@@ -246,17 +246,21 @@
 					<thumb>$INFO[Skin.String(CustomProgramsFolder)]</thumb>		
 					<onclick>ActivateWindow(Programs)</onclick>	
 					<visible>!Skin.HasSetting(HomeMenuNoProgramsButton)</visible>
-				</item>					
-				<item id="12"><!--Settings-->
+				</item>	
+				<item id="12"><!--Filemanager-->
+					<label>41025</label>
+					<icon>home/home_filemanager.png</icon>	
+					<thumb>$INFO[Skin.String(CustomFilemanagerFolder)]</thumb>		
+					<onclick>ActivateWindow(filemanager)</onclick>
+					<visible>!Skin.HasSetting(HomeMenuNoFilemanagerButton)</visible>
+				</item>	
+				<item id="13"><!--Settings-->
 					<label>5</label>
 					<icon>home/home_settings.png</icon>	
 					<thumb>$INFO[Skin.String(CustomSettingsFolder)]</thumb>		
 					<onclick>ActivateWindow(settings)</onclick>
 				</item>	
-				
-				
 			</content>
-
 		</control>
 
 		

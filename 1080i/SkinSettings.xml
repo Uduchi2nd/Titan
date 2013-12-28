@@ -344,7 +344,7 @@
 				<orientation>vertical</orientation>
 				<visible>Container(100).Hasfocus(5)</visible>
 
-				<control type="radiobutton" id="601"><!--Music-->
+				<control type="radiobutton" id="601">	<!--Music-->
 					<description>Music</description>
 					<width>1230</width>
 					<align>left</align>
@@ -355,7 +355,7 @@
 					<onclick>Skin.ToggleSetting(HomeMenuNoMusicButton)</onclick>
 					<selected>Skin.HasSetting(HomeMenuNoMusicButton)</selected>
 				</control>
-				<control type="radiobutton" id="602"><!--Video-->
+				<control type="radiobutton" id="602">	<!--Video-->
 					<description>Video</description>
 					<width>1230</width>
 					<align>left</align>
@@ -366,7 +366,7 @@
 					<onclick>Skin.ToggleSetting(HomeMenuNoVideosButton)</onclick>
 					<selected>Skin.HasSetting(HomeMenuNoVideosButton)</selected>
 				</control>
-				<control type="radiobutton" id="603"><!--Movies-->
+				<control type="radiobutton" id="603">	<!--Movies-->
 					<description>Movies</description>
 					<width>1230</width>
 					<align>left</align>
@@ -377,7 +377,7 @@
 					<onclick>Skin.ToggleSetting(HomeMenuNoMoviesButton)</onclick>
 					<selected>Skin.HasSetting(HomeMenuNoMoviesButton)</selected>
 				</control>
-				<control type="radiobutton" id="604"><!--TV_Shows-->
+				<control type="radiobutton" id="604">	<!--TV_Shows-->
 					<description>TV-Shows</description>
 					<width>1230</width>
 					<align>left</align>
@@ -388,8 +388,7 @@
 					<onclick>Skin.ToggleSetting(HomeMenuNoTVShowsButton)</onclick>
 					<selected>Skin.HasSetting(HomeMenuNoTVShowsButton)</selected>
 				</control>
-				<control type="radiobutton" id="608">
-					<!--Live_TV-->
+				<control type="radiobutton" id="608">	<!--Live_TV-->					
 					<description>Live TV</description>
 					<width>1230</width>
 					<align>left</align>
@@ -400,7 +399,7 @@
 					<onclick>Skin.ToggleSetting(HomeMenuNoPVRButton)</onclick>
 					<selected>Skin.HasSetting(HomeMenuNoPVRButton)</selected>
 				</control>
-				<control type="radiobutton" id="605"><!--Video-Addons-->
+				<control type="radiobutton" id="605">	<!--Video-Addons-->
 					<description>Video-Addons</description>
 					<width>1230</width>
 					<align>left</align>
@@ -411,7 +410,7 @@
 					<onclick>Skin.ToggleSetting(HomeMenuNoVideoAddonsButton)</onclick>
 					<selected>Skin.HasSetting(HomeMenuNoVideoAddonsButton)</selected>
 				</control>	
-				<control type="radiobutton" id="606"><!--Pictures-->
+				<control type="radiobutton" id="606">	<!--Pictures-->
 					<description>Pictures</description>
 					<width>1230</width>
 					<align>left</align>
@@ -422,7 +421,7 @@
 					<onclick>Skin.ToggleSetting(HomeMenuNoPicturesButton)</onclick>
 					<selected>Skin.HasSetting(HomeMenuNoPicturesButton)</selected>
 				</control>
-				<control type="radiobutton" id="607"><!--Weather-->
+				<control type="radiobutton" id="607">	<!--Weather-->
 					<description>Weather</description>
 					<width>1230</width>
 					<align>left</align>
@@ -444,7 +443,7 @@
 					<onclick>Skin.ToggleSetting(HomeMenuNoFavouritesButton)</onclick>
 					<selected>Skin.HasSetting(HomeMenuNoFavouritesButton)</selected>
 				</control-->
-				<control type="radiobutton" id="609">
+				<control type="radiobutton" id="609">	<!--Addons-->
 					<description>Addons</description>
 					<width>1230</width>
 					<align>left</align>
@@ -455,7 +454,7 @@
 					<onclick>Skin.ToggleSetting(HomeMenuNoAddonsButton)</onclick>
 					<selected>Skin.HasSetting(HomeMenuNoAddonsButton)</selected>
 				</control>	
-				<control type="radiobutton" id="610">
+				<control type="radiobutton" id="610">	<!--Programs-->
 					<description>Programs</description>
 					<width>1230</width>
 					<align>left</align>
@@ -466,7 +465,18 @@
 					<onclick>Skin.ToggleSetting(HomeMenuNoProgramsButton)</onclick>
 					<selected>Skin.HasSetting(HomeMenuNoProgramsButton)</selected>
 				</control>
-				<control type="radiobutton" id="611"><!--Shutdown-->
+				<control type="radiobutton" id="611">	<!--Filemanger-->
+					<description>Filemanager</description>
+					<width>1230</width>
+					<align>left</align>
+					<label>41025</label>
+					<height>50</height>
+					<focusedcolor>black</focusedcolor>
+					<font>Reg32</font>	
+					<onclick>Skin.ToggleSetting(HomeMenuNoFilemanagerButton)</onclick>
+					<selected>Skin.HasSetting(HomeMenuNoFilemanagerButton)</selected>
+				</control>
+				<control type="radiobutton" id="612">	<!--Shutdown-->
 					<description>Shutdown</description>
 					<width>1230</width>
 					<align>left</align>
@@ -609,8 +619,7 @@
 							<thumb>$INFO[Skin.String(CustomTVShowsFolder)]</thumb>
 							<visible>Library.HasContent(TVShows)</visible>
 						</item>
-						<item id="9">
-							<!--PVR-->
+						<item id="9">	<!--Live TV-->							
 							<label>Live TV</label>
 							<onclick>-</onclick>
 							<icon>home/home_pvr.png</icon>
@@ -652,6 +661,12 @@
 							<onclick>-</onclick>								
 							<icon>home/home_programs.png</icon>
 							<thumb>$INFO[Skin.String(CustomProgramsFolder)]</thumb>
+						</item>	
+						<item id="16">	<!--Programs-->								
+							<label>41025</label>
+							<onclick>-</onclick>								
+							<icon>home/home_filemanager.png</icon>
+							<thumb>$INFO[Skin.String(CustomFilemanagerFolder)]</thumb>
 						</item>	
 						<item id="7">	<!--Settings-->
 							<label>41006</label>
@@ -889,8 +904,7 @@
 							<onclick>Skin.Reset(CustomTVShowsFolder)</onclick>								
 						</control>
 					</control>
-					<control type="group">
-						<!--Live TV-->
+					<control type="group">	<!--Live TV-->						
 						<visible>Container(9004).HasFocus(9)</visible>
 						<control type="button" id="9001">
 							<include>Button9001</include>
@@ -903,6 +917,21 @@
 						<control type="button" id="9003">
 							<include>Button9003</include>
 							<onclick>Skin.Reset(CustomPVRFolder)</onclick>
+						</control>
+					</control>
+					<control type="group">	<!--Filemager-->						
+						<visible>Container(9004).HasFocus(16)</visible>
+						<control type="button" id="9001">
+							<include>Button9001</include>
+							<onclick>Skin.SetImage(CustomFilemanagerFolder)</onclick>
+						</control>
+						<control type="button" id="9002">
+							<include>Button9002</include>
+							<onclick>Skin.SetPath(CustomFilemagerFolder)</onclick>
+						</control>
+						<control type="button" id="9003">
+							<include>Button9003</include>
+							<onclick>Skin.Reset(CustomFilemanagerFolder)</onclick>
 						</control>
 					</control>
 				</control>

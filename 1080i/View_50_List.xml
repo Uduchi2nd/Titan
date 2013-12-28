@@ -185,7 +185,7 @@
 						<font>Light28</font>		
 						<textcolor>list_label_2_second</textcolor>
 						<selectedcolor>list_label_2_second</selectedcolor>
-						<label>$VAR[value_list_label_2_first]</label>
+						<label>$VAR[value_list_label_2]</label>
 						<visible>!StringCompare(ListItem.Label,..)</visible>
 					</control>					
 					<control type="image"><!--Separator-->			
@@ -275,7 +275,7 @@
 						<font>Light28</font>		
 						<textcolor>list_label_2_second</textcolor>
 						<selectedcolor>list_label_2_second</selectedcolor>
-						<label>$VAR[value_list_label_2_first]</label>
+						<label>$VAR[value_list_label_2]</label>
 						<visible>!StringCompare(ListItem.Label,..)</visible>
 					</control>	
 					<control type="image"><!--Separator-->			
@@ -381,7 +381,7 @@
 						<font>Light28</font>		
 						<textcolor>list_label_2_second</textcolor>
 						<selectedcolor>list_label_2_second</selectedcolor>
-						<label>$VAR[value_list_label_2_first]</label>
+						<label>$VAR[value_list_label_2]</label>
 						<visible>!StringCompare(ListItem.Label,..)</visible>
 					</control>						
 					<control type="image"><!--Watched Overlay-->		
@@ -692,18 +692,18 @@
 				<posx>420</posx>
 				<posy>0</posy> 		
 				<width>100</width>
-				<font>Bold30</font>			
+				<font>Bold30Big</font>			
 				<textcolor>black</textcolor>
-				<label>[B]$INFO[ListItem.Rating][/B]</label>	
+				<label>$INFO[ListItem.Rating]</label>	
 			</control>	
 			<control type="label"><!--Album, Songs-->
 				<visible>Container.Content(albums) | Container.Content(songs)</visible>
 				<posx>130</posx>
 				<posy>0</posy> 		
 				<width>600</width>
-				<font>Bold30</font>			
+				<font>Bold30Big</font>			
 				<textcolor>black</textcolor>
-				<label>[B]$INFO[ListItem.Album][/B]</label>	
+				<label>$INFO[ListItem.Album]</label>	
 			</control>				
 		</control>
 		<control type="group">		<!-- Title -->	
@@ -718,9 +718,9 @@
 				<posy>0</posy> 		
 				<width>800</width>
 				<align>center</align>
-				<font>Bold34</font>			
+				<font>Bold34Big</font>			
 				<textcolor>black</textcolor>
-				<label>[B]$INFO[ListItem.Label][/B]</label>	
+				<label>$INFO[ListItem.Label]</label>	
 			</control>	
 			<control type="label"><!--Album, Songs-->
 				<visible>Container.Content(albums) | Container.Content(songs)</visible>
@@ -728,9 +728,9 @@
 				<posy>0</posy> 		
 				<width>800</width>
 				<align>center</align>
-				<font>Bold34</font>			
+				<font>Bold34Big</font>			
 				<textcolor>black</textcolor>
-				<label>[B]$INFO[ListItem.Artist][/B]</label>	
+				<label>$INFO[ListItem.Artist]</label>	
 			</control>	
 		</control>
 		<control type="group">		<!-- Page Control -->	
@@ -744,9 +744,9 @@
 				<posy>0</posy> 		
 				<width>400</width>
 				<align>right</align>
-				<font>Bold30</font>			
+				<font>Bold30Big</font>			
 				<textcolor>black</textcolor>
-				<label>[B]$INFO[Container.CurrentPage]/$INFO[Container.NumPages][/B]</label>
+				<label>$INFO[Container.CurrentPage]/$INFO[Container.NumPages]</label>
 			</control>			
 		</control>
 		<control type="group">		<!-- Flags Video: Movies-->	
@@ -877,7 +877,7 @@
 		<control type="group">	
 			<control type="label" id="5101">
 				<include>HiddenButton</include>
-				<label>$VAR[value_list_label_2_first]</label>
+				<label>$VAR[value_list_label_2]</label>
 			</control>
 			<control type="label" id="5201">
 				<include>HiddenButton</include>

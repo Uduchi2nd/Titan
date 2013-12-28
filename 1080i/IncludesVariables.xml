@@ -55,11 +55,11 @@
 		<value condition="!Container.Content(albums)">$INFO[ListItem.Label]</value>
 		<value condition="Container.Content(albums)">$INFO[ListItem.Label2] - $INFO[ListItem.Label]</value>	
 	</variable>	
-	<variable name="value_list_label_2_first"> 
+	<variable name="value_list_label_2"> 
 		<value condition="[Container.Content(movies) | Container.Content(musicvideos)] + ![SubString(ListItem.Duration,min) | SubString(ListItem.Path,videodb://1/7,left)]">[COLOR=list_label_2_first]$LOCALIZE[180]: [/COLOR] $INFO[ListItem.Duration] min - [COLOR=list_label_2_first]$LOCALIZE[20339]: [/COLOR] $INFO[ListItem.Director]</value>
 		<value condition="[Container.Content(movies) | Container.Content(musicvideos)] + SubString(ListItem.Duration,min) + !SubString(ListItem.Path,videodb://1/7,left)">[COLOR=list_label_2_first]$LOCALIZE[180]: [/COLOR] $INFO[ListItem.Duration] - [COLOR=list_label_2_first]$LOCALIZE[20339]: [/COLOR] $INFO[ListItem.Director]</value>
 		<value condition="SubString(ListItem.Path,videodb://1/7,left)">[COLOR=list_label_2_first]$LOCALIZE[20457][/COLOR]</value> <!-- Movie Sets -->
-		<value condition="Container.Content(tvshows) + !IsEmpty(ListItem.Episode)">[COLOR=list_label_2_first]$LOCALIZE[33054]: [/COLOR]$INFO[ListItem.Property(TotalSeasons)] - [COLOR=list_label_2_first]$LOCALIZE[20360]: [/COLOR]$INFO[ListItem.Episode]</value>
+		<value condition="Container.Content(tvshows) + !IsEmpty(ListItem.Episode)">[COLOR=list_label_2_first]$LOCALIZE[20360]: [/COLOR]$INFO[ListItem.Episode]  - [COLOR=list_label_2_first]$LOCALIZE[16101]: [/COLOR]$INFO[ListItem.Property(UnWatchedEpisodes)]</value>
 		<value condition="Container.Content(seasons) + !IsEmpty(ListItem.Episode)">[COLOR=list_label_2_first]$INFO[ListItem.TVShowTitle][/COLOR] - [COLOR=list_label_2_first]$LOCALIZE[20360]: [/COLOR]$INFO[ListItem.Episode]  - [COLOR=list_label_2_first]$LOCALIZE[16101]: [/COLOR]$INFO[ListItem.Property(UnWatchedEpisodes)]</value>
 		<value condition="Container.Content(episodes) + !SubString(ListItem.Duration,min)">[COLOR=list_label_2_first]$LOCALIZE[180]: [/COLOR] $INFO[ListItem.Duration] min - [COLOR=list_label_2_first]$INFO[ListItem.TVShowTitle][/COLOR]</value>
 		<value condition="Container.Content(episodes) + SubString(ListItem.Duration,min)">[COLOR=list_label_2_first]$LOCALIZE[180]: [/COLOR] $INFO[ListItem.Duration] - [COLOR=list_label_2_first]$INFO[ListItem.TVShowTitle][/COLOR]</value>
@@ -131,12 +131,13 @@
 		<value condition="Window.IsActive(MyMusicNav.xml)">special://skin/backgrounds/music.png</value>								
 	</variable>
 	<variable name="value_global_background">
-		<value condition="IsEmpty(Skin.String(CustomGlobalBack)) + ![Window.IsActive(Settings.xml) | Window.IsActive(SkinSettings.xml) | Window.IsActive(SettingsCategory.xml) | Window.IsActive(SettingsSystemInfo.xml)]">special://skin/backgrounds/global.png</value>	
-		<value condition="!IsEmpty(Skin.String(CustomGlobalBack)) + ![Window.IsActive(Settings.xml) | Window.IsActive(SkinSettings.xml) | Window.IsActive(SettingsCategory.xml) | Window.IsActive(SettingsSystemInfo.xml)]">$INFO[Skin.String(CustomGlobalBack)]</value>
+		<value condition="IsEmpty(Skin.String(CustomGlobalBack)) + ![Window.IsActive(Settings.xml) | Window.IsActive(SkinSettings.xml) | Window.IsActive(SettingsCategory.xml) | Window.IsActive(SettingsSystemInfo.xml) | Window.IsActive(FileManager.xml)]">special://skin/backgrounds/global.png</value>	
+		<value condition="!IsEmpty(Skin.String(CustomGlobalBack)) + ![Window.IsActive(Settings.xml) | Window.IsActive(SkinSettings.xml) | Window.IsActive(SettingsCategory.xml) | Window.IsActive(SettingsSystemInfo.xml) | Window.IsActive(FileManager.xml)]">$INFO[Skin.String(CustomGlobalBack)]</value>
 		<value condition="Window.IsActive(Settings.xml)">special://skin/backgrounds/globalsettings.png</value>
 		<value condition="Window.IsActive(SkinSettings.xml)">special://skin/backgrounds/globalsettings.png</value>
 		<value condition="Window.IsActive(SettingsCategory.xml)">special://skin/backgrounds/globalsettings.png</value>
-		<value condition="Window.IsActive(SettingsSystemInfo.xml)">special://skin/backgrounds/globalsettings.png</value>		
+		<value condition="Window.IsActive(SettingsSystemInfo.xml)">special://skin/backgrounds/globalsettings.png</value>
+		<value condition="Window.IsActive(FileManager.xml)">special://skin/backgrounds/globalsettings.png</value>
 	</variable>
 	
 </includes>

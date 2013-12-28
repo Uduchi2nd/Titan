@@ -16,6 +16,22 @@
         <scroll>false</scroll>
 		<scrollspeed>30</scrollspeed>
     </default>
+	<default type="fadelabel">
+        <posx>0</posx>
+        <posy>0</posy>
+        <label>-</label>
+        <height>60</height>
+        <align>left</align>
+        <aligny>center</aligny>
+        <font>Light32</font>
+        <textcolor>white</textcolor>
+        <focusedcolor>white</focusedcolor>
+        <selectedcolor>white</selectedcolor>
+        <disabledcolor>midgrey</disabledcolor>  	
+		<scrollspeed>30</scrollspeed>
+		<pauseatend>2000</pauseatend>
+		<scrollout>false</scrollout>
+    </default>
     <default type="image">
         <posx>0</posx>
         <posy>0</posy>

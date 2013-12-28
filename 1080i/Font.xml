@@ -297,15 +297,22 @@
 		<!--     Bold      -->
 		<!-- ============= -->
 		<font>
-			<name>Bold30</name>
+			<name>Bold30Big</name>
 			<filename>Bold.ttf</filename>
 			<size>30</size>
-		</font>
+			<style>bold</style>
+		</font>		
+		<font>
+			<name>Bold34Big</name>
+			<filename>Bold.ttf</filename>
+			<size>34</size>
+			<style>bold</style>
+		</font>		
 		<font>
 			<name>Bold34</name>
 			<filename>Bold.ttf</filename>
-			<size>34</size>
-		</font>
+			<size>34</size>			
+		</font>	
 		<font>
 			<name>Bold38</name>
 			<filename>Bold.ttf</filename>

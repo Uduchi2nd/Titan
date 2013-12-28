@@ -1,4 +1,4 @@
-<!--Basic-->
+<!--Titan-->
 <window>
 	<defaultcontrol always="true">10</defaultcontrol>
 	<zorder>5</zorder>
@@ -13,10 +13,7 @@
 
 			<control type="group">
 				<posx>590</posx>
-				<posy>490</posy>
-				<animation effect="slide" end="0,-25" time="0" condition="IsEmpty(Control.GetLabel(2))">Conditional</animation>
-				<animation effect="slide" end="0,-25" time="0" condition="IsEmpty(Control.GetLabel(3))">Conditional</animation>
-				<animation effect="slide" end="0,-25" time="0" condition="IsEmpty(Control.GetLabel(4))">Conditional</animation>
+				<posy>460</posy>				
 				<control type="image">
 					<posx>330</posx>
 					<posy>13</posy>
@@ -68,49 +65,47 @@
 			</control>
 			<control type="label" id="1">
 				<description>Dialog Header</description>
-				<posx>460</posx>
-				<posy>310</posy>
-				<width>1000</width>
-				<height>22</height>			
+				<posx>100</posx>
+				<posy>340</posy>
+				<width>1720</width>				
 				<align>center</align>
+				<aligny>top</aligny>
 				<include>DialogHeader</include>
-				<animation effect="slide" end="0,25" time="0" condition="IsEmpty(Control.GetLabel(2))">Conditional</animation>
-				<animation effect="slide" end="0,25" time="0" condition="IsEmpty(Control.GetLabel(3))">Conditional</animation>
-				<animation effect="slide" end="0,25" time="0" condition="IsEmpty(Control.GetLabel(4))">Conditional</animation>
+				<animation effect="slide" end="0,60" time="0" condition="IsEmpty(Control.GetLabel(2))">Conditional</animation>				
+				<animation effect="slide" end="0,-60" time="0" condition="Window.IsActive(FileManager.xml)">Conditional</animation><!--Doubles Line-->
 			</control>
 			<control type="label" id="2">
 				<description>Line 1</description>
 				<posx>100</posx>
+				<posy>400</posy>
+				<width>1720</width>				
+				<align>center</align>
+				<aligny>top</aligny>
+				<label>-</label>
+				<include>DialogHeader2</include>				
+				<animation effect="slide" end="0,-60" time="0" condition="Window.IsActive(FileManager.xml)">Conditional</animation><!--Doubles Line-->
+			</control>
+			
+			<!--control type="label" id="3">
+				<description>Line 2</description>
+				<posx>100</posx>
 				<posy>350</posy>
 				<width>1720</width>				
 				<align>center</align>
+				<aligny>top</aligny>
 				<label>-</label>
-				<include>DialogHeader2</include>
-				<animation effect="slide" end="0,25" time="0" condition="IsEmpty(Control.GetLabel(3))">Conditional</animation>
-				<animation effect="slide" end="0,25" time="0" condition="IsEmpty(Control.GetLabel(4))">Conditional</animation>
-			</control>
-			<control type="label" id="3">
-				<description>Line 2</description>
+				<include>DialogHeader2</include>					
+			</control-->
+			<!--control type="label" id="4">
+				<description>Line 3</description>
 				<posx>100</posx>
 				<posy>400</posy>
 				<width>1720</width>				
 				<align>center</align>
+				<aligny>top</aligny>
 				<label>-</label>
-				<include>DialogHeader2</include>
-				<animation effect="slide" end="0,-25" time="0" condition="IsEmpty(Control.GetLabel(2))">Conditional</animation>
-				<animation effect="slide" end="0,25" time="0" condition="IsEmpty(Control.GetLabel(4))">Conditional</animation>
-			</control>
-			<control type="label" id="4">
-				<description>Line 3</description>
-				<posx>100</posx>
-				<posy>450</posy>
-				<width>1720</width>				
-				<align>center</align>
-				<label>-</label>
-				<include>DialogHeader2</include>
-				<animation effect="slide" end="0,-25" time="0" condition="IsEmpty(Control.GetLabel(2))">Conditional</animation>
-				<animation effect="slide" end="0,-25" time="0" condition="IsEmpty(Control.GetLabel(3))">Conditional</animation>
-			</control>
+				<include>DialogHeader2</include>				
+			</control-->
 		</control>
 
 	</controls>

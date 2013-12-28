@@ -35,29 +35,25 @@
 			<control type="label">		<!--Now Playing-->					
 				<posx>255</posx>
 				<posy>40</posy>
-				<width>300</width>
+				<width>285</width>
 				<align>left</align>
 				<font>Reg28</font>
 				<textcolor>darkgrey</textcolor>
-				<label>Now Playing</label>
-				<scroll>false</scroll>
-				<!--<scrollspeed>30</scrollspeed>-->
-			</control>		
-			<control type="label">		<!--Title-->				
+				<label>Now Playing</label>				
+			</control>				
+			<control type="fadelabel"> <!--Title-->	
 				<posx>255</posx>
-				<posy>73</posy>
-				<width>300</width>
+				<posy>75</posy>
+				<width>285</width>
 				<align>left</align>
 				<font>Bold34</font>
-				<textcolor>darkgrey</textcolor>
-				<label>$INFO[MusicPlayer.Title]</label>
-				<scroll>false</scroll>
-				<!--<scrollspeed>30</scrollspeed>-->
-			</control>		
+				<textcolor>darkgrey</textcolor>		
+				<label>$INFO[MusicPlayer.Title]</label>										
+		  </control>
 			<control type="label">		<!--Play Time-->
 				<posx>255</posx>
 				<posy>125</posy>
-				<width>200</width>
+				<width>285</width>
 				<align>left</align>
 				<font>Reg28</font>
 				<textcolor>darkgrey</textcolor>
@@ -107,18 +103,16 @@
 			<control type="label">		<!--Now Playing-->				
 				<posx>355</posx>
 				<posy>40</posy>
-				<width>300</width>
+				<width>285</width>
 				<align>left</align>
 				<font>Reg28</font>
 				<textcolor>darkgrey</textcolor>
-				<label>Now Playing</label>
-				<scroll>false</scroll>
-				<!--<scrollspeed>30</scrollspeed>-->
+				<label>Now Playing</label>				
 			</control>		
 			<control type="label">		<!--Title-->			
 				<posx>355</posx>
-				<posy>73</posy>
-				<width>300</width>
+				<posy>75</posy>
+				<width>285</width>
 				<align>left</align>
 				<font>Bold34</font>
 				<textcolor>darkgrey</textcolor>
@@ -128,7 +122,7 @@
 			<control type="label">		<!--Play Time-->
 				<posx>355</posx>
 				<posy>125</posy>
-				<width>300</width>
+				<width>285</width>
 				<align>left</align>
 				<font>Reg28</font>
 				<textcolor>darkgrey</textcolor>

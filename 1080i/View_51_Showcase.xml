@@ -86,9 +86,9 @@
 				<posx>420</posx>
 				<posy>0</posy> 		
 				<width>100</width>
-				<font>Bold30</font>			
+				<font>Bold30Big</font>			
 				<textcolor>black</textcolor>
-				<label>[B]$INFO[ListItem.Rating][/B]</label>	
+				<label>$INFO[ListItem.Rating]</label>	
 			</control>			
 		</control>
 		<control type="group">	<!-- Title -->	
@@ -102,9 +102,9 @@
 				<posy>0</posy> 		
 				<width>800</width>
 				<align>center</align>
-				<font>Bold34</font>			
+				<font>Bold34Big</font>			
 				<textcolor>black</textcolor>
-				<label>[B]$INFO[ListItem.Label][/B]</label>	
+				<label>$INFO[ListItem.Label]</label>	
 			</control>			
 		</control>
 		<control type="group">	<!-- Page Control -->	
@@ -118,9 +118,9 @@
 				<posy>0</posy> 		
 				<width>400</width>
 				<align>right</align>
-				<font>Bold30</font>			
+				<font>Bold30Big</font>			
 				<textcolor>black</textcolor>
-				<label>[B]$INFO[Container.CurrentPage]/$INFO[Container.NumPages][/B]</label>
+				<label>$INFO[Container.CurrentPage]/$INFO[Container.NumPages]</label>
 			</control>			
 		</control>	
 	</include>

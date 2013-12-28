@@ -410,9 +410,9 @@
 			<posy>990</posy> 		
 			<width>800</width>
 			<align>center</align>
-			<font>Bold34</font>			
+			<font>Bold34Big</font>			
 			<textcolor>black</textcolor>
-			<label>[B]$INFO[Control.GetLabel(3)][/B]</label>					
+			<label>$INFO[Control.GetLabel(3)]</label>					
 			<visible>Weather.IsFetched</visible>				
 		</control>
 
