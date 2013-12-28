@@ -10,7 +10,7 @@
 			<animation effect="fade" time="600" delay="800" reversible="false">WindowOpen</animation>		
 			<animation effect="fade" time="200" reversible="false">WindowClose</animation>				
 			
-			<visible>!Window.IsActive(Settings.xml + !Window.IsActive(SettingsCategory.xml)  + !Window.IsActive(SettingsSystemInfo.xml) ) + !Window.IsActive(SkinSettings.xml)</visible>
+			<visible>!Window.IsActive(Settings.xml) + !Window.IsActive(SettingsCategory.xml)  + !Window.IsActive(SettingsSystemInfo.xml) + !Window.IsActive(SkinSettings.xml)</visible>
 			<visible>!Window.IsActive(DialogKaiToast.xml) + !Window.IsActive(DialogExtendedProgressBar.xml)</visible>
 			<visible>![Window.IsActive(DialogVideoInfo.xml) + !substring(ListItem.Path,plugin)]</visible>
 		
@@ -80,7 +80,7 @@
 			<animation effect="fade" time="600" delay="1000" reversible="false">WindowOpen</animation>		
 			<animation effect="fade" time="200" reversible="false">WindowClose</animation>							
 			
-			<visible>!Window.IsActive(Settings.xml + !Window.IsActive(SettingsCategory.xml)  + !Window.IsActive(SettingsSystemInfo.xml) ) + !Window.IsActive(SkinSettings.xml)</visible>
+			<visible>!Window.IsActive(Settings.xml) + !Window.IsActive(SettingsCategory.xml)  + !Window.IsActive(SettingsSystemInfo.xml) + !Window.IsActive(SkinSettings.xml)</visible>
 			<visible>!Window.IsActive(DialogKaiToast.xml) + !Window.IsActive(DialogExtendedProgressBar.xml)</visible>
 			<visible>![Window.IsActive(DialogVideoInfo.xml) + !substring(ListItem.Path,plugin)]</visible>
 			
@@ -145,7 +145,7 @@
 			<animation effect="slide" start="1500" end="0" time="0" delay="1500" reversible="false">Visible</animation>
 			<animation effect="slide" start="0" end="1500" time="0" reversible="false">Hidden</animation>				
 			
-			<visible>!Window.IsActive(Settings.xml + !Window.IsActive(SettingsCategory.xml)  + !Window.IsActive(SettingsSystemInfo.xml) ) + !Window.IsActive(SkinSettings.xml)</visible>
+			<visible>!Window.IsActive(Settings.xml) + !Window.IsActive(SettingsCategory.xml)  + !Window.IsActive(SettingsSystemInfo.xml) + !Window.IsActive(SkinSettings.xml)</visible>
 			<visible>!Window.IsActive(DialogKaiToast.xml) + !Window.IsActive(DialogExtendedProgressBar.xml)</visible>	
 			<visible>![Window.IsActive(DialogVideoInfo.xml) + !substring(ListItem.Path,plugin)]</visible>
 			
