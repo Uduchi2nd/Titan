@@ -1,5 +1,4 @@
 <!--Titan-->
-
 <includes>	
 	
 	<!-- ====== -->
@@ -72,46 +71,38 @@
 	<!-- =============== -->
 	<!-- Additional Info -->
 	<!-- =============== -->
-	<variable name="value_ground1_label">
-		<value condition="Container.Content(movies) | Window.IsVisible(VideoPlaylist) | Container.Content(musicvideos) | StringCompare(Container.FolderPath,videodb://1/7/)">$LOCALIZE[21875] :</value><!-- Land -->
+	<variable name="value_ground1_label"><!-- Land / Premiere -->
+		<value condition="Container.Content(movies) | Window.IsVisible(VideoPlaylist) | Container.Content(musicvideos)">$LOCALIZE[21875] :</value><!-- Land -->
 		<value condition="Container.Content(tvshows) | Container.Content(seasons) | Container.Content(episodes)">Premiere :</value><!-- Premiere -->
 	</variable>
 	<variable name="value_ground1_value">
-		<value condition="[Container.Content(movies) | Window.IsVisible(VideoPlaylist) | Container.Content(musicvideos)] + !SubString(ListItem.Path,videodb://1/7,left)">$INFO[ListItem.Country]</value>
-		<value condition="SubString(ListItem.Path,videodb://1/7,left)">$INFO[Window(0).Property(Set.Movies.Country)]</value>
+		<value condition="Container.Content(movies) | Window.IsVisible(VideoPlaylist) | Container.Content(musicvideos)">$INFO[ListItem.Country]</value>		
 		<value condition="Container.Content(tvshows) | Container.Content(seasons) | Container.Content(episodes)">$INFO[ListItem.Premiered]</value>
 	</variable>
-	<variable name="value_ground2_label">
-		<value condition="Container.Content(movies) | Window.IsVisible(VideoPlaylist) | Container.Content(musicvideos) | Container.Content(tvshows) | Container.Content(seasons) | StringCompare(Container.FolderPath,videodb://1/7/)">$LOCALIZE[515] :</value><!-- Genre -->
-		<value condition="Container.Content(episodes)">$LOCALIZE[20339] :</value><!-- Diretor -->
+	<variable name="value_ground2_label"><!-- Genre / Regie -->
+		<value condition="Container.Content(movies) | Window.IsVisible(VideoPlaylist) | Container.Content(musicvideos) | Container.Content(tvshows) | Container.Content(seasons)">$LOCALIZE[515] :</value><!-- Genre -->
+		<value condition="Container.Content(episodes)">$LOCALIZE[20339] :</value><!-- Regie -->
 	</variable>
 	<variable name="value_ground2_value">
-		<value condition="[Container.Content(movies) | Window.IsVisible(VideoPlaylist) | Container.Content(musicvideos) | Container.Content(tvshows) | Container.Content(seasons)] + !SubString(ListItem.Path,videodb://1/7,left)">$INFO[ListItem.Genre]</value>
-		<value condition="SubString(ListItem.Path,videodb://1/7,left)">$INFO[Window(0).Property(Set.Movies.Genre)]</value>
-		<value condition="Container.Content(episodes)">$INFO[ListItem.director]</value>
+		<value condition="Container.Content(movies) | Window.IsVisible(VideoPlaylist) | Container.Content(musicvideos) | Container.Content(tvshows) | Container.Content(seasons)">$INFO[ListItem.Genre]</value>
+		<value condition="Container.Content(episodes)">$INFO[ListItem.Director]</value>
 	</variable>
-	<variable name="value_ground3_label">
-		<value condition="Container.Content(movies) | Window.IsVisible(VideoPlaylist) | Container.Content(musicvideos) | StringCompare(Container.FolderPath,videodb://1/7/)">$LOCALIZE[20339] :</value><!-- Regie -->
-		<value condition="Container.Content(tvshows)">$LOCALIZE[20360] :</value><!-- Episoden -->
-		<value condition="Container.Content(seasons)">$LOCALIZE[20388] :</value><!-- Studio -->
-		<value condition="Container.Content(episodes)">$LOCALIZE[180] :</value><!-- Duration -->
-		<value condition="Window.IsActive(1) + !Container.Content(Addons)">$LOCALIZE[31788]</value><!-- Desenvolvedor -->
+	<variable name="value_ground3_label"><!-- Studio -->
+		<value condition="Container.Content(movies) | Window.IsVisible(VideoPlaylist) | Container.Content(musicvideos) |  Container.Content(tvshows) | Container.Content(seasons) | Container.Content(episodes)">$LOCALIZE[20388] :</value><!-- Studio -->
 	</variable>
 	<variable name="value_ground3_value">
-		<value condition="[Container.Content(movies) | Window.IsVisible(VideoPlaylist) | Container.Content(musicvideos)] + !SubString(ListItem.Path,videodb://1/7,left)">$INFO[ListItem.Director]</value>
-		<value condition="SubString(ListItem.Path,videodb://1/7,left)">$INFO[Window(0).Property(Set.Movies.Director)]</value>
-		<value condition="Container.Content(tvshows)">$INFO[ListItem.Episode] ($LOCALIZE[16101]: $INFO[ListItem.Property(UnwatchedEpisodes)])</value>
-		<value condition="Container.Content(seasons)">$INFO[ListItem.Studio]</value>
-		<value condition="Container.Content(episodes) + !SubString(ListItem.Duration,min)">$INFO[ListItem.Duration] min</value> 
-		<value condition="Container.Content(episodes) + SubString(ListItem.Duration,min)">$INFO[ListItem.Duration]</value>
+		<value condition="Container.Content(movies) | Window.IsVisible(VideoPlaylist) | Container.Content(musicvideos) |  Container.Content(tvshows) | Container.Content(seasons) | Container.Content(episodes)">$INFO[ListItem.Studio]</value>
 	</variable>
-	<variable name="value_ground4_label">
-		<value condition="[Container.Content(movies) | Container.Content(tvshows) | Container.Content(episodes)] + !SubString(ListItem.Path,videodb://1/7,left)">$LOCALIZE[562] :</value><!-- Year -->
-		<value condition="[Container.Content(movies) | Container.Content(tvshows) | Container.Content(episodes)] + SubString(ListItem.Path,videodb://1/7,left)">$LOCALIZE[652] :</value><!-- Years -->
+	<variable name="value_ground4_label"><!-- Regie / Episodes (counter) / Duration -->
+		<value condition="Container.Content(movies) | Window.IsVisible(VideoPlaylist) | Container.Content(musicvideos)">$LOCALIZE[20339] :</value><!-- Regie -->
+		<value condition="Container.Content(tvshows)">$LOCALIZE[20360] :</value><!-- Episodes -->		
+		<value condition="Container.Content(episodes)">$LOCALIZE[180] :</value><!-- Duration -->
 	</variable>
 	<variable name="value_ground4_value">
-		<value condition="[Container.Content(movies) | Container.Content(tvshows) | Container.Content(episodes)] + !SubString(ListItem.Path,videodb://1/7,left)">$INFO[ListItem.Year]</value>
-		<value condition="[Container.Content(movies) | Container.Content(tvshows) | Container.Content(episodes)] + SubString(ListItem.Path,videodb://1/7,left)">$INFO[Window(0).Property(Set.Movies.Years)]</value>
+		<value condition="Container.Content(movies) | Window.IsVisible(VideoPlaylist) | Container.Content(musicvideos)">$INFO[ListItem.Director]</value>
+		<value condition="Container.Content(tvshows)">$INFO[ListItem.Episode] ($LOCALIZE[16101]: $INFO[ListItem.Property(UnwatchedEpisodes)])</value>		
+		<value condition="Container.Content(episodes) + !SubString(ListItem.Duration,min)">$INFO[ListItem.Duration] min</value> 
+		<value condition="Container.Content(episodes) + SubString(ListItem.Duration,min)">$INFO[ListItem.Duration]</value>	
 	</variable>
 
 	<!-- ====== -->

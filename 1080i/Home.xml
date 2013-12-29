@@ -231,7 +231,7 @@
 					<icon>home/home_videos.png</icon>
 					<thumb>$INFO[Skin.String(CustomVideosFolder)]</thumb>		
 					<onclick>ActivateWindow(Video,root)</onclick>
-					<visible>!Skin.HasSetting(HomeMenuNoVideosButton</visible>					
+					<visible>!Skin.HasSetting(HomeMenuNoVideosButton)</visible>					
 				</item>
 				<item id="10"><!--Addons-->	
 					<label>10040</label>
