@@ -24,6 +24,7 @@
 		<value condition="Window.IsActive(SkinSettings.xml)">[UPPERCASE]$LOCALIZE[5][/UPPERCASE]</value>
 		<value condition="Window.IsActive(SettingsCategory.xml)">[UPPERCASE]$LOCALIZE[5][/UPPERCASE]</value>
 		<value condition="Window.IsActive(SettingsSystemInfo.xml)">[UPPERCASE]$LOCALIZE[5][/UPPERCASE]</value>
+		<value condition="Window.IsActive(MyPVR.xml)">[UPPERCASE]Live TV[/UPPERCASE]</value>
 	</variable>
 	<variable name="value_header_icon">
 		<value condition="Window.IsActive(Home.xml)">icons/icon_home.png</value>
@@ -45,6 +46,7 @@
 		<value condition="Window.IsActive(SkinSettings.xml)">icons/icon_settings.png</value>
 		<value condition="Window.IsActive(SettingsCategory.xml)">icons/icon_settings.png</value>
 		<value condition="Window.IsActive(SettingsSystemInfo.xml)">icons/icon_settings.png</value>
+		<value condition="Window.IsActive(MyPVR.xml)">icons/icon_tvshows.png</value>
 	</variable>
 	
 	<!-- ========== -->
