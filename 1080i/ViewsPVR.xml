@@ -635,7 +635,7 @@
 						<height>80</height>						
 						<texture>common/button-fo.png</texture>
 					</control>
-					<control type="label" id="1">	<!--Channel Now Playing-->
+					<control type="fadelabel" id="1"><!--Channel Now Playing-->
 						<animation effect="slide" start="0" end="40" time="0" reversible="false" condition="ListItem.IsRecording">Conditional</animation>	
 						<animation effect="slide" start="0" end="40" time="0" reversible="false" condition="ListItem.HasTimer + !ListItem.IsRecording">Conditional</animation>	
 						<posx>20</posx>
@@ -1071,6 +1071,7 @@
 			</control>
 			<control type="group">			<!--Video Window--> 
 				<visible>Control.IsVisible(15)</visible>
+				<visible>!IsEmpty(ListItem.Label)</visible>
 				<include>animation_view_change_pvr</include>			
 				<include>animation_list</include>
 				<posx>80</posx>
@@ -1092,8 +1093,9 @@
 					<animation effect="slide" start="0,0" end="-4500,0" time="0">WindowClose</animation>
 				</control>				
 			</control>
-			<control type="label">			<!--Title-->
+			<control type="label">			<!--Title-->				
 				<visible>Control.IsVisible(15)</visible>
+				<visible>!IsEmpty(ListItem.Label)</visible>
 				<include>animation_view_change_pvr</include>			
 				<include>animation_list</include>				
 				<posx>500</posx>
@@ -1104,8 +1106,23 @@
 				<textcolor>mainblue</textcolor>
 				<label>$INFO[ListItem.Label]</label>
 			</control>
+			<control type="label">			<!--No Info-->				
+				<visible>Control.IsVisible(15)</visible>
+				<visible>IsEmpty(ListItem.Label)</visible>
+				<include>animation_view_change_pvr</include>			
+				<include>animation_list</include>				
+				<posx>0</posx>
+				<posy>270</posy>
+				<width>1920</width>
+				<height>50</height>
+				<align>center</align>
+				<font>Bold45</font>
+				<textcolor>mainblue</textcolor>
+				<label>195</label>
+			</control>
 			<control type="group">			<!--Start, End, Duration-->
-				<visible>Control.IsVisible(15)</visible>			
+				<visible>Control.IsVisible(15)</visible>	
+				<visible>!IsEmpty(ListItem.Label)</visible>
 				<include>animation_view_change_pvr</include>
 				<include>animation_list</include>
 				<posx>500</posx>
@@ -1162,8 +1179,9 @@
 					</control>					
 				</control>
 			</control>
-			<control type="textbox">		<!--Info Plot-->		
+			<control type="textbox">		<!--Info Plot-->					
 				<visible>Control.IsVisible(15)</visible>
+				<visible>!IsEmpty(ListItem.Label)</visible>
 				<include>animation_view_change_pvr</include>			
 				<include>animation_list</include>
 				<posx>1150</posx>
