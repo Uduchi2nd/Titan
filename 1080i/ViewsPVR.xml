@@ -204,7 +204,7 @@
 						<visible>ListItem.Isplaying</visible>
 					</control>
 					<control type="image">		<!--Chanel Icon-->					
-						<posx>1085</posx>
+						<posx>1100</posx>
 						<posy>5</posy>
 						<width>48</width>
 						<height>48</height>
@@ -217,7 +217,7 @@
 						<height>55</height>
 						<font>Reg32</font>
 						<textcolor>midgrey</textcolor>
-						<selectedcolor>mainblue</selectedcolor>
+						<selectedcolor>midgrey</selectedcolor>
 						<align>left</align>
 						<aligny>center</aligny>
 						<label>$INFO[ListItem.Label]</label>					
@@ -275,7 +275,7 @@
 						<height>78</height>
 						<texture>$INFO[ListItem.Icon]</texture>
 					</control>				
-					<control type="label">		<!--Channel Name-->					
+					<control type="label">		<!--Channel Name-->				
 						<animation effect="slide" start="0" end="50" time="0" reversible="false" condition="ListItem.Isplaying">Conditional</animation>
 						<posx>1200</posx>						
 						<width>545</width>
@@ -285,7 +285,7 @@
 						<selectedcolor>mainblue</selectedcolor>						
 						<label>$INFO[ListItem.Label]</label>
 					</control>
-					<control type="label">		<!--Program Description-->					
+					<control type="label">		<!--Channel Now Playing-->					
 						<posx>1200</posx>
 						<posy>50</posy>
 						<width>545</width>
@@ -433,9 +433,9 @@
 				<include>animation_list</include>				
 				<posx>500</posx>
 				<posy>190</posy>
-				<width>400</width>
+				<width>600</width>
 				<height>50</height>						
-				<font>Reg45</font>
+				<font>Bold45</font>
 				<textcolor>mainblue</textcolor>
 				<label>$INFO[ListItem.Label]</label>
 			</control>
@@ -456,7 +456,7 @@
 				<control type="label">						
 					<posx>130</posx>
 					<posy>0</posy>
-					<width>400</width>	
+					<width>470</width>	
 					<textcolor>midgrey</textcolor>
 					<label>$INFO[ListItem.StartTime] - $INFO[ListItem.EndTime]</label>
 				</control>
@@ -470,7 +470,7 @@
 				<control type="label">					
 					<posx>130</posx>
 					<posy>40</posy>
-					<width>400</width>
+					<width>470</width>
 					<textcolor>midgrey</textcolor>
 					<label>$INFO[ListItem.Duration]</label>
 				</control>
@@ -483,7 +483,7 @@
 				<control type="fadelabel">				
 					<posx>130</posx>
 					<posy>80</posy>
-					<width>400</width>
+					<width>470</width>
 					<textcolor>midgrey</textcolor>
 					<label>$INFO[ListItem.ChannelName]</label>
 				</control>
@@ -516,7 +516,8 @@
 				<onleft>9000</onleft>
 				<onright>9000</onright>				
 				<onup>10</onup>
-				<ondown>10</ondown>
+				<ondown>10</ondown>				
+				
 				<rulerlayout height="80" width="60">			<!--Date, Time Top Line-->
 					<control type="image" id="1"><!--Background-->
 						<width>60</width>
@@ -564,7 +565,7 @@
 						<posy>0</posy>
 						<width>320</width>
 						<height>80</height>
-						<font>Reg30</font>					
+						<font>Reg32</font>					
 						<textcolor>midgrey</textcolor>  
 						<selectedcolor>midgrey</selectedcolor>						
 						<label>$INFO[ListItem.ChannelName]</label>
@@ -585,8 +586,8 @@
 						<width>80</width>
 						<height>80</height>
 						<font>Reg40</font>					
-						<textcolor>mainblue</textcolor>
-						<selectedcolor>mainblue</selectedcolor>			
+						<textcolor>white</textcolor>
+						<selectedcolor>white</selectedcolor>			
 						<info>ListItem.ChannelNumber</info>
 					</control>
 					<control type="image">			<!--Channel Icon-->
@@ -596,12 +597,12 @@
 						<height>60</height>
 						<texture>$INFO[ListItem.Icon]</texture>
 					</control>
-					<control type="label" id="1">	<!--Cahnnel Name-->
+					<control type="label" id="1">	<!--Channel Name-->
 						<posx>160</posx>
 						<posy>0</posy>
 						<width>320</width>
 						<height>80</height>
-						<font>Bold30Big</font>					
+						<font>Reg32</font>					
 						<textcolor>black</textcolor>  
 						<selectedcolor>black</selectedcolor>		
 						<label>$INFO[ListItem.ChannelName]</label>
@@ -609,14 +610,6 @@
 				</focusedchannellayout>
 
 				<itemlayout height="80" width="60">				<!--EPG UNFOCUS-->
-					<!--control type="image" id="2">
-						<width>60</width>
-						<height>78</height>
-						<posx>0</posx>
-						<posy>50</posy>
-						<aspectratio>stretch</aspectratio>
-						<texture>epg-genres/$INFO[ListItem.Property(GenreType)].png</texture>
-					</control-->
 					<control type="image" id="14">	<!--Button NF-->
 						<posx>1</posx>
 						<posy>0</posy>
@@ -624,18 +617,18 @@
 						<height>80</height>						
 						<texture>common/button-nf.png</texture>
 					</control>
-					<control type="label" id="1">	<!--Label 1-->
+					<control type="label" id="1">	<!--Channel Now Playing-->
 						<posx>20</posx>
 						<posy>5</posy>						
 						<width>0</width>									
-						<font>Reg30</font>
+						<font>Reg32</font>
 						<aligny>top</aligny>
 						<textoffsetx>0</textoffsetx>
 						<textcolor>midgrey</textcolor>
 						<selectedcolor>midgrey</selectedcolor>							
 						<info>ListItem.Label</info>
 					</control>
-					<control type="label" id="2">	<!--Label 2-->
+					<control type="label" id="2">	<!--Time: Start, End-->
 						<posx>0</posx>
 						<posy>40</posy>						
 						<width>0</width>									
@@ -694,26 +687,18 @@
 						<height>80</height>						
 						<texture>common/button-fo.png</texture>
 					</control>
-					<!--control type="image" id="2">
-						<width>60</width>
-						<height>78</height>
-						<posx>50</posx>
-						<posy>0</posy>
-						<aspectratio>stretch</aspectratio>
-						<texture border="3">epg-genres/$INFO[ListItem.Property(GenreType)].png</texture>
-					</control-->
-					<control type="label" id="1">	<!--Lable 1-->
+					<control type="label" id="1">	<!--Channel Now Playing-->
 						<posx>20</posx>
 						<posy>4</posy>						
 						<width>0</width>							
-						<font>Bold32</font>
+						<font>Reg32</font>
 						<aligny>top</aligny>
 						<textoffsetx>0</textoffsetx>
 						<textcolor>black</textcolor>
 						<selectedcolor>black</selectedcolor>	
 						<info>ListItem.Label</info>
 					</control>
-					<control type="label" id="2">	<!--Label 2-->
+					<control type="label" id="2">	<!--Time: Start, End-->
 						<posx>0</posx>
 						<posy>40</posy>						
 						<width>0</width>									
@@ -722,7 +707,7 @@
 						<textoffsetx>0</textoffsetx>
 						<textcolor>black</textcolor>
 						<selectedcolor>black</selectedcolor>							
-						<label>   [COLOR=black]$LOCALIZE[142] [/COLOR] $INFO[ListItem.StartTime] - $INFO[ListItem.EndTime]</label>
+						<label>   [COLOR=white]$LOCALIZE[142] [/COLOR] $INFO[ListItem.StartTime] - $INFO[ListItem.EndTime]</label>
 						<visible>!ListItem.HasTimer + !ListItem.IsRecording</visible>
 					</control>	
 					<control type="image">			<!--Icon PVR Recording-->

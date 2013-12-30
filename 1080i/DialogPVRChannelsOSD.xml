@@ -6,17 +6,17 @@
 		<!--Panel-->
 		<control type="image">
 			<include>animation_fade_visible_hidden</include>
-			<include>animation_fade_open_close</include>		
-			<posx>1120</posx>
+			<include>animation_fade_open_close</include>	
+			<posx>100</posx><!-- +23 -->
 			<posy>100</posy>
-			<width>750</width>
-			<height>820</height>				
-			<texture>pvr/pvr_channel_osd.png</texture>					
+			<width>1000</width>
+			<height>820</height>
+			<texture border="39">dialogs/default/bg-black.png</texture>
 		</control>
 
 		<!--Header-->
 		<control type="group"> 
-			<posx>1120</posx>
+			<posx>123</posx>
 			<posy>100</posy>
 			<include>animation_fade_visible_hidden</include>
 			<include>animation_fade_open_close</include>	
@@ -56,9 +56,9 @@
 		<control type="list" id="11">
 			<include>animation_fade_visible_hidden</include>
 			<include>animation_fade_open_close</include>	
-			<posx>1133</posx>
+			<posx>123</posx>
 			<posy>270</posy>				
-			<width>900</width>
+			<width>1920</width>
 			<height>600</height>
 			<onleft>-</onleft>
 			<onright>-</onright>
@@ -68,7 +68,7 @@
 			<pagecontrol>70</pagecontrol>
 			<scrolltime>200</scrolltime>
 
-			<itemlayout height="100" width="900">
+			<itemlayout height="100" width="1920">
 				<control type="label">		<!--Channel Number-->					
 					<posx>50</posx>
 					<posy>0</posy>
@@ -104,23 +104,23 @@
 					<height>75</height>
 					<texture>$INFO[ListItem.Icon]</texture>
 				</control>				
-				<control type="label">		<!--Channel Name-->					
+				<control type="label">		<!--Channel Name-->				
 					<animation effect="slide" start="0" end="50" time="0" reversible="false" condition="ListItem.Isplaying">Conditional</animation>
 					<posx>200</posx>
 					<posy>20</posy>
-					<width>400</width>
+					<width>954</width>
 					<height>25</height>
 					<font>Reg32</font>
 					<textcolor>midgrey</textcolor>
-					<selectedcolor>mainblue</selectedcolor>
+					<selectedcolor>midgrey</selectedcolor>
 					<align>left</align>
 					<aligny>center</aligny>
 					<label>$INFO[ListItem.Label]</label>					
 				</control>
-				<control type="label">		<!--Program Description-->					
+				<control type="label">		<!--Channel Now Playing (LEFT)-->						
 					<posx>200</posx>
-					<posy>54</posy>
-					<width>400</width>
+					<posy>65</posy>
+					<width>450</width>
 					<height>20</height>
 					<font>Reg25</font>
 					<textcolor>mainblue</textcolor>
@@ -128,23 +128,35 @@
 					<align>left</align>
 					<aligny>center</aligny>
 					<label>$INFO[ListItem.Title]</label>
-				</control>
-				<control type="progress">	<!--Progress Bar-->						
-					<posx>200</posx>
-					<posy>80</posy>
-					<width>400</width>					
-					<texturebg></texturebg>
-					<midtexture border="4">osd/ProgressMidSmall.png</midtexture>
-					<visible>ListItem.HasEpg</visible>
-					<info>ListItem.Progress</info>
+				</control>		
+				<control type="label">		<!--Time: Start, End (RIGHT)-->				
+					<posx>650</posx>
+					<posy>65</posy>
+					<width>300</width>
+					<height>20</height>
+					<font>Reg25</font>
+					<textcolor>mainblue</textcolor>
+					<selectedcolor>mainblue</selectedcolor>
+					<align>left</align>
+					<aligny>center</aligny>
+					<label>[COLOR=midgrey]$LOCALIZE[142] [/COLOR] $INFO[ListItem.StartTime] - $INFO[ListItem.EndTime]</label>
+				</control>	
+				<control type="image">		<!--Separator-->			
+					<posx>50</posx>
+					<posy>96</posy>
+					<width>854</width>
+					<height>20</height>		
+					<fadetime>400</fadetime>
+					<colordiffuse>Separator</colordiffuse>
+					<texture>common/separator.png</texture>			
 				</control>
 			</itemlayout>
 			<focusedlayout height="100" width="900">
 				<control type="image">		<!--Slider-->				
 					<posx>0</posx>
 					<posy>0</posy>
-					<width>724</width>
-					<height>100</height>					
+					<width>954</width>
+					<height>96</height>					
 					<texture>common/button-fo.png</texture>
 				</control>
 				<control type="label">		<!--Channel Number-->					
@@ -181,39 +193,51 @@
 					<height>75</height>
 					<texture>$INFO[ListItem.Icon]</texture>
 				</control>				
-				<control type="label">		<!--Channel Name-->					
+				<control type="label">		<!--Channel Name-->				
 					<animation effect="slide" start="0" end="50" time="0" reversible="false" condition="ListItem.Isplaying">Conditional</animation>
 					<posx>200</posx>
 					<posy>20</posy>
-					<width>400</width>
+					<width>954</width>
 					<height>25</height>
-					<font>Reg36</font>
+					<font>Reg32</font>
 					<textcolor>black</textcolor>
 					<selectedcolor>black</selectedcolor>
 					<align>left</align>
 					<aligny>center</aligny>
 					<label>$INFO[ListItem.Label]</label>
 				</control>
-				<control type="label">		<!--Program Description-->					
+				<control type="label">		<!--Channel Now Playing (LEFT)-->			
 					<posx>200</posx>
-					<posy>54</posy>
-					<width>400</width>
+					<posy>65</posy>
+					<width>450</width>
 					<height>20</height>
 					<font>Reg25</font>
-					<textcolor>black</textcolor>
-					<selectedcolor>black</selectedcolor>
+					<textcolor>white</textcolor>
+					<selectedcolor>white</selectedcolor>
 					<align>left</align>
 					<aligny>center</aligny>
 					<label>$INFO[ListItem.Title]</label>
-				</control>
-				<control type="progress">	<!--Progress Bar-->						
-					<posx>200</posx>
-					<posy>80</posy>
-					<width>400</width>					
-					<texturebg></texturebg>
-					<midtexture border="4">osd/ProgressMidSmall.png</midtexture>
-					<visible>ListItem.HasEpg</visible>
-					<info>ListItem.Progress</info>
+				</control>		
+				<control type="label">		<!--Time: Start, End (RIGHT)-->				
+					<posx>650</posx>
+					<posy>65</posy>
+					<width>300</width>
+					<height>20</height>
+					<font>Reg25</font>
+					<textcolor>white</textcolor>
+					<selectedcolor>white</selectedcolor>
+					<align>left</align>
+					<aligny>center</aligny>
+					<label>[COLOR=black]$LOCALIZE[142] [/COLOR] $INFO[ListItem.StartTime] - $INFO[ListItem.EndTime]</label>
+				</control>	
+				<control type="image">		<!--Separator-->			
+					<posx>50</posx>
+					<posy>96</posy>
+					<width>854</width>
+					<height>20</height>		
+					<fadetime>400</fadetime>
+					<colordiffuse>Separator</colordiffuse>
+					<texture>common/separator.png</texture>			
 				</control>
 			</focusedlayout>
 		</control>
