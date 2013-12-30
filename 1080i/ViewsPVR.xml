@@ -50,7 +50,7 @@
 					</control>
 					<control type="label">
 						<visible>!IsEmpty(Container(11).ListItem.Title)</visible>
-						<posx>180</posx>
+						<posx>160</posx>
 						<posy>0</posy>
 						<width>400</width>	
 						<textcolor>midgrey</textcolor>
@@ -58,7 +58,7 @@
 					</control>
 					<control type="label">	
 						<visible>IsEmpty(Container(11).ListItem.Title)</visible>
-						<posx>180</posx>
+						<posx>160</posx>
 						<posy>0</posy>
 						<width>400</width>	
 						<textcolor>midgrey</textcolor>
@@ -76,7 +76,7 @@
 					</control>
 					<control type="label">
 						<visible>!IsEmpty(Container(11).ListItem.StartTime)</visible>
-						<posx>180</posx>
+						<posx>160</posx>
 						<posy>0</posy>
 						<width>400</width>	
 						<textcolor>midgrey</textcolor>
@@ -84,7 +84,7 @@
 					</control>
 					<control type="label">	
 						<visible>IsEmpty(Container(11).ListItem.StartTime)</visible>
-						<posx>180</posx>
+						<posx>160</posx>
 						<posy>0</posy>
 						<width>400</width>	
 						<textcolor>midgrey</textcolor>
@@ -102,7 +102,7 @@
 					</control>
 					<control type="label">
 						<visible>!IsEmpty(Container(11).ListItem.EndTime)</visible>
-						<posx>180</posx>
+						<posx>160</posx>
 						<posy>0</posy>
 						<width>400</width>	
 						<textcolor>midgrey</textcolor>
@@ -110,7 +110,7 @@
 					</control>
 					<control type="label">	
 						<visible>IsEmpty(Container(11).ListItem.EndTime)</visible>
-						<posx>180</posx>
+						<posx>160</posx>
 						<posy>0</posy>
 						<width>400</width>	
 						<textcolor>midgrey</textcolor>
