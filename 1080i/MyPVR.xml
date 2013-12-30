@@ -36,13 +36,13 @@
 		<control type="group">
 			<posx>15</posx>
 			<posy>150</posy>
-			
+
 			<visible>!Window.IsActive(DialogKeyboard.xml)</visible>
-			
+
 			<include>animation_fade_visible_hidden</include>
 			<include>animation_fade_open_close</include>
 			<include>animation_sub_menu</include>				
-			
+
 			<!--Panel-->
 			<control type="image">
 				<posx>-19</posx>
@@ -57,7 +57,7 @@
 				<texture border="39">dialogs/default/bg-black.png</texture>
 				<aspectratio>stretch</aspectratio>
 			</control>			
-			
+
 			<!--Gouplist 9000-->
 			<control type="grouplist" id="9000">		
 				<posx>21</posx>

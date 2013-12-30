@@ -355,7 +355,7 @@
 	</include>
 	<include name="EPGTimelineView">		<!--EPG Timeline View ID=10-->		
 		<control type="group">
-		
+
 			<control type="group">			<!--Panel-->
 				<visible>Control.IsVisible(10)</visible>
 				<include>animation_view_change_pvr</include>
@@ -496,7 +496,7 @@
 				<onright>9000</onright>				
 				<onup>10</onup>
 				<ondown>10</ondown>				
-				
+
 				<rulerlayout height="80" width="60">			<!--Date, Time Top Line-->
 					<control type="image" id="1"><!--Background-->
 						<width>60</width>
@@ -670,7 +670,7 @@
 	</include>
 	<include name="LiveTVGuideNowNextView">	<!--LiveTVGuideNowNextView ID=16-->
 		<control type="group">       
-		
+
 			<control type="group">			<!--Panel-->
 				<visible>Control.IsVisible(16)</visible>
 				<include>animation_view_change_pvr</include>
@@ -795,7 +795,7 @@
 				<label fallback="161">$INFO[ListItem.Plot]</label>
 				<autoscroll time="2000" delay="8000" repeat="5000">true</autoscroll>
 			</control> 
-			
+
 			<control type="group">			<!--Top Bar-->
 				<visible>Control.IsVisible(16)</visible>
 				<include>animation_view_change_pvr</include>
@@ -1049,7 +1049,7 @@
 	</include>
 	<include name="LiveTVGuideChannelView">	<!--LiveTVGuideChannelView ID=15-->
 		<control type="group">  
-			
+
 			<control type="group">			<!--Panel-->
 				<visible>Control.IsVisible(15)</visible>
 				<include>animation_view_change_pvr</include>			
@@ -1179,7 +1179,7 @@
 					</control>					
 				</control>
 			</control>
-			<control type="textbox">		<!--Info Plot-->					
+			<control type="textbox">		<!--Info Plot-->	
 				<visible>Control.IsVisible(15)</visible>
 				<visible>!IsEmpty(ListItem.Label)</visible>
 				<include>animation_view_change_pvr</include>			
@@ -1192,7 +1192,7 @@
 				<label fallback="161">$INFO[ListItem.Plot]</label>
 				<autoscroll time="2000" delay="8000" repeat="5000">true</autoscroll>
 			</control> 		
-			
+
 			<control type="group">			<!--Top Bar-->
 				<visible>Control.IsVisible(15)</visible>
 				<include>animation_view_change_pvr</include>			
@@ -1410,8 +1410,8 @@
 					</control>				
 				</focusedlayout>
 			</control>
-			
+
 		</control>
 	</include>
-	
+
 </includes>
