@@ -1,7 +1,7 @@
 <!--Titan-->
 <includes>
 
-	<include name="LiveTVChannelView">	<!--Live TV Channel View ID=11-->	
+	<include name="LiveTVChannelView">		<!--Live TV Channel View ID=11-->	
 		<control type="group">  
 
 			<control type="image">			<!--Panel-->
@@ -48,22 +48,13 @@
 						<textcolor>mainblue</textcolor>			
 						<label>$LOCALIZE[19030] :</label>			
 					</control>
-					<control type="label">
-						<visible>!IsEmpty(Container(11).ListItem.Title)</visible>
+					<control type="label">					
 						<posx>160</posx>
 						<posy>0</posy>
-						<width>400</width>	
+						<width>300</width>	
 						<textcolor>midgrey</textcolor>
 						<label>$INFO[Container(11).ListItem.Title]</label>	     		
-					</control>
-					<control type="label">	
-						<visible>IsEmpty(Container(11).ListItem.Title)</visible>
-						<posx>160</posx>
-						<posy>0</posy>
-						<width>400</width>	
-						<textcolor>midgrey</textcolor>
-						<label>...</label>			
-					</control>
+					</control>					
 				</control>
 				<control type="group">	<!-- Ground 2 -->									
 					<posy>40</posy>
@@ -74,22 +65,13 @@
 						<textcolor>mainblue</textcolor>			
 						<label>$LOCALIZE[19126] :</label>			
 					</control>
-					<control type="label">
-						<visible>!IsEmpty(Container(11).ListItem.StartTime)</visible>
+					<control type="label">						
 						<posx>160</posx>
 						<posy>0</posy>
-						<width>400</width>	
+						<width>300</width>	
 						<textcolor>midgrey</textcolor>
 						<label>$INFO[Container(11).ListItem.StartTime]</label>	     		
-					</control>
-					<control type="label">	
-						<visible>IsEmpty(Container(11).ListItem.StartTime)</visible>
-						<posx>160</posx>
-						<posy>0</posy>
-						<width>400</width>	
-						<textcolor>midgrey</textcolor>
-						<label>...</label>			
-					</control>
+					</control>					
 				</control>
 				<control type="group">	<!-- Ground 3 -->									
 					<posy>80</posy>
@@ -100,25 +82,14 @@
 						<textcolor>mainblue</textcolor>			
 						<label>$LOCALIZE[19127] :</label>			
 					</control>
-					<control type="label">
-						<visible>!IsEmpty(Container(11).ListItem.EndTime)</visible>
+					<control type="label">						
 						<posx>160</posx>
 						<posy>0</posy>
-						<width>400</width>	
+						<width>300</width>	
 						<textcolor>midgrey</textcolor>
 						<label>$INFO[Container(11).ListItem.EndTime]</label>	     		
-					</control>
-					<control type="label">	
-						<visible>IsEmpty(Container(11).ListItem.EndTime)</visible>
-						<posx>160</posx>
-						<posy>0</posy>
-						<width>400</width>	
-						<textcolor>midgrey</textcolor>
-						<label>...</label>			
-					</control>
+					</control>					
 				</control>
-
-
 			</control>
 			<control type="group">			<!--Infos-->
 				<include>animation_fade_visible_hidden</include>
@@ -382,7 +353,7 @@
 			</control>		
 		</control>
 	</include>
-	<include name="EPGTimelineView">	<!--EPG Timeline View ID=10-->		
+	<include name="EPGTimelineView">		<!--EPG Timeline View ID=10-->		
 		<control type="group">
 		
 			<control type="group">			<!--Panel-->
@@ -439,55 +410,64 @@
 				<textcolor>mainblue</textcolor>
 				<label>$INFO[ListItem.Label]</label>
 			</control>
-			<control type="group">			<!--Infos-->
-				<visible>Control.IsVisible(10)</visible>
-				<include>animation_view_change</include>			
+			<control type="group">			<!--Start, End, Duration-->
+				<visible>Control.IsVisible(10)</visible>			
+				<include>animation_view_change</include>
 				<include>animation_list</include>
 				<posx>500</posx>
 				<posy>245</posy>
-				<control type="label">		<!--Time:Start, End-->
-					<description>Time description</description>
-					<posx>0</posx>
+				<control type="group">	<!-- Ground 1 -->									
 					<posy>0</posy>
-					<width>200</width>
-					<textcolor>mainblue</textcolor>
-					<label>$LOCALIZE[142]</label>
+					<control type="label">
+						<posx>0</posx>
+						<posy>0</posy>
+						<width>180</width>			
+						<textcolor>mainblue</textcolor>			
+						<label>$LOCALIZE[142]</label>			
+					</control>
+					<control type="label">					
+						<posx>160</posx>
+						<posy>0</posy>
+						<width>300</width>	
+						<textcolor>midgrey</textcolor>
+						<label>$INFO[ListItem.StartTime] - $INFO[ListItem.EndTime]</label>	
+					</control>					
 				</control>
-				<control type="label">						
-					<posx>130</posx>
-					<posy>0</posy>
-					<width>470</width>	
-					<textcolor>midgrey</textcolor>
-					<label>$INFO[ListItem.StartTime] - $INFO[ListItem.EndTime]</label>
-				</control>
-				<control type="label">		<!--Duration-->
-					<posx>0</posx>
+				<control type="group">	<!-- Ground 2 -->									
 					<posy>40</posy>
-					<width>200</width>
-					<textcolor>mainblue</textcolor>
-					<label>$LOCALIZE[180]:</label>
+					<control type="label">
+						<posx>0</posx>
+						<posy>0</posy>
+						<width>180</width>			
+						<textcolor>mainblue</textcolor>			
+						<label>$LOCALIZE[180]:</label>			
+					</control>
+					<control type="label">						
+						<posx>160</posx>
+						<posy>0</posy>
+						<width>300</width>	
+						<textcolor>midgrey</textcolor>
+						<label>$INFO[ListItem.Duration]</label>    		
+					</control>					
 				</control>
-				<control type="label">					
-					<posx>130</posx>
-					<posy>40</posy>
-					<width>470</width>
-					<textcolor>midgrey</textcolor>
-					<label>$INFO[ListItem.Duration]</label>
-				</control>
-				<control type="label">		<!--Channel Name-->					
-					<posx>0</posx>
-					<posy>80</posy>							
-					<textcolor>mainblue</textcolor>
-					<label>$LOCALIZE[19148]:</label>
-				</control>
-				<control type="fadelabel">				
-					<posx>130</posx>
+				<control type="group">	<!-- Ground 3 -->									
 					<posy>80</posy>
-					<width>470</width>
-					<textcolor>midgrey</textcolor>
-					<label>$INFO[ListItem.ChannelName]</label>
+					<control type="label">
+						<posx>0</posx>
+						<posy>0</posy>
+						<width>180</width>							
+						<textcolor>mainblue</textcolor>			
+						<label>$LOCALIZE[19148]:</label>			
+					</control>
+					<control type="label">						
+						<posx>160</posx>
+						<posy>0</posy>
+						<width>300</width>	
+						<textcolor>midgrey</textcolor>
+						<label><label>$INFO[ListItem.ChannelName]</label></label>	     		
+					</control>					
 				</control>
-			</control>			
+			</control>
 			<control type="textbox">		<!--Info Plot-->		
 				<visible>Control.IsVisible(10)</visible>
 				<include>animation_view_change</include>			
@@ -618,66 +598,35 @@
 						<texture>common/button-nf.png</texture>
 					</control>
 					<control type="label" id="1">	<!--Channel Now Playing-->
+						<animation effect="slide" start="0" end="40" time="0" reversible="false" condition="ListItem.IsRecording">Conditional</animation>	
+						<animation effect="slide" start="0" end="40" time="0" reversible="false" condition="ListItem.HasTimer + !ListItem.IsRecording">Conditional</animation>
 						<posx>20</posx>
-						<posy>5</posy>						
-						<width>0</width>									
+						<posy>0</posy>						
+						<width>0</width>
+						<height>80</height>						
 						<font>Reg32</font>
-						<aligny>top</aligny>
+						<aligny>center</aligny>
 						<textoffsetx>0</textoffsetx>
 						<textcolor>midgrey</textcolor>
 						<selectedcolor>midgrey</selectedcolor>							
-						<info>ListItem.Label</info>
+						<label>$INFO[ListItem.Label]</label>	
 					</control>
-					<control type="label" id="2">	<!--Time: Start, End-->
-						<posx>0</posx>
-						<posy>40</posy>						
-						<width>0</width>									
-						<font>Reg28</font>
-						<aligny>top</aligny>
-						<textoffsetx>0</textoffsetx>
-						<textcolor>midgrey</textcolor>
-						<selectedcolor>midgrey</selectedcolor>							
-						<label>   [COLOR=mainblue]$LOCALIZE[142] [/COLOR] $INFO[ListItem.StartTime] - $INFO[ListItem.EndTime]</label>
-						<visible>!ListItem.HasTimer + !ListItem.IsRecording</visible>
-					</control>					
 					<control type="image">			<!--Icon PVR Recording-->
 						<posx>5</posx>
-						<posy>40</posy>
-						<width>40</width>
-						<height>40</height>
+						<posy>15</posy>
+						<width>50</width>
+						<height>50</height>
 						<texture>pvr/icons/pvr_record.png</texture>
 						<visible>ListItem.IsRecording</visible>
 					</control>
-					<control type="label" id="3">	<!--Label PVR Recording-->					
-						<posx>20</posx>
-						<posy>45</posy>
-						<width>0</width>											
-						<font>Reg25</font>
-						<aligny>top</aligny>
-						<textoffsetx>0</textoffsetx>
-						<textcolor>red</textcolor>
-						<label>      REC</label>
-						<visible>ListItem.IsRecording</visible>
-					</control>					
 					<control type="image">			<!--Icon PVR Timer-->
 						<posx>5</posx>
-						<posy>40</posy>
-						<width>40</width>
-						<height>40</height>
+						<posy>15</posy>
+						<width>50</width>
+						<height>50</height>
 						<texture>pvr/icons/pvr_timer.png</texture>
 						<visible>ListItem.HasTimer + !ListItem.IsRecording</visible>
 					</control>
-					<control type="label" id="4">	<!--Label PVR Timer-->					
-						<posx>20</posx>
-						<posy>25</posy>
-						<width>0</width>									
-						<font>Reg25</font>
-						<aligny>top</aligny>
-						<textoffsetx>0</textoffsetx>
-						<textcolor>green</textcolor>
-						<label>      TIME</label>
-						<visible>ListItem.HasTimer + !ListItem.IsRecording</visible>
-					</control>	
 				</itemlayout>
 				<focusedlayout height="80" width="60">			<!--EPG FOCUS-->
 					<control type="image" id="14">	<!--Button FO-->
@@ -688,69 +637,760 @@
 						<texture>common/button-fo.png</texture>
 					</control>
 					<control type="label" id="1">	<!--Channel Now Playing-->
+						<animation effect="slide" start="0" end="40" time="0" reversible="false" condition="ListItem.IsRecording">Conditional</animation>	
+						<animation effect="slide" start="0" end="40" time="0" reversible="false" condition="ListItem.HasTimer + !ListItem.IsRecording">Conditional</animation>	
 						<posx>20</posx>
-						<posy>4</posy>						
-						<width>0</width>							
+						<posy>0</posy>						
+						<width>0</width>
+						<height>80</height>
 						<font>Reg32</font>
-						<aligny>top</aligny>
-						<textoffsetx>0</textoffsetx>
+						<aligny>center</aligny>						
 						<textcolor>black</textcolor>
 						<selectedcolor>black</selectedcolor>	
-						<info>ListItem.Label</info>
-					</control>
-					<control type="label" id="2">	<!--Time: Start, End-->
-						<posx>0</posx>
-						<posy>40</posy>						
-						<width>0</width>									
-						<font>Reg28</font>
-						<aligny>top</aligny>
-						<textoffsetx>0</textoffsetx>
-						<textcolor>black</textcolor>
-						<selectedcolor>black</selectedcolor>							
-						<label>   [COLOR=white]$LOCALIZE[142] [/COLOR] $INFO[ListItem.StartTime] - $INFO[ListItem.EndTime]</label>
-						<visible>!ListItem.HasTimer + !ListItem.IsRecording</visible>
-					</control>	
+						<label>$INFO[ListItem.Label]</label>						
+					</control>					
 					<control type="image">			<!--Icon PVR Recording-->
 						<posx>5</posx>
-						<posy>40</posy>
-						<width>40</width>
-						<height>40</height>
+						<posy>15</posy>
+						<width>50</width>
+						<height>50</height>
 						<texture>pvr/icons/pvr_record.png</texture>
 						<visible>ListItem.IsRecording</visible>
-					</control>
-					<control type="label" id="3">	<!--Label PVR Recording-->					
-						<posx>20</posx>
-						<posy>45</posy>
-						<width>0</width>											
-						<font>Reg25</font>
-						<aligny>top</aligny>
-						<textoffsetx>0</textoffsetx>
-						<textcolor>red</textcolor>
-						<label>      REC</label>
-						<visible>ListItem.IsRecording</visible>
-					</control>	
+					</control>					
 					<control type="image">			<!--Icon PVR Timer-->
 						<posx>5</posx>
-						<posy>40</posy>
-						<width>40</width>
-						<height>40</height>
+						<posy>15</posy>
+						<width>50</width>
+						<height>50</height>
 						<texture>pvr/icons/pvr_timer.png</texture>
 						<visible>ListItem.HasTimer + !ListItem.IsRecording</visible>
-					</control>
-					<control type="label" id="4">	<!--Label PVR Timer-->					
-						<posx>20</posx>
-						<posy>45</posy>
-						<width>0</width>									
-						<font>Reg25</font>
-						<aligny>top</aligny>
-						<textoffsetx>0</textoffsetx>
-						<textcolor>green</textcolor>
-						<label>      TIME</label>
-						<visible>ListItem.HasTimer + !ListItem.IsRecording</visible>
-					</control>	
+					</control>			
 				</focusedlayout>
 			</control>
 		</control>
 	</include>
+	<include name="LiveTVGuideNowNextView">	<!--LiveTVGuideNowNextView ID=16-->
+		<control type="group">       
+		
+			<control type="group">			<!--Panel-->
+				<visible>Control.IsVisible(16)</visible>
+				<include>animation_view_change</include>			
+				<include>animation_list</include>
+				<control type="image">			<!--Panel Button-->
+					<posx>0</posx>
+					<posy>450</posy>
+					<width>1907</width>
+					<height>633</height>				
+					<texture>pvr/pvr_epg_panel.png</texture>					
+				</control>			
+				<control type="image">			<!--Panel Top-->
+					<posx>0</posx>
+					<posy>120</posy>
+					<width>1907</width>
+					<height>341</height>				
+					<texture>pvr/pvr_epg_info.png</texture>					
+				</control>
+			</control>
+			<control type="group">			<!--Video Window--> 
+				<visible>Control.IsVisible(16)</visible>
+				<include>animation_view_change</include>			
+				<include>animation_list</include>
+				<posx>80</posx>
+				<posy>190</posy>			
+				<control type="image">			<!--Background-->				
+					<posx>0</posx>
+					<posy>0</posy>
+					<width>350</width>
+					<height>200</height>
+					<texture>special://skin/backgrounds/pvr.png</texture>				
+					<visible>!Player.HasVideo</visible>
+				</control>
+				<control type="videowindow">	<!--Video Window-->
+					<posx>0</posx>
+					<posy>0</posy>
+					<width>350</width>
+					<height>200</height>
+					<visible>Player.HasVideo</visible>
+					<animation effect="slide" start="0,0" end="-4500,0" time="0">WindowClose</animation>
+				</control>				
+			</control>
+			<control type="label">			<!--Title-->
+				<visible>Control.IsVisible(16)</visible>
+				<include>animation_view_change</include>			
+				<include>animation_list</include>				
+				<posx>500</posx>
+				<posy>190</posy>
+				<width>600</width>
+				<height>50</height>						
+				<font>Bold45</font>
+				<textcolor>mainblue</textcolor>
+				<label>$INFO[ListItem.Label]</label>
+			</control>
+			<control type="group">			<!--Start, End, Duration-->
+				<visible>Control.IsVisible(16)</visible>			
+				<include>animation_view_change</include>
+				<include>animation_list</include>
+				<posx>500</posx>
+				<posy>245</posy>
+				<control type="group">	<!-- Ground 1 -->									
+					<posy>0</posy>
+					<control type="label">
+						<posx>0</posx>
+						<posy>0</posy>
+						<width>180</width>			
+						<textcolor>mainblue</textcolor>			
+						<label>$LOCALIZE[142]</label>			
+					</control>
+					<control type="label">					
+						<posx>160</posx>
+						<posy>0</posy>
+						<width>300</width>	
+						<textcolor>midgrey</textcolor>
+						<label>$INFO[ListItem.StartTime] - $INFO[ListItem.EndTime]</label>	
+					</control>					
+				</control>
+				<control type="group">	<!-- Ground 2 -->									
+					<posy>40</posy>
+					<control type="label">
+						<posx>0</posx>
+						<posy>0</posy>
+						<width>180</width>			
+						<textcolor>mainblue</textcolor>			
+						<label>$LOCALIZE[180]:</label>			
+					</control>
+					<control type="label">						
+						<posx>160</posx>
+						<posy>0</posy>
+						<width>300</width>	
+						<textcolor>midgrey</textcolor>
+						<label>$INFO[ListItem.Duration]</label>    		
+					</control>					
+				</control>
+				<control type="group">	<!-- Ground 3 -->									
+					<posy>80</posy>
+					<control type="label">
+						<posx>0</posx>
+						<posy>0</posy>
+						<width>180</width>							
+						<textcolor>mainblue</textcolor>			
+						<label>$LOCALIZE[19148]:</label>			
+					</control>
+					<control type="label">						
+						<posx>160</posx>
+						<posy>0</posy>
+						<width>300</width>	
+						<textcolor>midgrey</textcolor>
+						<label>$INFO[ListItem.ChannelName]</label>     		
+					</control>					
+				</control>
+			</control>
+			<control type="textbox">		<!--Info Plot-->		
+				<visible>Control.IsVisible(16)</visible>
+				<include>animation_view_change</include>			
+				<include>animation_list</include>
+				<posx>1150</posx>
+				<posy>190</posy> 
+				<width>650</width>
+				<height>190</height>						
+				<textcolor>midgrey</textcolor>         
+				<label fallback="161">$INFO[ListItem.Plot]</label>
+				<autoscroll time="2000" delay="8000" repeat="5000">true</autoscroll>
+			</control> 
+			
+			<control type="group">			<!--Top Bar-->
+				<visible>Control.IsVisible(16)</visible>
+				<include>animation_fade_visible_hidden</include>
+				<include>animation_list</include>
+				<posx>125</posx>
+				<posy>445</posy>
+				<control type="label">	<!--Time-->					
+					<posx>0</posx>
+					<posy>30</posy>
+					<width>100</width>
+					<height>30</height>					
+					<font>Bold30Big</font>
+					<textoffsetx>0</textoffsetx>
+					<textcolor>black</textcolor>    
+					<label>555</label>
+				</control>
+				<control type="label">	<!--Channel-->					
+					<posx>150</posx>
+					<posy>30</posy>
+					<width>300</width>
+					<height>30</height>
+					<font>Bold30Big</font>
+					<textoffsetx>0</textoffsetx>
+					<textcolor>black</textcolor>    
+					<label>19148</label>
+				</control>
+				<control type="label">	<!--Title-->
+					<posx>625</posx>
+					<posy>30</posy>
+					<width>300</width>
+					<height>30</height>
+					<font>Bold30Big</font>
+					<textoffsetx>0</textoffsetx>
+					<textcolor>black</textcolor>    
+					<label>369</label>
+				</control>
+				<control type="label">	<!--Status-->					
+					<posx>1370</posx>
+					<posy>30</posy>
+					<width>210</width>
+					<height>30</height>
+					<font>Bold30Big</font>
+					<textoffsetx>15</textoffsetx>
+					<textcolor>black</textcolor>    
+					<label>126</label>
+				</control>
+			</control>   
+			<control type="list" id="16">	<!--List ID=16-->
+				<posx>125</posx>
+				<posy>550</posy>
+				<width>1650</width>
+				<height>470</height>
+				<onup>16</onup>
+				<ondown>16</ondown>
+				<onleft>9000</onleft>
+				<onright>-</onright>
+				<pagecontrol>-</pagecontrol>
+				<scrolltime>200</scrolltime>
+				<itemlayout height="80">
+					<control type="label">	<!--Time-->
+						<posx>0</posx>
+						<posy>0</posy>
+						<width>150</width>
+						<height>80</height>
+						<font>Reg36</font>
+						<textcolor>midgrey</textcolor>    
+						<info>ListItem.StartTime</info>
+					</control>
+					<control type="label">	<!--Channel Number-->
+						<posx>150</posx>
+						<posy>0</posy>
+						<width>80</width>
+						<height>80</height>
+						<font>Reg36</font>
+						<textcolor>midgrey</textcolor>    
+						<info>ListItem.ChannelNumber</info>
+					</control>
+					<control type="image">	<!--Icon-->
+						<posx>205</posx>
+						<posy>17</posy>
+						<width>45</width>
+						<height>45</height>
+						<info>ListItem.Icon</info>
+					</control>
+					<control type="label">	<!--Channel Name-->
+						<posx>305</posx>
+						<posy>0</posy>
+						<width>400</width>
+						<height>80</height>
+						<font>Reg32</font>
+						<textcolor>midgrey</textcolor>    
+						<info>ListItem.ChannelName</info>
+					</control>
+					<control type="label">	<!--Current Play-->
+						<posx>625</posx>
+						<posy>0</posy>
+						<width>600</width>
+						<height>80</height>
+						<font>Reg32</font>
+						<textcolor>midgrey</textcolor>    
+						<info>ListItem.Label</info>
+					</control>
+					<control type="image">	<!--REC Icon-->
+						<posx>1370</posx>
+						<posy>8</posy>
+						<width>64</width>
+						<height>64</height>
+						<texture>pvr/icons/pvr_record.png</texture>
+						<visible>ListItem.IsRecording</visible>
+					</control>
+					<control type="label">	<!--REC Label-->
+						<posx>1450</posx>
+						<posy>0</posy>
+						<width>200</width>
+						<height>80</height>
+						<font>Reg32</font>
+						<textcolor>red</textcolor>    
+						<label>REC</label>
+						<visible>ListItem.IsRecording</visible>
+					</control>
+					<control type="image">	<!--TIME Icon-->
+						<posx>1370</posx>
+						<posy>8</posy>
+						<width>64</width>
+						<height>64</height>
+						<texture>pvr/icons/pvr_timer.png</texture>
+						<visible>ListItem.HasTimer + !ListItem.IsRecording</visible>
+					</control>
+					<control type="label">	<!--TIME Label-->
+						<posx>1450</posx>
+						<posy>0</posy>
+						<width>200</width>
+						<height>80</height>
+						<font>Reg32</font>
+						<textcolor>green</textcolor>    
+						<label>TIME</label>
+						<visible>ListItem.HasTimer</visible>
+					</control>
+					<control type="image">	<!--Separator-->			
+						<posx>15</posx>
+						<posy>80</posy>
+						<width>1635</width>
+						<height>20</height>		
+						<fadetime>400</fadetime>
+						<colordiffuse>Separator</colordiffuse>
+						<texture>common/separator.png</texture>			
+					</control>
+				</itemlayout>
+				<focusedlayout height="80">
+					<control type="image">	<!--Slide-->					
+						<posx>110</posx>
+						<posy>0</posy>
+						<width>1590</width>
+						<height>80</height>							
+						<texture>common/button-fo.png</texture>       
+					</control>    
+					<control type="label">	<!--Time-->
+						<posx>0</posx>
+						<posy>0</posy>
+						<width>150</width>
+						<height>80</height>
+						<font>Reg36</font>
+						<textcolor>mainblue</textcolor>    
+						<info>ListItem.StartTime</info>
+					</control>
+					<control type="label">	<!--Channel Number-->
+						<posx>150</posx>
+						<posy>0</posy>
+						<width>80</width>
+						<height>80</height>
+						<font>Reg36</font>
+						<textcolor>black</textcolor>    
+						<info>ListItem.ChannelNumber</info>
+					</control>
+					<control type="image">	<!--Icon-->
+						<posx>205</posx>
+						<posy>17</posy>
+						<width>45</width>
+						<height>45</height>
+						<info>ListItem.Icon</info>
+					</control>				
+					<control type="label">	<!--Channel Name-->
+						<posx>305</posx>
+						<posy>0</posy>
+						<width>400</width>
+						<height>80</height>
+						<font>Reg36</font>
+						<textcolor>black</textcolor>    
+						<info>ListItem.ChannelName</info>
+					</control>
+					<control type="label">	<!--Current Play-->
+						<posx>625</posx>
+						<posy>0</posy>
+						<width>600</width>
+						<height>80</height>
+						<font>Reg32</font>
+						<textcolor>black</textcolor>    
+						<info>ListItem.Label</info>
+					</control>
+					<control type="image">	<!--REC Icon-->
+						<posx>1370</posx>
+						<posy>8</posy>
+						<width>64</width>
+						<height>64</height>
+						<texture>pvr/icons/pvr_record.png</texture>
+						<visible>ListItem.IsRecording</visible>
+					</control>
+					<control type="label">	<!--REC Label-->
+						<posx>1450</posx>
+						<posy>0</posy>
+						<width>200</width>
+						<height>80</height>
+						<font>Reg32</font>
+						<textcolor>red</textcolor>    
+						<label>REC</label>
+						<visible>ListItem.IsRecording</visible>
+					</control>
+					<control type="image">	<!--TIME Icon-->
+						<posx>1370</posx>
+						<posy>8</posy>
+						<width>64</width>
+						<height>64</height>
+						<texture>pvr/icons/pvr_timer.png</texture>
+						<visible>ListItem.HasTimer + !ListItem.IsRecording</visible>
+					</control>
+					<control type="label">	<!--TIME Label-->
+						<posx>1450</posx>
+						<posy>0</posy>
+						<width>200</width>
+						<height>80</height>
+						<font>Reg32</font>
+						<textcolor>green</textcolor>    
+						<label>TIME</label>
+						<visible>ListItem.HasTimer</visible>
+					</control>
+					<control type="image">	<!--Separator-->			
+						<posx>15</posx>
+						<posy>80</posy>
+						<width>1635</width>
+						<height>20</height>		
+						<fadetime>400</fadetime>
+						<colordiffuse>Separator</colordiffuse>
+						<texture>common/separator.png</texture>			
+					</control>
+				</focusedlayout>
+			</control>
 
+		</control>
+	</include>
+	<include name="LiveTVGuideChannelView">	<!--LiveTVGuideChannelView ID=15-->
+		<control type="group">  
+			
+			<control type="group">			<!--Panel-->
+				<visible>Control.IsVisible(15)</visible>
+				<include>animation_view_change</include>			
+				<include>animation_list</include>
+				<control type="image">			<!--Panel Button-->
+					<posx>0</posx>
+					<posy>450</posy>
+					<width>1907</width>
+					<height>633</height>				
+					<texture>pvr/pvr_epg_panel.png</texture>					
+				</control>			
+				<control type="image">			<!--Panel Top-->
+					<posx>0</posx>
+					<posy>120</posy>
+					<width>1907</width>
+					<height>341</height>				
+					<texture>pvr/pvr_epg_info.png</texture>					
+				</control>
+			</control>
+			<control type="group">			<!--Video Window--> 
+				<visible>Control.IsVisible(15)</visible>
+				<include>animation_view_change</include>			
+				<include>animation_list</include>
+				<posx>80</posx>
+				<posy>190</posy>			
+				<control type="image">			<!--Background-->				
+					<posx>0</posx>
+					<posy>0</posy>
+					<width>350</width>
+					<height>200</height>
+					<texture>special://skin/backgrounds/pvr.png</texture>				
+					<visible>!Player.HasVideo</visible>
+				</control>
+				<control type="videowindow">	<!--Video Window-->
+					<posx>0</posx>
+					<posy>0</posy>
+					<width>350</width>
+					<height>200</height>
+					<visible>Player.HasVideo</visible>
+					<animation effect="slide" start="0,0" end="-4500,0" time="0">WindowClose</animation>
+				</control>				
+			</control>
+			<control type="label">			<!--Title-->
+				<visible>Control.IsVisible(15)</visible>
+				<include>animation_view_change</include>			
+				<include>animation_list</include>				
+				<posx>500</posx>
+				<posy>190</posy>
+				<width>600</width>
+				<height>50</height>						
+				<font>Bold45</font>
+				<textcolor>mainblue</textcolor>
+				<label>$INFO[ListItem.Label]</label>
+			</control>
+			<control type="group">			<!--Start, End, Duration-->
+				<visible>Control.IsVisible(15)</visible>			
+				<include>animation_view_change</include>
+				<include>animation_list</include>
+				<posx>500</posx>
+				<posy>245</posy>
+				<control type="group">	<!-- Ground 1 -->									
+					<posy>0</posy>
+					<control type="label">
+						<posx>0</posx>
+						<posy>0</posy>
+						<width>180</width>			
+						<textcolor>mainblue</textcolor>			
+						<label>$LOCALIZE[142]</label>			
+					</control>
+					<control type="label">					
+						<posx>160</posx>
+						<posy>0</posy>
+						<width>300</width>	
+						<textcolor>midgrey</textcolor>
+						<label>$INFO[ListItem.StartTime] - $INFO[ListItem.EndTime]</label>	
+					</control>					
+				</control>
+				<control type="group">	<!-- Ground 2 -->									
+					<posy>40</posy>
+					<control type="label">
+						<posx>0</posx>
+						<posy>0</posy>
+						<width>180</width>			
+						<textcolor>mainblue</textcolor>			
+						<label>$LOCALIZE[180]:</label>			
+					</control>
+					<control type="label">						
+						<posx>160</posx>
+						<posy>0</posy>
+						<width>300</width>	
+						<textcolor>midgrey</textcolor>
+						<label>$INFO[ListItem.Duration]</label>    		
+					</control>					
+				</control>
+				<control type="group">	<!-- Ground 3 -->									
+					<posy>80</posy>
+					<control type="label">
+						<posx>0</posx>
+						<posy>0</posy>
+						<width>180</width>							
+						<textcolor>mainblue</textcolor>			
+						<label>$LOCALIZE[19148]:</label>			
+					</control>
+					<control type="label">						
+						<posx>160</posx>
+						<posy>0</posy>
+						<width>300</width>	
+						<textcolor>midgrey</textcolor>
+						<label>$INFO[ListItem.ChannelName]</label>    		
+					</control>					
+				</control>
+			</control>
+			<control type="textbox">		<!--Info Plot-->		
+				<visible>Control.IsVisible(15)</visible>
+				<include>animation_view_change</include>			
+				<include>animation_list</include>
+				<posx>1150</posx>
+				<posy>190</posy> 
+				<width>650</width>
+				<height>190</height>						
+				<textcolor>midgrey</textcolor>         
+				<label fallback="161">$INFO[ListItem.Plot]</label>
+				<autoscroll time="2000" delay="8000" repeat="5000">true</autoscroll>
+			</control> 		
+			
+			<control type="group">			<!--Top Bar-->
+				<visible>Control.IsVisible(15)</visible>
+				<include>animation_view_change</include>			
+				<include>animation_list</include>
+				<posx>125</posx>
+				<posy>445</posy>
+				<control type="label">	<!--Time-->					
+					<posx>0</posx>
+					<posy>30</posy>
+					<width>100</width>
+					<height>30</height>					
+					<font>Bold30Big</font>
+					<textoffsetx>0</textoffsetx>
+					<textcolor>black</textcolor>    
+					<label>555</label>
+				</control>
+				<control type="label">	<!--Channel Name-->					
+					<posx>350</posx>
+					<posy>30</posy>
+					<width>300</width>
+					<height>30</height>
+					<font>Bold30Big</font>
+					<textoffsetx>0</textoffsetx>
+					<textcolor>black</textcolor>    
+					<label>19148</label>
+				</control>
+				<control type="label">	<!--Channle Title-->
+					<posx>750</posx>
+					<posy>30</posy>
+					<width>300</width>
+					<height>30</height>
+					<font>Bold30Big</font>
+					<textoffsetx>0</textoffsetx>
+					<textcolor>black</textcolor>    
+					<label>369</label>
+				</control>
+				<control type="label">	<!--Status-->					
+					<posx>1370</posx>
+					<posy>30</posy>
+					<width>210</width>
+					<height>30</height>
+					<font>Bold30Big</font>
+					<textoffsetx>15</textoffsetx>
+					<textcolor>black</textcolor>    
+					<label>126</label>
+				</control>
+			</control>  
+			<control type="list" id="15">	<!--List ID=15-->
+				<posx>125</posx>
+				<posy>550</posy>
+				<width>1650</width>
+				<height>470</height>
+				<onup>15</onup>
+				<ondown>15</ondown>
+				<onleft>9000</onleft>
+				<onright>-</onright>
+				<pagecontrol>-</pagecontrol>
+				<scrolltime>200</scrolltime>				
+				<itemlayout height="80">
+					<control type="label">	<!--Date-->
+						<posx>0</posx>
+						<posy>0</posy>
+						<width>400</width>
+						<height>80</height>
+						<font>Reg32</font>
+						<textcolor>mainblue</textcolor>  
+						<info>ListItem.Date</info>
+					</control>
+					<control type="label">	<!--Channel Name-->	
+						<description>Channel Value</description>
+						<posx>350</posx>
+						<posy>0</posy>
+						<width>400</width>
+						<height>80</height>					
+						<font>Reg32</font>
+						<textcolor>midgrey</textcolor>    
+						<label>$INFO[ListItem.ChannelName]</label>
+					</control>					
+					<control type="label">	<!--Channel Show-->						
+						<posx>750</posx>
+						<posy>0</posy>
+						<width>600</width>
+						<height>80</height>
+						<font>Reg32</font>
+						<textcolor>midgrey</textcolor>    
+						<info>ListItem.Label</info>
+					</control>		
+					<control type="image">	<!--REC Icon-->
+						<posx>1370</posx>
+						<posy>8</posy>
+						<width>64</width>
+						<height>64</height>
+						<texture>pvr/icons/pvr_record.png</texture>
+						<visible>ListItem.IsRecording</visible>
+					</control>
+					<control type="label">	<!--REC Label-->
+						<posx>1450</posx>
+						<posy>0</posy>
+						<width>200</width>
+						<height>80</height>
+						<font>Reg32</font>
+						<textcolor>red</textcolor>    
+						<label>REC</label>
+						<visible>ListItem.IsRecording</visible>
+					</control>
+					<control type="image">	<!--TIME Icon-->
+						<posx>1370</posx>
+						<posy>8</posy>
+						<width>64</width>
+						<height>64</height>
+						<texture>pvr/icons/pvr_timer.png</texture>
+						<visible>ListItem.HasTimer + !ListItem.IsRecording</visible>
+					</control>
+					<control type="label">	<!--TIME Label-->
+						<posx>1450</posx>
+						<posy>0</posy>
+						<width>200</width>
+						<height>80</height>
+						<font>Reg32</font>
+						<textcolor>green</textcolor>    
+						<label>TIME</label>
+						<visible>ListItem.HasTimer</visible>
+					</control>
+					<control type="image">	<!--Separator-->			
+						<posx>15</posx>
+						<posy>80</posy>
+						<width>1635</width>
+						<height>20</height>		
+						<fadetime>400</fadetime>
+						<colordiffuse>Separator</colordiffuse>
+						<texture>common/separator.png</texture>			
+					</control>
+				</itemlayout>
+				<focusedlayout height="80">
+					<control type="image">	<!--Slide-->					
+						<posx>300</posx>
+						<posy>0</posy>
+						<width>1350</width>
+						<height>80</height>							
+						<texture>common/button-fo.png</texture>       
+					</control>     
+					<control type="label">	<!--Date-->
+						<posx>0</posx>
+						<posy>0</posy>
+						<width>400</width>
+						<height>80</height>
+						<font>Reg32</font>
+						<textcolor>mainblue</textcolor>  
+						<info>ListItem.Date</info>
+					</control>
+					<control type="label">	<!--Channel Name-->							
+						<posx>350</posx>
+						<posy>0</posy>
+						<width>400</width>
+						<height>80</height>					
+						<font>Reg32</font>
+						<textcolor>black</textcolor>    
+						<label>$INFO[ListItem.ChannelName]</label>
+					</control>					
+					<control type="label">	<!--Channel Show-->						
+						<posx>750</posx>
+						<posy>0</posy>
+						<width>600</width>
+						<height>80</height>
+						<font>Reg32</font>
+						<textcolor>black</textcolor>    
+						<info>ListItem.Label</info>
+					</control>					
+					<control type="image">	<!--REC Icon-->
+						<posx>1370</posx>
+						<posy>8</posy>
+						<width>64</width>
+						<height>64</height>
+						<texture>pvr/icons/pvr_record.png</texture>
+						<visible>ListItem.IsRecording</visible>
+					</control>
+					<control type="label">	<!--REC Label-->
+						<posx>1450</posx>
+						<posy>0</posy>
+						<width>200</width>
+						<height>80</height>
+						<font>Reg32</font>
+						<textcolor>red</textcolor>    
+						<label>REC</label>
+						<visible>ListItem.IsRecording</visible>
+					</control>
+					<control type="image">	<!--TIME Icon-->
+						<posx>1370</posx>
+						<posy>8</posy>
+						<width>64</width>
+						<height>64</height>
+						<texture>pvr/icons/pvr_timer.png</texture>
+						<visible>ListItem.HasTimer + !ListItem.IsRecording</visible>
+					</control>
+					<control type="label">	<!--TIME Label-->
+						<posx>1450</posx>
+						<posy>0</posy>
+						<width>200</width>
+						<height>80</height>
+						<font>Reg32</font>
+						<textcolor>green</textcolor>    
+						<label>TIME</label>
+						<visible>ListItem.HasTimer</visible>
+					</control>
+					<control type="image">	<!--Separator-->			
+						<posx>15</posx>
+						<posy>80</posy>
+						<width>1635</width>
+						<height>20</height>		
+						<fadetime>400</fadetime>
+						<colordiffuse>Separator</colordiffuse>
+						<texture>common/separator.png</texture>			
+					</control>				
+				</focusedlayout>
+			</control>
+			
+		</control>
+	</include>
+	
 </includes>
