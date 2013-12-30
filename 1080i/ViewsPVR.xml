@@ -5,7 +5,7 @@
 		<control type="group">  
 
 			<control type="image">			<!--Panel-->
-				<include>animation_fade_visible_hidden</include>
+				<include>animation_view_change_pvr</include>
 				<include>animation_list</include>	
 				<visible>Control.IsVisible(11)</visible> 
 				<posx>10</posx>
@@ -15,7 +15,7 @@
 				<texture>views/view_50_list_panel_episodes.png</texture>				
 			</control>
 			<control type="group">			<!--Video Window--> 
-				<include>animation_fade_visible_hidden</include>
+				<include>animation_view_change_pvr</include>
 				<include>animation_list</include>	
 				<visible>Control.IsVisible(11)</visible> 
 				<posx>105</posx>
@@ -35,7 +35,7 @@
 			</control>
 			<control type="group">			<!--Start, End, Next-->
 				<visible>Control.IsVisible(11)</visible>			
-				<include>animation_view_change</include>
+				<include>animation_view_change_pvr</include>
 				<include>animation_list</include>
 				<posx>470</posx>
 				<posy>330</posy>
@@ -92,7 +92,7 @@
 				</control>
 			</control>
 			<control type="group">			<!--Infos-->
-				<include>animation_fade_visible_hidden</include>
+				<include>animation_view_change_pvr</include>
 				<include>animation_list</include>	
 				<visible>Control.IsVisible(11)</visible> 
 				<control type="textbox">		<!--Info Plot-->					
@@ -127,9 +127,8 @@
 			</control>
 
 			<control type="list" id="11">	<!--List ID=11-->	
-				<include>animation_fade_visible_hidden</include>
+				<include>animation_view_change_pvr</include>
 				<include>animation_list</include>	
-
 				<posx>0</posx>
 				<posy>320</posy>
 				<width>1920</width>
@@ -280,7 +279,7 @@
 
 			<control type="group">			<!-- Process -->	
 				<visible>Control.IsVisible(11)</visible>				
-				<include>animation_view_change</include>			
+				<include>animation_view_change_pvr</include>			
 				<include>animation_list</include>
 				<posy>955</posy>
 				<control type="label">			<!--Start-->				
@@ -310,7 +309,7 @@
 			</control>
 			<control type="group">			<!-- Title -->	
 				<visible>Control.IsVisible(11)</visible>	
-				<include>animation_view_change</include>			
+				<include>animation_view_change_pvr</include>			
 				<include>animation_list</include>
 				<posy>955</posy>					
 				<control type="label"><!--Others-->					
@@ -326,7 +325,7 @@
 			<control type="group">			<!-- Page Control -->	
 				<visible>Control.IsVisible(11)</visible>	
 				<visible>![Window.IsActive(DialogVideoInfo.xml) + !substring(ListItem.Path,plugin)]</visible>
-				<include>animation_view_change</include>			
+				<include>animation_view_change_pvr</include>			
 				<include>animation_list</include>
 				<posy>955</posy>					
 				<control type="label">					
@@ -341,7 +340,8 @@
 			</control>
 
 			<control type="group">			<!--Scrollbar-->		
-				<visible>IntegerGreaterThan(Container(11).NumItems,30)</visible>				
+				<visible>IntegerGreaterThan(Container(11).NumItems,30)</visible>
+				<include>animation_view_change_pvr</include>
 				<include>animation_list</include>		
 				<control type="scrollbar" id="70">	<!--Scrollbar ID70-->							
 					<posx>1840</posx> 
@@ -358,7 +358,7 @@
 		
 			<control type="group">			<!--Panel-->
 				<visible>Control.IsVisible(10)</visible>
-				<include>animation_view_change</include>			
+				<include>animation_view_change_pvr</include>
 				<include>animation_list</include>
 				<control type="image">			<!--Panel Button-->
 					<posx>0</posx>
@@ -377,7 +377,7 @@
 			</control>
 			<control type="group">			<!--Video Window--> 
 				<visible>Control.IsVisible(10)</visible>
-				<include>animation_view_change</include>			
+				<include>animation_view_change_pvr</include>
 				<include>animation_list</include>
 				<posx>80</posx>
 				<posy>190</posy>			
@@ -400,7 +400,7 @@
 			</control>
 			<control type="label">			<!--Title-->
 				<visible>Control.IsVisible(10)</visible>
-				<include>animation_view_change</include>			
+				<include>animation_view_change_pvr</include>
 				<include>animation_list</include>				
 				<posx>500</posx>
 				<posy>190</posy>
@@ -412,7 +412,7 @@
 			</control>
 			<control type="group">			<!--Start, End, Duration-->
 				<visible>Control.IsVisible(10)</visible>			
-				<include>animation_view_change</include>
+				<include>animation_view_change_pvr</include>
 				<include>animation_list</include>
 				<posx>500</posx>
 				<posy>245</posy>
@@ -470,7 +470,7 @@
 			</control>
 			<control type="textbox">		<!--Info Plot-->		
 				<visible>Control.IsVisible(10)</visible>
-				<include>animation_view_change</include>			
+				<include>animation_view_change_pvr</include>			
 				<include>animation_list</include>
 				<posx>1150</posx>
 				<posy>190</posy> 
@@ -482,9 +482,8 @@
 			</control> 
 
 			<control type="epggrid" id="10"><!--List ID=10-->
-				<include>animation_view_change</include>			
-				<include>animation_list</include>
-				
+				<include>animation_view_change_pvr</include>
+				<include>animation_list</include>				
 				<posx>80</posx>
 				<posy>465</posy>
 				<width>1750</width>
@@ -674,7 +673,7 @@
 		
 			<control type="group">			<!--Panel-->
 				<visible>Control.IsVisible(16)</visible>
-				<include>animation_view_change</include>			
+				<include>animation_view_change_pvr</include>
 				<include>animation_list</include>
 				<control type="image">			<!--Panel Button-->
 					<posx>0</posx>
@@ -693,7 +692,7 @@
 			</control>
 			<control type="group">			<!--Video Window--> 
 				<visible>Control.IsVisible(16)</visible>
-				<include>animation_view_change</include>			
+				<include>animation_view_change_pvr</include>			
 				<include>animation_list</include>
 				<posx>80</posx>
 				<posy>190</posy>			
@@ -716,7 +715,7 @@
 			</control>
 			<control type="label">			<!--Title-->
 				<visible>Control.IsVisible(16)</visible>
-				<include>animation_view_change</include>			
+				<include>animation_view_change_pvr</include>			
 				<include>animation_list</include>				
 				<posx>500</posx>
 				<posy>190</posy>
@@ -728,7 +727,7 @@
 			</control>
 			<control type="group">			<!--Start, End, Duration-->
 				<visible>Control.IsVisible(16)</visible>			
-				<include>animation_view_change</include>
+				<include>animation_view_change_pvr</include>
 				<include>animation_list</include>
 				<posx>500</posx>
 				<posy>245</posy>
@@ -786,7 +785,7 @@
 			</control>
 			<control type="textbox">		<!--Info Plot-->		
 				<visible>Control.IsVisible(16)</visible>
-				<include>animation_view_change</include>			
+				<include>animation_view_change_pvr</include>			
 				<include>animation_list</include>
 				<posx>1150</posx>
 				<posy>190</posy> 
@@ -799,7 +798,7 @@
 			
 			<control type="group">			<!--Top Bar-->
 				<visible>Control.IsVisible(16)</visible>
-				<include>animation_fade_visible_hidden</include>
+				<include>animation_view_change_pvr</include>
 				<include>animation_list</include>
 				<posx>125</posx>
 				<posy>445</posy>
@@ -845,6 +844,8 @@
 				</control>
 			</control>   
 			<control type="list" id="16">	<!--List ID=16-->
+				<include>animation_view_change_pvr</include>			
+				<include>animation_list</include>
 				<posx>125</posx>
 				<posy>550</posy>
 				<width>1650</width>
@@ -1051,7 +1052,7 @@
 			
 			<control type="group">			<!--Panel-->
 				<visible>Control.IsVisible(15)</visible>
-				<include>animation_view_change</include>			
+				<include>animation_view_change_pvr</include>			
 				<include>animation_list</include>
 				<control type="image">			<!--Panel Button-->
 					<posx>0</posx>
@@ -1070,7 +1071,7 @@
 			</control>
 			<control type="group">			<!--Video Window--> 
 				<visible>Control.IsVisible(15)</visible>
-				<include>animation_view_change</include>			
+				<include>animation_view_change_pvr</include>			
 				<include>animation_list</include>
 				<posx>80</posx>
 				<posy>190</posy>			
@@ -1093,7 +1094,7 @@
 			</control>
 			<control type="label">			<!--Title-->
 				<visible>Control.IsVisible(15)</visible>
-				<include>animation_view_change</include>			
+				<include>animation_view_change_pvr</include>			
 				<include>animation_list</include>				
 				<posx>500</posx>
 				<posy>190</posy>
@@ -1105,7 +1106,7 @@
 			</control>
 			<control type="group">			<!--Start, End, Duration-->
 				<visible>Control.IsVisible(15)</visible>			
-				<include>animation_view_change</include>
+				<include>animation_view_change_pvr</include>
 				<include>animation_list</include>
 				<posx>500</posx>
 				<posy>245</posy>
@@ -1163,7 +1164,7 @@
 			</control>
 			<control type="textbox">		<!--Info Plot-->		
 				<visible>Control.IsVisible(15)</visible>
-				<include>animation_view_change</include>			
+				<include>animation_view_change_pvr</include>			
 				<include>animation_list</include>
 				<posx>1150</posx>
 				<posy>190</posy> 
@@ -1176,7 +1177,7 @@
 			
 			<control type="group">			<!--Top Bar-->
 				<visible>Control.IsVisible(15)</visible>
-				<include>animation_view_change</include>			
+				<include>animation_view_change_pvr</include>			
 				<include>animation_list</include>
 				<posx>125</posx>
 				<posy>445</posy>
@@ -1222,6 +1223,8 @@
 				</control>
 			</control>  
 			<control type="list" id="15">	<!--List ID=15-->
+				<include>animation_view_change_pvr</include>			
+				<include>animation_list</include>
 				<posx>125</posx>
 				<posy>550</posy>
 				<width>1650</width>

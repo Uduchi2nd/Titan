@@ -566,6 +566,10 @@
 			<effect type="fade" start="0" end="100" time="600" delay="200"/>
 		</animation>
 	</include>
+	<include name="animation_view_change_pvr">				<!--Visible/Hidden Aniamtion-->	
+		<animation time="600" effect="fade">Visible</animation> 
+		<animation time="0" effect="fade">Hidden</animation>	
+	</include>
 	<include name="animation_list">							<!--Panel Open/Close-->
 		<animation type="WindowOpen" reversible="false">
 			<effect type="slide" start="0" end="0" tween="cubic" easing="out" time="750"/>
