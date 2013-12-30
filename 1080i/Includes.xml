@@ -566,7 +566,7 @@
 			<effect type="fade" start="0" end="100" time="600" delay="200"/>
 		</animation>
 	</include>
-	<include name="animation_view_change_pvr">				<!--Visible/Hidden Aniamtion-->	
+	<include name="animation_view_change_pvr">				<!--View Change PVR-->
 		<animation time="600" effect="fade">Visible</animation> 
 		<animation time="0" effect="fade">Hidden</animation>	
 	</include>
