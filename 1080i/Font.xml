@@ -307,7 +307,12 @@
 			<filename>Bold.ttf</filename>
 			<size>34</size>
 			<style>bold</style>
-		</font>		
+		</font>	
+		<font>
+			<name>Bold32</name>
+			<filename>Bold.ttf</filename>
+			<size>32</size>			
+		</font>			
 		<font>
 			<name>Bold34</name>
 			<filename>Bold.ttf</filename>

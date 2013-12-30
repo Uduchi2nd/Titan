@@ -23,7 +23,8 @@
 
 		<!--PVR Views-->
 		<control type="group" id="50">         
-			<include>LiveTVChannelView</include>		<!--view id=11-->
+			<include>LiveTVChannelView</include>		<!--View ID=11-->
+			<include>EPGTimelineView</include>			<!--View ID=10-->
 		</control>
 
 		<!--Sub Menu Tab Left-->
