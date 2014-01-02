@@ -2001,8 +2001,7 @@
 	<include name="LiveTVSearchView">		<!--LiveTVSearchView ID=17-->
 		<control type="group">
 			<description>TV Search group</description>
-			<visible>Control.IsVisible(17)</visible>
-			<include>VisibleFadeEffect</include>
+			<visible>Control.IsVisible(17)</visible>			
 			<control type="group">
 				<posx>120</posx>
 				<posy>90</posy>

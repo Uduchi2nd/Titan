@@ -41,7 +41,7 @@
 				<textcolor>darkgrey</textcolor>
 				<label>Now Playing</label>				
 			</control>				
-			<control type="fadelabel"> <!--Title-->	
+			<control type="fadelabel"> 	<!--Title-->	
 				<posx>255</posx>
 				<posy>75</posy>
 				<width>285</width>
@@ -109,8 +109,8 @@
 				<textcolor>darkgrey</textcolor>
 				<label>Now Playing</label>				
 			</control>		
-			<control type="label">		<!--Title-->			
-				<posx>355</posx>
+			<control type="fadelabel">	<!--Title-->			
+				<posx>357</posx>
 				<posy>75</posy>
 				<width>285</width>
 				<align>left</align>
