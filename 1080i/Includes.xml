@@ -27,7 +27,7 @@
 			<align>right</align>
 			<font>Light40</font>
 			<textcolor>midgrey</textcolor>
-			<label>Titan 1.4.1</label>
+			<label>Titan 1.4.2</label>
 			<include>animation_fade_visible_hidden</include>
 			<include>animation_fade_open_close</include>
 		</control>
@@ -515,7 +515,7 @@
 	</include>	
 	<include name="YoutubeSearchOverlay">	<!--Youtube Search Overlay-->
 		<control type="group">	
-		<visible>Skin.HasSetting(youtube)</visible>
+			<visible>Skin.HasSetting(youtube)</visible>
 			<animation effect="fade" time="0" start="0" end="100">Visible</animation> 
 			<animation effect="fade" time="1000" start="100" end="0">Hidden</animation>	
 			<control type="image">		
@@ -762,6 +762,20 @@
 	</include>
 	<include name="DialogButton">			<!--Dialog Button-->
 		<font>Light32</font>						
+		<textcolor>FF585858</textcolor>
+		<focusedcolor>eewhite</focusedcolor>
+		<disabledcolor>77585858</disabledcolor>
+		<shadowcolor>20FFFFFF</shadowcolor>
+	</include>
+	<include name="DialogButtonBig">		<!--Dialog Button Big-->
+		<font>Bold30</font>						
+		<textcolor>FF585858</textcolor>
+		<focusedcolor>eewhite</focusedcolor>
+		<disabledcolor>77585858</disabledcolor>
+		<shadowcolor>20FFFFFF</shadowcolor>
+	</include>
+	<include name="DialogButtonSmall">		<!--Dialog Button Small-->
+		<font>Reg28</font>						
 		<textcolor>FF585858</textcolor>
 		<focusedcolor>eewhite</focusedcolor>
 		<disabledcolor>77585858</disabledcolor>

@@ -530,7 +530,7 @@
 			<visible>Container.content(episodes)</visible>
 			<include>animation_view_change</include>
 			<include>animation_list</include>
-			<posx>470</posx>
+			<posx>490</posx>
 			<posy>330</posy>
 			<control type="group">	<!-- Ground 1 -->
 				<visible>!IsEmpty(Control.GetLabel(5201))</visible>						
@@ -546,7 +546,7 @@
 					<visible>!IsEmpty(Control.GetLabel(5301))</visible>
 					<posx>180</posx>
 					<posy>0</posy>
-					<width>300</width>	
+					<width>250</width>	
 					<textcolor>list_label_info</textcolor>
 					<label>$VAR[value_ground1_value]</label>			
 				</control>
@@ -554,7 +554,7 @@
 					<visible>IsEmpty(Control.GetLabel(5301))</visible>
 					<posx>180</posx>
 					<posy>0</posy>
-					<width>300</width>	
+					<width>250</width>	
 					<textcolor>list_label_info</textcolor>
 					<label>...</label>			
 				</control>
@@ -573,7 +573,7 @@
 					<visible>!IsEmpty(Control.GetLabel(5302))</visible>
 					<posx>180</posx>
 					<posy>0</posy>
-					<width>300</width>	
+					<width>250</width>	
 					<textcolor>list_label_info</textcolor>
 					<label>$VAR[value_ground2_value]</label>									
 				</control>
@@ -581,7 +581,7 @@
 					<visible>IsEmpty(Control.GetLabel(5302))</visible>
 					<posx>180</posx>
 					<posy>0</posy>
-					<width>300</width>
+					<width>250</width>
 					<textcolor>list_label_info</textcolor>					
 					<label>...</label>			
 				</control>
@@ -600,7 +600,7 @@
 					<visible>!IsEmpty(Control.GetLabel(5303))</visible>
 					<posx>180</posx>
 					<posy>0</posy>
-					<width>300</width>
+					<width>250</width>
 					<textcolor>list_label_info</textcolor>					
 					<label>$VAR[value_ground3_value]</label>			
 				</control>
@@ -608,7 +608,7 @@
 					<visible>IsEmpty(Control.GetLabel(5303))</visible>
 					<posx>180</posx>
 					<posy>0</posy>
-					<width>300</width>
+					<width>250</width>
 					<textcolor>list_label_info</textcolor>					
 					<label>...</label>			
 				</control>
@@ -627,7 +627,7 @@
 					<visible>!sEmpty(Control.GetLabel(5304)</visible>
 					<posx>180</posx>
 					<posy>0</posy>
-					<width>300</width>	
+					<width>250</width>	
 					<textcolor>list_label_info</textcolor>					
 					<label>$VAR[value_ground4_value]</label>			
 				</control>
@@ -635,7 +635,7 @@
 					<visible>IsEmpty(Control.GetLabel(5304))</visible>
 					<posx>180</posx>
 					<posy>0</posy>
-					<width>300</width>	
+					<width>250</width>	
 					<textcolor>list_label_info</textcolor>					
 					<label>...</label>			
 				</control>

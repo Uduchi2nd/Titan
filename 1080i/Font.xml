@@ -309,6 +309,11 @@
 			<style>bold</style>
 		</font>	
 		<font>
+			<name>Bold30</name>
+			<filename>Bold.ttf</filename>
+			<size>30</size>			
+		</font>	
+		<font>
 			<name>Bold32</name>
 			<filename>Bold.ttf</filename>
 			<size>32</size>			
