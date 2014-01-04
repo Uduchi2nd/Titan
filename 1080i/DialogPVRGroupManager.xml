@@ -465,7 +465,7 @@
 				<control type="grouplist" id="9000">	<!--Button Grouplist-->
 					<posx>350</posx>
 					<posy>856</posy>
-					<width>1900</width>
+					<width>1600</width>
 					<height>100</height>
 					<itemgap>-50</itemgap>
 					<align>left</align>
