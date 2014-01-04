@@ -41,7 +41,7 @@
 					<align>center</align>
 				</control>
 
-				<control type="group">			<!--Group List-->	            	
+				<control type="group">		<!--LEFT: Group List -->	            	
 					<posx>341</posx>
 					<posy>220</posy>
 					<control type="label">	            	  
@@ -87,7 +87,7 @@
 								<height>60</height>
 								<info>ListItem.Label</info>
 								<include>DialogListNF</include>	                           
-							</control>
+							</control>							
 						</itemlayout>
 						<focusedlayout height="60">
 							<control type="group">
@@ -131,7 +131,7 @@
 									<height>60</height>
 									<info>ListItem.Label</info>
 									<include>DialogListFO</include>
-								</control>
+								</control>								
 							</control>
 						</focusedlayout>
 					</control>
@@ -167,7 +167,7 @@
 						<animation effect="fade" start="75" end="0" time="300" tween="sine" easing="inout" condition="!Control.IsVisible(61)">Conditional</animation>
 					</control>
 				</control>
-				<control type="group">			<!--Channels List-->	            	
+				<control type="group">		<!--MIDDLE: Channels List -->	            	
 					<posx>755</posx>
 					<posy>220</posy>
 					<control type="label" id="21">
@@ -214,6 +214,13 @@
 								<label>$INFO[ListItem.ChannelNumber,(,) ]$INFO[ListItem.ChannelName]</label>
 								<include>DialogLabel</include>	 
 							</control>
+							<control type="image">
+								<posx>10</posx>
+								<posy>10</posy>
+								<width>40</width>
+								<height>40</height>
+								<texture background="true">$INFO[ListItem.Icon]</texture>
+							</control>
 						</itemlayout>
 						<focusedlayout height="60">
 							<control type="group">
@@ -234,12 +241,19 @@
 									<include>DialogListNF</include>	 
 								</control>
 								<control type="image">
+									<posx>10</posx>
+									<posy>10</posy>
+									<width>40</width>
+									<height>40</height>
+									<texture background="true">$INFO[ListItem.Icon]</texture>
+								</control>
+								<control type="image">
 									<posx>335</posx>
 									<posy>0</posy>
 									<width>60</width>
 									<height>60</height>
 									<texture>dialogs/select/selected.png</texture>
-								</control>
+								</control>								
 							</control>
 							<control type="group">
 								<visible>Control.HasFocus(11)</visible>	                           
@@ -257,6 +271,13 @@
 									<height>60</height>
 									<label>$INFO[ListItem.ChannelNumber,(,) ]$INFO[ListItem.ChannelName]</label>
 									<include>DialogListFO</include>	 
+								</control>
+								<control type="image">
+									<posx>10</posx>
+									<posy>10</posy>
+									<width>40</width>
+									<height>40</height>
+									<texture background="true">$INFO[ListItem.Icon]</texture>
 								</control>
 							</control>	                        
 						</focusedlayout>
@@ -293,7 +314,7 @@
 						<animation effect="fade" start="75" end="0" time="300" tween="sine" easing="inout" condition="!Control.IsVisible(71)">Conditional</animation>
 					</control>
 				</control>
-				<control type="group">			<!--Grouped Channels List-->	            	
+				<control type="group">		<!--RIGHT: Grouped Channels List -->	            	
 					<posx>1169</posx>
 					<posy>220</posy>
 					<control type="label" id="22">
@@ -340,6 +361,13 @@
 								<label>$INFO[ListItem.ChannelNumber,(,) ]$INFO[ListItem.ChannelName]</label>
 								<include>DialogListNF</include>	  
 							</control>
+							<control type="image">
+								<posx>10</posx>
+								<posy>10</posy>
+								<width>40</width>
+								<height>40</height>
+								<texture background="true">$INFO[ListItem.Icon]</texture>
+							</control>
 						</itemlayout>
 						<focusedlayout height="60">
 							<control type="group">
@@ -358,6 +386,13 @@
 									<height>60</height>
 									<label>$INFO[ListItem.ChannelNumber,(,) ]$INFO[ListItem.ChannelName]</label>
 									<include>DialogListNF</include>	  
+								</control>
+								<control type="image">
+									<posx>10</posx>
+									<posy>10</posy>
+									<width>40</width>
+									<height>40</height>
+									<texture background="true">$INFO[ListItem.Icon]</texture>
 								</control>
 								<control type="image">
 									<posx>335</posx>
@@ -383,6 +418,13 @@
 									<height>60</height>
 									<label>$INFO[ListItem.ChannelNumber,(,) ]$INFO[ListItem.ChannelName]</label>
 									<include>DialogListFO</include>	  
+								</control>
+								<control type="image">
+									<posx>10</posx>
+									<posy>10</posy>
+									<width>40</width>
+									<height>40</height>
+									<texture background="true">$INFO[ListItem.Icon]</texture>
 								</control>
 							</control>	                       
 						</focusedlayout>
@@ -419,68 +461,66 @@
 						<animation effect="fade" start="75" end="0" time="300" tween="sine" easing="inout" condition="!Control.IsVisible(81)">Conditional</animation>
 					</control>
 				</control>
-				<control type="grouplist" id="9000"><!--Button Grouplist-->
-					<posx>320</posx>
+
+				<control type="grouplist" id="9000">	<!--Button Grouplist-->
+					<posx>350</posx>
 					<posy>856</posy>
-					<width>1316</width>
+					<width>1900</width>
 					<height>100</height>
-					<itemgap>-40</itemgap>
-					<align>center</align>
+					<itemgap>-50</itemgap>
+					<align>left</align>
 					<orientation>horizontal</orientation>
 					<onleft>72</onleft>
 					<onright>13</onright>
 					<onup>13</onup>
 					<ondown>13</ondown>
-					<control type="button" id="26"><!--Add-->	                   
-						<label>$LOCALIZE[15019]</label>
-						<texturefocus>common/folder-fo.png</texturefocus>
-						<texturenofocus>common/folder-nf.png</texturenofocus>
-						<include>DialogButtonOKCancel</include>
-						<align>left</align>	
-						<textoffsetx>100</textoffsetx> 					
-						<pulseonselect>false</pulseonselect>
-						<width>350</width>
+					<control type="button" id="26"><!--Add-->
+						<width>360</width>
 						<height>100</height>
+						<align>left</align>	
+						<textoffsetx>100</textoffsetx> 	
+						<label>$LOCALIZE[15019]</label>						
+						<include>DialogButtonOKCancel</include>						
+						<pulseonselect>false</pulseonselect>
+						<texturefocus border="100,0,0,0">common/folder-fo.png</texturefocus><!-- left,top,right,bottom-->
+						<texturenofocus border="100,0,0,0">common/folder-nf.png</texturenofocus>						
 						<animation effect="fade" start="100" end="75" time="0" condition="!Control.IsEnabled(26)">Conditional</animation>
 					</control>
 					<control type="button" id="27"><!--Rename-->
-						<label>$LOCALIZE[118]</label>
-						<texturefocus>common/edit-fo.png</texturefocus>
-						<texturenofocus>common/edit-nf.png</texturenofocus>
-						<include>DialogButtonOKCancel</include>
-						<align>left</align>	
-						<textoffsetx>100</textoffsetx> 					
-						<pulseonselect>false</pulseonselect>
-						<width>350</width>
+						<width>400</width>
 						<height>100</height>
+						<align>left</align>	
+						<textoffsetx>100</textoffsetx> 	
+						<label>$LOCALIZE[118]</label>
+						<include>DialogButtonOKCancel</include>
+						<texturefocus border="100,0,0,0">common/edit-fo.png</texturefocus>
+						<texturenofocus border="100,0,0,0">common/edit-nf.png</texturenofocus>						
 						<animation effect="fade" start="100" end="75" time="0" condition="!Control.IsEnabled(27)">Conditional</animation>
 					</control>
 					<control type="button" id="28"><!--Delete-->
-						<label>$LOCALIZE[117]</label>
-						<texturefocus>common/cancel-fo.png</texturefocus>
-						<texturenofocus>common/cancel-nf.png</texturenofocus>
-						<include>DialogButtonOKCancel</include>
-						<align>left</align>	
-						<textoffsetx>100</textoffsetx> 					
-						<pulseonselect>false</pulseonselect>
-						<width>350</width>
+						<width>320</width>
 						<height>100</height>
+						<align>left</align>	
+						<textoffsetx>100</textoffsetx> 	
+						<label>$LOCALIZE[117]</label>
+						<include>DialogButtonOKCancel</include>
+						<texturefocus border="100,0,0,0">common/cancel-fo.png</texturefocus>
+						<texturenofocus border="100,0,0,0">common/cancel-nf.png</texturenofocus>						
 						<animation effect="fade" start="100" end="75" time="0" condition="!Control.IsEnabled(28)">Conditional</animation>
 					</control>
-					<control type="button" id="29"><!--Select-->	                   
-						<label>$LOCALIZE[424]</label>
-						<texturefocus>common/select-fo.png</texturefocus>
-						<texturenofocus>common/select-nf.png</texturenofocus>
-						<include>DialogButtonOKCancel</include>
-						<align>left</align>	
-						<textoffsetx>100</textoffsetx> 					
-						<pulseonselect>false</pulseonselect>
+					<control type="button" id="29"><!--Select-->	
 						<width>350</width>
 						<height>100</height>
+						<align>left</align>	
+						<textoffsetx>100</textoffsetx> 	
+						<label>$LOCALIZE[424]</label>
+						<include>DialogButtonOKCancel</include>
+						<texturefocus border="100,0,0,0">common/select-fo.png</texturefocus>
+						<texturenofocus border="100,0,0,0">common/select-nf.png</texturenofocus>					
 						<animation effect="fade" start="100" end="75" time="0" condition="!Control.IsEnabled(29)">Conditional</animation>
 					</control>
 				</control>
-				<control type="label" id="20">		<!--Fake Label used to pass on name label-->					
+				<control type="label" id="20">			<!--Fake Label used to pass on name label-->					
 					<visible>false</visible>
 				</control>
 			</control>

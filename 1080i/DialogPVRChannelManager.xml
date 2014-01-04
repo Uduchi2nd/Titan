@@ -571,13 +571,14 @@
 					<posx>50</posx>
 					<width>350</width>
 					<height>100</height>
-					<label>$LOCALIZE[42000]</label>
-					<include>DialogButtonOKCancel</include>
-					<textoffsetx>100</textoffsetx> 					
+					<align>left</align>	
+					<textoffsetx>100</textoffsetx> 	
+					<label>$LOCALIZE[424]</label>
+					<include>DialogButtonOKCancel</include>							
 					<pulseonselect>false</pulseonselect>		
-					<texturefocus>common/select-fo.png</texturefocus>
-					<texturenofocus>common/select-nf.png</texturenofocus>
-
+					<texturefocus border="100,0,0,0">common/select-fo.png</texturefocus><!-- left,top,right,bottom-->
+					<texturenofocus border="100,0,0,0">common/select-nf.png</texturenofocus>
+					
 					<onleft>5</onleft>
 					<onright>6</onright>
 					<onup condition="!IsEmpty(Window.Property(Focus))">33</onup>
@@ -590,14 +591,15 @@
 				<control type="button" id="6"><!--Close-->
 					<posx>300</posx>
 					<width>350</width>
-					<height>100</height>					
-					<label>$LOCALIZE[42001]</label>
-					<include>DialogButtonOKCancel</include>
-					<textoffsetx>100</textoffsetx> 					
+					<height>100</height>
+					<align>left</align>	
+					<textoffsetx>100</textoffsetx> 						
+					<label>$LOCALIZE[222]</label>
+					<include>DialogButtonOKCancel</include>								
 					<pulseonselect>false</pulseonselect>
-					<texturefocus>common/cancel-fo.png</texturefocus>
-					<texturenofocus>common/cancel-nf.png</texturenofocus>					
-
+					<texturefocus border="100,0,0,0">common/cancel-fo.png</texturefocus>
+					<texturenofocus border="100,0,0,0">common/cancel-nf.png</texturenofocus>					
+					
 					<onleft>4</onleft>
 					<onright>5</onright>					
 					<onup condition="!IsEmpty(Window.Property(Focus))">33</onup>
@@ -610,14 +612,15 @@
 				<control type="button" id="5"><!--Apply Changes-->
 					<posx>750</posx>
 					<width>450</width>
-					<height>100</height>					
+					<height>100</height>		
+					<align>right</align>	
+					<textoffsetx>100</textoffsetx> 	
 					<label>$LOCALIZE[14070]</label>					
-					<include>DialogButtonOKCancel</include>
-					<textoffsetx>100</textoffsetx> 					
+					<include>DialogButtonOKCancel</include>							
 					<pulseonselect>false</pulseonselect>
 					<texturefocus border="0,0,100,0">common/options-right-fo.png</texturefocus>
 					<texturenofocus border="0,0,100,0">common/options-right-nf.png</texturenofocus>					
-
+					
 					<onleft>6</onleft>
 					<onright>4</onright>
 					<onup condition="!IsEmpty(Window.Property(Focus))">33</onup>
