@@ -1,7 +1,6 @@
 <!--Titan-->
 <window id="601">
-	<defaultcontrol always="true">8000</defaultcontrol>
-	<include condition="Window.IsActive(fullscreenvideo)">3</include>
+	<defaultcontrol always="true">8000</defaultcontrol>	
 	<controls>
 
 		<!--Dialog Overlay-->	
