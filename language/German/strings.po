@@ -158,11 +158,11 @@ msgstr "Debug"
 
 msgctxt "#31034"
 msgid "Enable Debug Grid"
-msgstr "Enable Debug Grid"
+msgstr "Aktiviere Debug Grid"
 
 msgctxt "#31035"
-msgid "Disable Debug Info"
-msgstr "Disable Debug Info"
+msgid "Enable Debug Info"
+msgstr "Aktiviere Debug Info"
 
 msgctxt "#31036"
 msgid "Rewind"
@@ -193,15 +193,15 @@ msgstr "DVD Menu"
 #############
 
 msgctxt "#31400"
-msgid "[B]CONFIGURE APPEARANCE SETTINGS[/B][CR][CR][COLOR=midgrey]Change the skin · Set language and region · Change file listing options[CR]Set up a screensaver[/COLOR]"
-msgstr "[B]KONFIGURIERE DIE DARSTELLUNGS EINSTELLUNGEN[/B][CR][CR][COLOR=midgrey]Wechsel den Skin · Wähle Sprache und Region · Wechsel Dateilisten Optionen[CR]Setze Bildschirmschoner[/COLOR]"
+msgid "[B]CONFIGURE APPEARANCE SETTINGS[/B][CR][CR][COLOR=midgrey]Change the skin · Set language and region · Change file listing options · Set up a screensaver[/COLOR]"
+msgstr "[B]KONFIGURIERE DIE DARSTELLUNGS EINSTELLUNGEN[/B][CR][CR][COLOR=midgrey]Wechsel den Skin · Wähle Sprache und Region · Wechsel Dateilisten Optionen · Setze Bildschirmschoner[/COLOR]"
 
 msgctxt "#31401"
-msgid "[B]CONFIGURE VIDEO SETTINGS[/B][CR][CR][COLOR=midgrey]Manage your video library · Set video playback options · Change video listing options[CR]Set subtitle fonts[/COLOR]"
+msgid "[B]CONFIGURE VIDEO SETTINGS[/B][CR][CR][COLOR=midgrey]Manage your video library · Set video playback options · Change video listing options · Set subtitle fonts[/COLOR]"
 msgstr "[B]KONFIGURIERE VIDEO EINSTELLUNGEN[/B][CR][CR][COLOR=midgrey]Organisiere die Video DB · Setze die Abspiel Optionen · Wechsel die Video Auflistungs Optionen · Setze Untertitel Schrift[/COLOR]"
 
 msgctxt "#31402"
-msgid "[B]CONFIGURE MUSIC SETTINGS[/B][CR][CR][COLOR=midgrey]Manage your music library · Set music playback options · Change music listing options[CR]Setup song submission · Set karaoke options[/COLOR]"
+msgid "[B]CONFIGURE MUSIC SETTINGS[/B][CR][CR][COLOR=midgrey]Manage your music library · Set music playback options · Change music listing options · Setup song submission · Set karaoke options[/COLOR]"
 msgstr "[B]KONFIGURIERE MUSIK EINSTELLUNGEN[/B][CR][CR][COLOR=midgrey]Organisiere die Musik DB · Setze die Musik Abspiel Optionen · Wechsel die Musik Auflistungs Optionen · Einrichten der Lied Vorlage · Setze Karaoke Optionen[/COLOR]"
 
 msgctxt "#31403"
@@ -213,20 +213,20 @@ msgid "[B]CONFIGURE WEATHER SETTINGS[/B][CR][CR][COLOR=midgrey]Set three cities 
 msgstr "[B]KONFIGURIERE WETTER EINSTELLUNGEN[/B][CR][CR][COLOR=midgrey]Wähle drei Städte zum sammeln der Wetter Informationen[/COLOR]"
 
 msgctxt "#31405"
-msgid "[B]CONFIGURE NETWORK SETTINGS[/B][CR][CR][COLOR=midgrey]Setup control of XBMC via UPnP and HTTP · Configure file sharing[CR]Set internet access options[/COLOR]"
-msgstr "[B]KONFIGURIERE NETZWERK EINSTELLUNGEN[/B][CR][CR][COLOR=midgrey]Einrichten der Steuerung von XBMC via UPnP und HTTP · Konfiguriere Datei Zugriff[CR]Setze Internet Zugriffs Optionen[/COLOR]"
+msgid "[B]CONFIGURE NETWORK SETTINGS[/B][CR][CR][COLOR=midgrey]Setup control of XBMC via UPnP and HTTP · Configure file sharing · Set internet access options[/COLOR]"
+msgstr "[B]KONFIGURIERE NETZWERK EINSTELLUNGEN[/B][CR][CR][COLOR=midgrey]Einrichten der Steuerung von XBMC via UPnP und HTTP · Konfiguriere Datei Zugriff · Setze Internet Zugriffs Optionen[/COLOR]"
 
 msgctxt "#31406"
-msgid "[B]CONFIGURE SYSTEM SETTINGS[/B][CR][CR][COLOR=midgrey]Setup and calibrate displays · Configure audio output · Setup remote controls[CR]Set power saving options · Enable debugging · Setup master lock[/COLOR]"
+msgid "[B]CONFIGURE SYSTEM SETTINGS[/B][CR][CR][COLOR=midgrey]Setup and calibrate displays · Configure audio output · Setup remote controls · Set power saving options · Enable debugging · Setup master lock[/COLOR]"
 msgstr "[B]KONFIGURIERE SYSTEM EINSTELLUNGEN[/B][CR][CR][COLOR=midgrey]Setze und kalibriere Displays · Konfiguriere Audioausgabe · Setze Fernbedienungs Einstellungen · Setze Energiespar Optionen · Aktiviere Debugging · Einrichten Master Sperre[/COLOR]"
 
 msgctxt "#31407"
-msgid "[B]CONFIGURE SKIN SETTINGS[/B][CR][CR][COLOR=midgrey]Setup the Avalon skin · Add and remove home menu items[CR]Change skin backgrounds[/COLOR]"
-msgstr "[B]KONFIGURIERE SKIN EINSTELLUNGEN[/B][CR][CR][COLOR=midgrey]Einrichten des Avalon Skin · Hinzufügen und entfernen der Home Menü Einträge[CR]Wechseln der Skin Hintergründe[/COLOR]"
+msgid "[B]CONFIGURE SKIN SETTINGS[/B][CR][CR][COLOR=midgrey]Setup the Avalon skin · Add and remove home menu items · Change skin backgrounds[/COLOR]"
+msgstr "[B]KONFIGURIERE SKIN EINSTELLUNGEN[/B][CR][CR][COLOR=midgrey]Einrichten des Avalon Skin · Hinzufügen und entfernen der Home Menü Einträge · Wechseln der Skin Hintergründe[/COLOR]"
 
 msgctxt "#31408"
-msgid "[B]CONFIGURE ADD-ONS[/B][CR][CR][COLOR=midgrey]Manage your installed Add-ons · Browse for and install Add-ons from xbmc.org[CR]Modify Add-on settings[/COLOR]"
-msgstr "[B]KONFIGURIERE ADD-ONS[/B][CR][CR][COLOR=midgrey]Organisiere die installierten Add-ons · Installiere Add-ons von xbmc.org[CR]Add-on Einstellungen anpassen[/COLOR]"
+msgid "[B]CONFIGURE ADD-ONS[/B][CR][CR][COLOR=midgrey]Manage your installed Add-ons · Browse for and install Add-ons from xbmc.org · Modify Add-on settings[/COLOR]"
+msgstr "[B]KONFIGURIERE ADD-ONS[/B][CR][CR][COLOR=midgrey]Organisiere die installierten Add-ons · Installiere Add-ons von xbmc.org · Add-on Einstellungen anpassen[/COLOR]"
 
 msgctxt "#31409"
 msgid "[B]SYSTEM INFO[/B][CR][CR][COLOR=midgrey]Summary · Storage · Network · Video · Hardware[/COLOR]"

@@ -13,7 +13,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: en\n"
+"Language: nl\n"
 "Plural-Forms: nplurals=2; plural=(n != 1)\n"
 
 #################
@@ -22,515 +22,515 @@ msgstr ""
 
 msgctxt "#31000"
 msgid "Finishes at"
-msgstr ""
+msgstr "Klaar op"
 
 msgctxt "#31001"
 msgid "Files Mode"
-msgstr ""
+msgstr "Bestanden modus"
 
 msgctxt "#31002"
 msgid "PROGRAMS"
-msgstr ""
+msgstr "PROGRAMMA'S"
 
 msgctxt "#31003"
 msgid "VIDEOS"
-msgstr ""
+msgstr "VIDEOS"
 
 msgctxt "#31004"
 msgid "MUSIC"
-msgstr ""
+msgstr "MUZIEK"
 
 msgctxt "#31005"
 msgid "PICTURES"
-msgstr ""
+msgstr "AFBEELDINGEN"
 
 msgctxt "#31006"
 msgid "MOVIES"
-msgstr ""
+msgstr "FILMS"
 
 msgctxt "#31007"
 msgid "TV SHOWS"
-msgstr ""
+msgstr "TV-SERIES"
 
 msgctxt "#31008"
 msgid "FAVOURITES"
-msgstr ""
+msgstr "FAVORIETEN"
 
 msgctxt "#31009"
 msgid "PROFILES"
-msgstr ""
+msgstr "PROFIELEN"
 
 msgctxt "#31010"
 msgid "WEATHER"
-msgstr ""
+msgstr "WEER"
 
 msgctxt "#31011"
 msgid "FILE MANAGER"
-msgstr ""
+msgstr "BESTANDS BEHEER"
 
 msgctxt "#31012"
 msgid "SETTINGS"
-msgstr ""
+msgstr "INSTELLINGEN"
 
 msgctxt "#31013"
 msgid "SHUTDOWN"
-msgstr ""
+msgstr "AFSLUITEN"
 
 msgctxt "#31014"
 msgid "PLAY DISC"
-msgstr ""
+msgstr "SPEEL DISK"
 
 msgctxt "#31015"
 msgid "Player Controls"
-msgstr ""
+msgstr "Speler Besturing"
 
 msgctxt "#31016"
 msgid "Background Visuals"
-msgstr ""
+msgstr "Achergrond Visualisaties"
 
 msgctxt "#31017"
 msgid "Lyrics/Subtitles"
-msgstr ""
+msgstr "Songteksten/Ondertitels"
 
 msgctxt "#31018"
 msgid "Current Selected"
-msgstr ""
+msgstr "Huidig Geselecteerd"
 
 msgctxt "#31019"
 msgid "Open playlist"
-msgstr ""
+msgstr "Open afspeellijst"
 
 msgctxt "#31020"
 msgid "Save playlist"
-msgstr ""
+msgstr "Afspeellijst opslaan"
 
 msgctxt "#31021"
 msgid "Close playlist"
-msgstr ""
+msgstr "Sluit Afspeellijst"
 
 msgctxt "#31022"
 msgid "System music files"
-msgstr ""
+msgstr "Systeem muziek bestanden"
 
 msgctxt "#31023"
 msgid "Disable Background Visualiser"
-msgstr ""
+msgstr "Schakel Achtergrond Visualisaties Uit "
 
 msgctxt "#31024"
 msgid "Disable Background Video"
-msgstr ""
+msgstr "Schakel Video Achtergrond Uit"
 
 msgctxt "#31025"
 msgid "Click to change default Lyrics script"
-msgstr ""
+msgstr "Klik om het standaard songteksten script te wijzigen"
 
 msgctxt "#31026"
 msgid "Click to change default Subtitles script"
-msgstr ""
+msgstr "Klik om het standaard Ondertitel script te wijzigen"
 
 msgctxt "#31027"
 msgid "Items"
-msgstr ""
+msgstr "Items"
 
 msgctxt "#31028"
 msgid "Page"
-msgstr ""
+msgstr "Pagina"
 
 msgctxt "#31029"
 msgid "Current playlist"
-msgstr ""
+msgstr "Huidige Afspeellijst"
 
 msgctxt "#31030"
 msgid "Memory Used"
-msgstr ""
+msgstr "Geheugen Gebruikt"
 
 msgctxt "#31031"
 msgid "Karaoke Song Selector"
-msgstr ""
+msgstr "Karaoke Song Keuze  "
 
 msgctxt "#31032"
 msgid "Visualization Presets"
-msgstr ""
+msgstr "Visualisatie Presets"
 
 msgctxt "#31033"
 msgid "Debug"
-msgstr ""
+msgstr "Debug"
 
 msgctxt "#31034"
 msgid "Enable Debug Grid"
-msgstr ""
+msgstr "Schakel Debug Grid In"
 
 msgctxt "#31035"
 msgid "Enable Debug Info"
-msgstr ""
+msgstr "Schakel Debug Info Uit"
 
 msgctxt "#31036"
 msgid "Rewind"
-msgstr ""
+msgstr "Terugspoelen"
 
 msgctxt "#31037"
 msgid "Pause"
-msgstr ""
+msgstr "Pauze"
 
 msgctxt "#31038"
 msgid "Stop"
-msgstr ""
+msgstr "Stoppen"
 
 msgctxt "#31039"
 msgid "Fast Forward"
-msgstr ""
+msgstr "Snel Doorspoelen"
 
 msgctxt "#31040"
 msgid "Visualisation Presets"
-msgstr ""
+msgstr "Visualisatie Presets"
 
 msgctxt "#31041"
 msgid "DVD Menu"
-msgstr ""
+msgstr "DVD Menu"
 
 #############
 #New Strings#
 #############
 
 msgctxt "#31400"
-msgid "[B]CONFIGURE APPEARANCE SETTINGS[/B][CR][CR][COLOR=midgrey]Change the skin · Set language and region · Change file listing options · Set up a screensaver[/COLOR]"
-msgstr ""
+msgid "[B]CONFIGURE APPEARANCE SETTINGS[/B][CR][CR][COLOR=midgrey]Change the skin · Set language and region · Change file listing optionsn · Set up a screensaver[/COLOR]"
+msgstr "[B]CONFIGUREER UITERLIJKE INSTELLINGEN[/B][CR][CR][COLOR=midgrey] Verander skin · Verander taal en regio  · Verander bestandsindeling opties · Stel een screensaver in[/COLOR]"
 
 msgctxt "#31401"
 msgid "[B]CONFIGURE VIDEO SETTINGS[/B][CR][CR][COLOR=midgrey]Manage your video library · Set video playback options · Change video listing options · Set subtitle fonts[/COLOR]"
-msgstr ""
+msgstr "[B]CONFIGUREER VIDEO INSTELLINGEN[/B][CR][CR][COLOR=midgrey] Beheer uw video bibliotheek · Stel video afspeel opties in  · Stel videoindeling opties in · Wijzig het ondertitel lettertype[/COLOR]"
 
 msgctxt "#31402"
 msgid "[B]CONFIGURE MUSIC SETTINGS[/B][CR][CR][COLOR=midgrey]Manage your music library · Set music playback options · Change music listing options · Setup song submission · Set karaoke options[/COLOR]"
-msgstr ""
+msgstr "[B]CONFIGUREER MUZIEK INSTELLINGEN[/B][CR][CR][COLOR=midgrey]Beheer uw muziek bibliotheek · Stel muziek afspeel opties in · Stel de muziek indeling in · Stel de nummer submissie in · Stel de karaoke opties in[/COLOR]"
 
 msgctxt "#31403"
 msgid "[B]CONFIGURE PICTURE SETTINGS[/B][CR][CR][COLOR=midgrey]Set picture listing options · Configure slideshows[/COLOR]"
-msgstr ""
+msgstr "[B]CONFIGUREER AFBEELDING OPTIES[/B][CR][CR][COLOR=midgrey]Verander afbeeldingsindeling opties · Configureer diavoorstelling[/COLOR]"
 
 msgctxt "#31404"
 msgid "[B]CONFIGURE WEATHER SETTINGS[/B][CR][CR][COLOR=midgrey]Set three cities to collect weather information[/COLOR]"
-msgstr ""
+msgstr "[B]CONFIGUREER WEER INSTELLINGEN[/B][CR][CR][COLOR=midgrey]Stel drie steden in om weer informatie van te ontvangen[/COLOR]"
 
 msgctxt "#31405"
 msgid "[B]CONFIGURE NETWORK SETTINGS[/B][CR][CR][COLOR=midgrey]Setup control of XBMC via UPnP and HTTP · Configure file sharing · Set internet access options[/COLOR]"
-msgstr ""
+msgstr "[B]CONFIGUREER NETWERK INSTELLINGEN[/B][CR][CR][COLOR=midgrey]Stel de besturing van xbmc via UPnP en HTTP in · Configureer bestands deling · Stel internet toegang opties in[/COLOR]"
 
 msgctxt "#31406"
 msgid "[B]CONFIGURE SYSTEM SETTINGS[/B][CR][CR][COLOR=midgrey]Setup and calibrate displays · Configure audio output · Setup remote controls · Set power saving options · Enable debugging · Setup master lock[/COLOR]"
-msgstr ""
+msgstr "[B]CONFIGUREER SYSTEEM INSTELLINGEN[/B][CR][CR][COLOR=midgrey]Installeer en kalibreer schermen · Configureer audio uitgang · Stel de afstandsbedieningen in · Stel de stroom besparings opties in · Schakel debugging in · Installeer master lock[/COLOR]"
 
 msgctxt "#31407"
 msgid "[B]CONFIGURE SKIN SETTINGS[/B][CR][CR][COLOR=midgrey]Setup the Avalon skin · Add and remove home menu items · Change skin backgrounds[/COLOR]"
-msgstr ""
+msgstr "[B]CONFIGUREER SKIN INSTELLINGEN[/B][CR][CR][COLOR=midgrey]Stel de Titan skin in · Voeg toe en verwijder home menu items · Verander skin achtergronden[/COLOR]"
 
 msgctxt "#31408"
 msgid "[B]CONFIGURE ADD-ONS[/B][CR][CR][COLOR=midgrey]Manage your installed Add-ons · Browse for and install Add-ons from xbmc.org · Modify Add-on settings[/COLOR]"
-msgstr ""
+msgstr "[B]CONFIGUREER ADD-ONS[/B][CR][CR][COLOR=midgrey]Beheer uw geïnstalleerde Add-ons · Blader en installeer Add-ons van xbmc.org · Wijzig Add-on instellingen[/COLOR]"
 
 msgctxt "#31409"
 msgid "[B]SYSTEM INFO[/B][CR][CR][COLOR=midgrey]Summary · Storage · Network · Video · Hardware[/COLOR]"
-msgstr ""
+msgstr "[B]SYSTEEM INFORMATIE[/B][CR][CR][COLOR=midgrey]Overzicht · Opslag · Netwerk · Video · Hardware[/COLOR]"
 
 msgctxt "#31410"
 msgid "[B]CONFIGURE TV SETTINGS[/B][CR][CR][COLOR=midgrey]Change fullscreen info · Manage EPG data settings[/COLOR]"
-msgstr ""
+msgstr "[B]CONFIGUREER TV INSTELLINGEN[/B][CR][CR][COLOR=midgrey]verander volledig scherm info · Beheer EPG data instellingen[/COLOR]"
 
 msgctxt "#31421"
 msgid "[B]SELECT YOUR XBMC USER PROFILE[/B][CR][CR][COLOR=midgrey]to login and continue[/COLOR]"
-msgstr ""
+msgstr "[B]SELECTEER UW XBMC GEBRUIKERS PROFIEL[/B][CR][CR][COLOR=midgrey]om in te loggen en door te gaan[/COLOR]"
 
 msgctxt "#41000"
 msgid "Pictures"
-msgstr ""
+msgstr "Afbeeldingen"
 
 msgctxt "#41001"
 msgid "Music"
-msgstr ""
+msgstr "Muziek"
 
 msgctxt "#41002"
 msgid "Movies"
-msgstr ""
+msgstr "Films"
 
 msgctxt "#41003"
 msgid "TV Shows"
-msgstr ""
+msgstr "TV-Series"
 
 msgctxt "#41004"
 msgid "Video-Addons"
-msgstr ""
+msgstr "Video-Addons"
 
 msgctxt "#41005"
 msgid "Weather"
-msgstr ""
+msgstr "Weer"
 
 msgctxt "#41006"
 msgid "Settings"
-msgstr ""
+msgstr "Instellingen"
 
 msgctxt "#41007"
 msgid "Shutdown"
-msgstr ""
+msgstr "Afsluiten"
 
 msgctxt "#41008"
 msgid "Videos"
-msgstr ""
+msgstr "Videos"
 
 msgctxt "#41009"
 msgid "Today"
-msgstr ""
+msgstr "Vandaag"
 
 msgctxt "#41010"
 msgid "Recently Added"
-msgstr ""
+msgstr "Recent Toegevoegd"
 
 msgctxt "#41011"
 msgid "New Movies"
-msgstr ""
+msgstr "Nieuwe Films"
 
 msgctxt "#41012"
 msgid "Genre"
-msgstr ""
+msgstr "Genre"
 
 msgctxt "#41013"
 msgid "Year"
-msgstr ""
+msgstr "Jaar"
 
 msgctxt "#41014"
 msgid "Actors"
-msgstr ""
+msgstr "Acteurs"
 
 msgctxt "#41015"
 msgid "Director"
-msgstr ""
+msgstr "Regisseur"
 
 msgctxt "#41016"
 msgid "Playlist"
-msgstr ""
+msgstr "Afspeellijst"
 
 msgctxt "#41017"
 msgid "Music Videos"
-msgstr ""
+msgstr "Muziek Videos"
 
 msgctxt "#41018"
 msgid "New Episodes"
-msgstr ""
+msgstr "Nieuwe Afleveringen"
 
 msgctxt "#41019"
 msgid "Music-Addons"
-msgstr ""
+msgstr "Muziek-Addons"
 
 msgctxt "#41020"
 msgid "New Albums"
-msgstr ""
+msgstr "Nieuwe Albums"
 
 msgctxt "#41021"
 msgid "Artist"
-msgstr ""
+msgstr "Artiest"
 
 msgctxt "#41022"
 msgid "Songs"
-msgstr ""
+msgstr "Nummers"
 
 msgctxt "#41023"
 msgid "Library"
-msgstr ""
+msgstr "Bibliotheek"
 
 msgctxt "#41024"
 msgid "Live TV"
-msgstr ""
+msgstr "Live TV"
 
 msgctxt "#41025"
 msgid "File manager"
-msgstr ""
+msgstr "Bestands beheer"
 
 msgctxt "#41026"
 msgid "Addons"
-msgstr ""
+msgstr "Addons"
 
 msgctxt "#41027"
 msgid "Programs"
-msgstr ""
+msgstr "Programma's"
 
 msgctxt "#41028"
 msgid "Favourites"
-msgstr ""
+msgstr "Favorieten"
 
 msgctxt "#41030"
 msgid "Premiere"
-msgstr ""
+msgstr "Premiere"
 
 msgctxt "#41031"
 msgid "Duration"
-msgstr ""
+msgstr "Duur"
 
 msgctxt "#41032"
 msgid "Rating"
-msgstr ""
+msgstr "Beoordeling"
 
 msgctxt "#41033"
 msgid "Unwatched Episodes"
-msgstr ""
+msgstr "Ongekeken Aflveringen"
 
 msgctxt "#41034"
 msgid "Premiere"
-msgstr ""
+msgstr "Premiere"
 
 msgctxt "#41035"
 msgid "Wind"
-msgstr ""
+msgstr "Wind"
 
 msgctxt "#41037"
 msgid "UV-Index"
-msgstr ""
+msgstr "UV-Index"
 
 msgctxt "#41038"
 msgid "Dew Point"
-msgstr ""
+msgstr "Dauw Punt"
 
 msgctxt "#41039"
 msgid "Unwatched"
-msgstr ""
+msgstr "Onbekeken"
 
 msgctxt "#41070"
 msgid "Single Image"
-msgstr ""
+msgstr "Enkele Achtergrond"
 
 msgctxt "#41071"
 msgid "Multi Image"
-msgstr ""
+msgstr "Meerdere Achtergronden"
 
 msgctxt "#41072"
 msgid "Default"
-msgstr ""
+msgstr "Standaard"
 
 msgctxt "#41073"
 msgid "Change Background"
-msgstr ""
+msgstr "Verander Achtergrond"
 
 msgctxt "#41080"
 msgid "Change Background"
-msgstr ""
+msgstr "Verander Achtergrond"
 
 msgctxt "#41081"
 msgid "Disable Menu"
-msgstr ""
+msgstr "Schakel Menu Uit"
 
 msgctxt "#41090"
 msgid "Menu"
-msgstr ""
+msgstr "Menu"
 
 msgctxt "#41091"
 msgid "Scroll Info-Plot"
-msgstr ""
+msgstr "Scroll Info-Plot"
 
 msgctxt "#41092"
 msgid "Youtube Trailer"
-msgstr ""
+msgstr "Youtube-Trailer"
 
 msgctxt "#41100"
 msgid "Movie Widget"
-msgstr ""
+msgstr "Film Widget"
 
 msgctxt "#41101"
 msgid "TV Show Widget"
-msgstr ""
+msgstr "TV-Series Widget"
 
 msgctxt "#41102"
 msgid "Album Widget"
-msgstr ""
+msgstr "Album Widget"
 
 msgctxt "#41103"
 msgid "Qlock Widget"
-msgstr ""
+msgstr "Qlock Widget"
 
 msgctxt "#41110"
 msgid "New on XBMC ..."
-msgstr ""
+msgstr "Nieuw op XBMC"
 
 msgctxt "#41111"
 msgid "XBMC recommended ..."
-msgstr ""
+msgstr "XBMC beveelt aan"
 
 msgctxt "#41136"
 msgid "Custom home menu"
-msgstr ""
+msgstr "Aangepast home Scherm"
 
 msgctxt "#41137"
 msgid "Custom"
-msgstr ""
+msgstr "Aangepast"
 
 msgctxt "#41138"
 msgid "Name"
-msgstr ""
+msgstr "Naam"
 
 msgctxt "#41139"
 msgid "Fanart"
-msgstr ""
+msgstr "Fanart"
 
 msgctxt "#41140"
 msgid "Dim icon"
-msgstr ""
+msgstr "Dim icoon"
 
 msgctxt "#41141"
 msgid "Type"
-msgstr ""
+msgstr "Type"
 
 msgctxt "#41142"
 msgid "Path"
-msgstr ""
+msgstr "Pad"
 
 msgctxt "#41143"
 msgid "Recommended size 1280x720px"
-msgstr ""
+msgstr "Aanbevolen grootte 1280x720px"
 
 msgctxt "#41144"
 msgid "Show overlay"
-msgstr ""
+msgstr "Toon overlapping"
 
 msgctxt "#41145"
 msgid "Video add-on"
-msgstr ""
+msgstr "Video add-on"
 
 msgctxt "#41146"
 msgid "Music add-on"
-msgstr ""
+msgstr "Muziek add-on"
 
 msgctxt "#41147"
 msgid "Picture add-on"
-msgstr ""
+msgstr "Afbeelding add-on"
 
 msgctxt "#41148"
 msgid "Program add-on"
-msgstr ""
+msgstr "Programma add-on"
 
 msgctxt "#41149"
 msgid "Video Playlist"
-msgstr ""
+msgstr "Video Afspeellijst"
 
 msgctxt "#41150"
 msgid "Music Playlist"
-msgstr ""
+msgstr "Muziek Afspeellijst"
 
 msgctxt "#41151"
 msgid "Custom"
-msgstr ""
+msgstr "Aangepast"
 
 msgctxt "#41152"
 msgid "Music panel opens"
-msgstr ""
+msgstr "Open muziek paneel"
 
 msgctxt "#41153"
 msgid "Favourite"
-msgstr ""
+msgstr "Favorieten"
 
 msgctxt "#41154"
 msgid "Close"
-msgstr ""
+msgstr "Sluiten"
 
 msgctxt "#42000"
 msgid "Search Youtube"
-msgstr ""
+msgstr "Zoek op Youtube"
 
 #######
 #Qlock#
@@ -540,458 +540,458 @@ msgstr ""
 
 msgctxt "#50000"
 msgid "I"
-msgstr ""
+msgstr "I"
 
 msgctxt "#50001"
 msgid "T"
-msgstr ""
+msgstr "T"
 
 msgctxt "#50002"
 msgid "L"
-msgstr ""
+msgstr "L"
 
 msgctxt "#50003"
 msgid "I"
-msgstr ""
+msgstr "I"
 
 msgctxt "#50004"
 msgid "S"
-msgstr ""
+msgstr "S"
 
 msgctxt "#50005"
 msgid "A"
-msgstr ""
+msgstr "A"
 
 msgctxt "#50006"
 msgid "S"
-msgstr ""
+msgstr "S"
 
 msgctxt "#50007"
 msgid "T"
-msgstr ""
+msgstr "T"
 
 msgctxt "#50008"
 msgid "I"
-msgstr ""
+msgstr "I"
 
 msgctxt "#50009"
 msgid "M"
-msgstr ""
+msgstr "M"
 
 msgctxt "#50010"
 msgid "E"
-msgstr ""
+msgstr "E"
 
 #Row 2
 
 msgctxt "#50011"
 msgid "A"
-msgstr ""
+msgstr "A"
 
 msgctxt "#50012"
 msgid "C"
-msgstr ""
+msgstr "C"
 
 msgctxt "#50013"
 msgid "Q"
-msgstr ""
+msgstr "Q"
 
 msgctxt "#50014"
 msgid "U"
-msgstr ""
+msgstr "U"
 
 msgctxt "#50015"
 msgid "A"
-msgstr ""
+msgstr "A"
 
 msgctxt "#50016"
 msgid "R"
-msgstr ""
+msgstr "R"
 
 msgctxt "#50017"
 msgid "T"
-msgstr ""
+msgstr "T"
 
 msgctxt "#50018"
 msgid "E"
-msgstr ""
+msgstr "E"
 
 msgctxt "#50019"
 msgid "R"
-msgstr ""
+msgstr "R"
 
 msgctxt "#50020"
 msgid "D"
-msgstr ""
+msgstr "D"
 
 msgctxt "#50021"
 msgid "C"
-msgstr ""
+msgstr "C"
 
 #Row 3
 
 msgctxt "#50022"
 msgid "T"
-msgstr ""
+msgstr "T"
 
 msgctxt "#50023"
 msgid "W"
-msgstr ""
+msgstr "W"
 
 msgctxt "#50024"
 msgid "E"
-msgstr ""
+msgstr "E"
 
 msgctxt "#50025"
 msgid "N"
-msgstr ""
+msgstr "N"
 
 msgctxt "#50026"
 msgid "T"
-msgstr ""
+msgstr "T"
 
 msgctxt "#50027"
 msgid "Y"
-msgstr ""
+msgstr "Y"
 
 msgctxt "#50028"
 msgid "F"
-msgstr ""
+msgstr "F"
 
 msgctxt "#50029"
 msgid "I"
-msgstr ""
+msgstr "I"
 
 msgctxt "#50030"
 msgid "V"
-msgstr ""
+msgstr "V"
 
 msgctxt "#50031"
 msgid "E"
-msgstr ""
+msgstr "E"
 
 msgctxt "#50032"
 msgid "X"
-msgstr ""
+msgstr "X"
 
 #Row 4
 
 msgctxt "#50033"
 msgid "H"
-msgstr ""
+msgstr "H"
 
 msgctxt "#50034"
 msgid "A"
-msgstr ""
+msgstr "A"
 
 msgctxt "#50035"
 msgid "L"
-msgstr ""
+msgstr "L"
 
 msgctxt "#50036"
 msgid "F"
-msgstr ""
+msgstr "F"
 
 msgctxt "#50037"
 msgid "B"
-msgstr ""
+msgstr "B"
 
 msgctxt "#50038"
 msgid "T"
-msgstr ""
+msgstr "T"
 
 msgctxt "#50039"
 msgid "E"
-msgstr ""
+msgstr "E"
 
 msgctxt "#50040"
 msgid "N"
-msgstr ""
+msgstr "N"
 
 msgctxt "#50041"
 msgid "F"
-msgstr ""
+msgstr "F"
 
 msgctxt "#50042"
 msgid "T"
-msgstr ""
+msgstr "T"
 
 msgctxt "#50043"
 msgid "O"
-msgstr ""
+msgstr "O"
 
 #Row 5
 
 msgctxt "#50044"
 msgid "P"
-msgstr ""
+msgstr "P"
 
 msgctxt "#50045"
 msgid "A"
-msgstr ""
+msgstr "A"
 
 msgctxt "#50046"
 msgid "S"
-msgstr ""
+msgstr "S"
 
 msgctxt "#50047"
 msgid "T"
-msgstr ""
+msgstr "T"
 
 msgctxt "#50048"
 msgid "E"
-msgstr ""
+msgstr "E"
 
 msgctxt "#50049"
 msgid "R"
-msgstr ""
+msgstr "R"
 
 msgctxt "#50050"
 msgid "U"
-msgstr ""
+msgstr "U"
 
 msgctxt "#50051"
 msgid "N"
-msgstr ""
+msgstr "N"
 
 msgctxt "#50052"
 msgid "I"
-msgstr ""
+msgstr "I"
 
 msgctxt "#50053"
 msgid "N"
-msgstr ""
+msgstr "N"
 
 msgctxt "#50054"
 msgid "E"
-msgstr ""
+msgstr "E"
 
 #Row 6
 
 msgctxt "#50055"
 msgid "O"
-msgstr ""
+msgstr "O"
 
 msgctxt "#50056"
 msgid "N"
-msgstr ""
+msgstr "N"
 
 msgctxt "#50057"
 msgid "E"
-msgstr ""
+msgstr "E"
 
 msgctxt "#50058"
 msgid "S"
-msgstr ""
+msgstr "S"
 
 msgctxt "#50059"
 msgid "I"
-msgstr ""
+msgstr "I"
 
 msgctxt "#50060"
 msgid "X"
-msgstr ""
+msgstr "X"
 
 msgctxt "#50061"
 msgid "T"
-msgstr ""
+msgstr "T"
 
 msgctxt "#50062"
 msgid "H"
-msgstr ""
+msgstr "H"
 
 msgctxt "#50063"
 msgid "R"
-msgstr ""
+msgstr "R"
 
 msgctxt "#50064"
 msgid "E"
-msgstr ""
+msgstr "E"
 
 msgctxt "#50065"
 msgid "E"
-msgstr ""
+msgstr "E"
 
 #Row 7
 
 msgctxt "#50066"
 msgid "F"
-msgstr ""
+msgstr "F"
 
 msgctxt "#50067"
 msgid "O"
-msgstr ""
+msgstr "O"
 
 msgctxt "#50068"
 msgid "U"
-msgstr ""
+msgstr "U"
 
 msgctxt "#50069"
 msgid "R"
-msgstr ""
+msgstr "R"
 
 msgctxt "#50070"
 msgid "F"
-msgstr ""
+msgstr "F"
 
 msgctxt "#50071"
 msgid "I"
-msgstr ""
+msgstr "I"
 
 msgctxt "#50072"
 msgid "V"
-msgstr ""
+msgstr "V"
 
 msgctxt "#50073"
 msgid "E"
-msgstr ""
+msgstr "E"
 
 msgctxt "#50074"
 msgid "T"
-msgstr ""
+msgstr "T"
 
 msgctxt "#50075"
 msgid "W"
-msgstr ""
+msgstr "W"
 
 msgctxt "#50076"
 msgid "O"
-msgstr ""
+msgstr "O"
 
 #Row 8
 
 msgctxt "#50077"
 msgid "E"
-msgstr ""
+msgstr "E"
 
 msgctxt "#50078"
 msgid "I"
-msgstr ""
+msgstr "I"
 
 msgctxt "#50079"
 msgid "G"
-msgstr ""
+msgstr "G"
 
 msgctxt "#50080"
 msgid "H"
-msgstr ""
+msgstr "H"
 
 msgctxt "#50081"
 msgid "T"
-msgstr ""
+msgstr "I"
 
 msgctxt "#50082"
 msgid "E"
-msgstr ""
+msgstr "E"
 
 msgctxt "#50083"
 msgid "L"
-msgstr ""
+msgstr "L"
 
 msgctxt "#50084"
 msgid "E"
-msgstr ""
+msgstr "E"
 
 msgctxt "#50085"
 msgid "V"
-msgstr ""
+msgstr "V"
 
 msgctxt "#50086"
 msgid "E"
-msgstr ""
+msgstr "E"
 
 msgctxt "#50087"
 msgid "N"
-msgstr ""
+msgstr "N"
 
 #Row 9
 
 msgctxt "#50088"
 msgid "S"
-msgstr ""
+msgstr "S"
 
 msgctxt "#50089"
 msgid "E"
-msgstr ""
+msgstr "E"
 
 msgctxt "#50090"
 msgid "V"
-msgstr ""
+msgstr "V"
 
 msgctxt "#50091"
 msgid "E"
-msgstr ""
+msgstr "E"
 
 msgctxt "#50092"
 msgid "N"
-msgstr ""
+msgstr "N"
 
 msgctxt "#50093"
 msgid "T"
-msgstr ""
+msgstr "T"
 
 msgctxt "#50094"
 msgid "W"
-msgstr ""
+msgstr "W"
 
 msgctxt "#50095"
 msgid "E"
-msgstr ""
+msgstr "E"
 
 msgctxt "#50096"
 msgid "L"
-msgstr ""
+msgstr "L"
 
 msgctxt "#50097"
 msgid "V"
-msgstr ""
+msgstr "V"
 
 msgctxt "#50098"
 msgid "E"
-msgstr ""
+msgstr "E"
 
 #Row 10
 
 msgctxt "#50099"
 msgid "T"
-msgstr ""
+msgstr "T"
 
 msgctxt "#50100"
 msgid "E"
-msgstr ""
+msgstr "E"
 
 msgctxt "#50101"
 msgid "N"
-msgstr ""
+msgstr "N"
 
 msgctxt "#50102"
 msgid "S"
-msgstr ""
+msgstr "S"
 
 msgctxt "#50103"
 msgid "E"
-msgstr ""
+msgstr "E"
 
 msgctxt "#50104"
 msgid "O'"
-msgstr ""
+msgstr "O"
 
 msgctxt "#50105"
 msgid "C"
-msgstr ""
+msgstr "C"
 
 msgctxt "#50106"
 msgid "L"
-msgstr ""
+msgstr "L"
 
 msgctxt "#50107"
 msgid "O"
-msgstr ""
+msgstr "O"
 
 msgctxt "#50108"
 msgid "C"
-msgstr ""
+msgstr "C"
 
 msgctxt "#50109"
 msgid "K"
-msgstr ""
+msgstr "K"
