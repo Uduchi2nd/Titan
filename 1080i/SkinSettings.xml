@@ -74,7 +74,7 @@
 					<label>$INFO[ListItem.Label]</label>
 				</control>
 			</focusedlayout>
-			
+
 			<content>	
 				<item id="8"><!--Disable Home-Menu Button ID=8000-->					
 					<label>41081</label>
@@ -285,7 +285,7 @@
 					<selected>Skin.HasSetting(DebugInfo)</selected>
 				</control>
 			</control>
-		
+
 			<control type="grouplist" id="8000"><!--Skin Setting: Home-Menu Button-->		
 				<description>Control Area</description>
 				<width>1230</width>

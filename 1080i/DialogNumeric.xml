@@ -2,7 +2,7 @@
 <window>
 	<defaultcontrol always="true">21</defaultcontrol>   
 	<controls>
-	
+
 		<!--Dialog Overlay-->	
 		<include>DialogOverlay</include>
 
