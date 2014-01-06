@@ -112,13 +112,14 @@
 	<!-- ====== -->
 	<variable name="value_video_background">
 		<value condition="IsEmpty(ListItem.Art(fanart))">special://skin/backgrounds/curtains.png</value>
-		<value condition="Container.Content(movies)">$INFO[ListItem.Art(fanart)]</value>
-		<value condition="Container.Content(musicvideos)">$INFO[ListItem.Art(fanart)]</value>
-		<value condition="Container.Content(tvshows">$INFO[ListItem.Art(fanart)]</value>
-		<value condition="Container.Content(seasons)">$INFO[ListItem.Art(fanart)]</value>		
-		<value condition="Container.Content(episodes)">$INFO[ListItem.Art(fanart)]</value>
-		<value condition="Container.Content(sets)">$INFO[ListItem.Art(fanart)]</value>
-		<value condition="Container.Content(genres)">special://skin/backgrounds/curtains.png</value>			
+		<value condition="Container.Content(movies) + ![substring(Container.FolderPath,addons://sources/video/) | substring(Container.FolderPath,plugin://plugin.video)]">$INFO[ListItem.Art(fanart)]</value>
+		<value condition="Container.Content(musicvideos) + ![substring(Container.FolderPath,addons://sources/video/) | substring(Container.FolderPath,plugin://plugin.video)]">$INFO[ListItem.Art(fanart)]</value>
+		<value condition="Container.Content(tvshows) + ![substring(Container.FolderPath,addons://sources/video/) | substring(Container.FolderPath,plugin://plugin.video)]">$INFO[ListItem.Art(fanart)]</value>
+		<value condition="Container.Content(seasons) + ![substring(Container.FolderPath,addons://sources/video/) | substring(Container.FolderPath,plugin://plugin.video)]">$INFO[ListItem.Art(fanart)]</value>		
+		<value condition="Container.Content(episodes) + ![substring(Container.FolderPath,addons://sources/video/) | substring(Container.FolderPath,plugin://plugin.video)]">$INFO[ListItem.Art(fanart)]</value>
+		<value condition="Container.Content(sets) + ![substring(Container.FolderPath,addons://sources/video/) | substring(Container.FolderPath,plugin://plugin.video)]">$INFO[ListItem.Art(fanart)]</value>
+		<value condition="Container.Content(genres) + ![substring(Container.FolderPath,addons://sources/video/) | substring(Container.FolderPath,plugin://plugin.video)]">special://skin/backgrounds/curtains.png</value>
+		<value condition="substring(Container.FolderPath,addons://sources/video/) | substring(Container.FolderPath,plugin://plugin.video)">special://skin/backgrounds/curtains.png</value>
 	</variable>
 	<variable name="value_music_background">
 		<value condition="Window.IsActive(MyMusicNav.xml)">special://skin/backgrounds/music.png</value>								
