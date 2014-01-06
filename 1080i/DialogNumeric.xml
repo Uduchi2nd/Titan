@@ -33,8 +33,7 @@
 				<height>60</height>
 				<texture>dialogs/default/arrow.png</texture>
 			</control>
-			<control type="image">
-				<description>image</description>
+			<control type="image">			
 				<posx>0</posx>
 				<posy>16</posy>
 				<width>320</width>
@@ -42,8 +41,7 @@
 				<texture border="39">dialogs/default/bg.png</texture>
 				<aspectratio>stretch</aspectratio>
 			</control>
-			<control type="label" id="1">
-				<description>Dialog Header</description>
+			<control type="label" id="1">				
 				<posx>-340</posx>
 				<posy>-85</posy>
 				<width>1000</width>
@@ -51,8 +49,7 @@
 				<align>center</align>
 				<include>DialogHeader</include>					
 			</control>
-			<control type="label" id="4">
-				<description>Edit Text</description>
+			<control type="label" id="4">				
 				<posx>-340</posx>
 				<posy>-50</posy>
 				<width>1000</width>					

@@ -20,8 +20,7 @@
 				<height>60</height>
 				<texture>dialogs/default/arrow.png</texture>
 			</control>
-			<control type="image">
-				<description>image</description>
+			<control type="image">				
 				<posx>0</posx>
 				<posy>18</posy>
 				<width>1072</width>
