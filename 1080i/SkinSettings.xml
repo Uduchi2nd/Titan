@@ -36,7 +36,7 @@
 			<onup>100</onup>
 			<ondown>100</ondown>
 			<onleft>-</onleft>
-			<onright>99</onright>
+			<onright>1000</onright>
 			<scrolltime>0</scrolltime>
 			<orientation>vertical</orientation>
 			<pagecontrol>-</pagecontrol>
@@ -74,38 +74,36 @@
 					<label>$INFO[ListItem.Label]</label>
 				</control>
 			</focusedlayout>
-			<content>				
-				<item id="2">
-					<description>Lyrics/Subtitles</description>
-					<label>$LOCALIZE[24013]/$LOCALIZE[24012]</label>
+			
+			<content>	
+				<item id="8"><!--Disable Home-Menu Button ID=8000-->					
+					<label>41081</label>
 					<onclick>-</onclick>
-				</item>
-				<item id="3">
-					<description>Debug</description>
-					<label>31033</label>
-					<onclick>-</onclick>
-				</item>		
-				<item id="4">
-					<description>Skin Background</description>
+				</item>	
+				<item id="9"><!--Skin Background ID=9000-->					
 					<label>41080</label>
 					<onclick>-</onclick>
 				</item>	
-				<item id="5">
-					<description>Disable Home-Menu Button </description>
-					<label>41081</label>
+				<item id="4"><!--Lyrics/Subtitles ID=4000-->					
+					<label>$LOCALIZE[24013]/$LOCALIZE[24012]</label>
 					<onclick>-</onclick>
-				</item>		
+				</item>
+				<item id="5"><!--Debug ID=5000-->				
+					<label>31033</label>
+					<onclick>-</onclick>
+				</item>	
+
 			</content>			
 		</control>
 
-		<!--Group 99 Right Area-->
-		<control type="group" id="99"> 
+		<!--Group 1000 Right Area-->
+		<control type="group" id="1000"> 
 			<posx>605</posx>
 			<posy>220</posy>			
 			<include>animation_fade_visible_hidden</include>
-			<include>animation_list</include>
-			
-			<control type="grouplist" id="9001"><!--Lyrics + Subtitle left-->
+			<include>animation_list</include>			
+
+			<control type="grouplist" id="4000"><!--Lyrics + Subtitle left-->
 				<description>Control Area</description>
 				<width>1230</width>
 				<height>720</height>
@@ -115,10 +113,9 @@
 				<onleft>100</onleft>
 				<onright>-</onright>
 				<orientation>vertical</orientation>
-				<visible>Container(100).Hasfocus(2)</visible>
+				<visible>Container(100).Hasfocus(4)</visible>
 
-				<control type="button" id="9002">
-					<description>Default Button</description>
+				<control type="button" id="4002">					
 					<width>1230</width>					
 					<align>left</align>
 					<label>$LOCALIZE[24013] $LOCALIZE[24009]</label>
@@ -127,8 +124,7 @@
 					<font>Reg32</font>					
 					<onclick>Skin.SetAddon(LyricPath,xbmc.python.lyrics)</onclick>
 				</control>
-				<control type="button" id="9003">
-					<description>Default Button</description>
+				<control type="button" id="4003">				
 					<width>1230</width>					
 					<align>left</align>
 					<label>$LOCALIZE[24012] $LOCALIZE[24009]</label>
@@ -139,7 +135,7 @@
 				</control>
 
 			</control>
-			<control type="grouplist" id="400">	<!--Lyrics + Subtitle right-->	
+			<control type="grouplist" id="4100"><!--Lyrics + Subtitle right-->	
 				<description>Control Area</description>
 				<width>1230</width>
 				<height>720</height>
@@ -149,10 +145,11 @@
 				<onleft>100</onleft>
 				<onright>-</onright>
 				<orientation>vertical</orientation>
-				<visible>Container(100).Hasfocus(2)</visible>
+				<visible>Container(100).Hasfocus(4)</visible>
 
+				<!--Lyrics-->
 				<control type="label">					
-					<visible>!Control.HasFocus(9002)</visible>
+					<visible>!Control.HasFocus(4002)</visible>
 					<width>1230</width>					
 					<font>Reg32</font>
 					<align>right</align>
@@ -164,7 +161,7 @@
 					<visible>!IsEmpty(Skin.String(LyricPath))</visible>
 				</control>
 				<control type="label">					
-					<visible>!Control.HasFocus(9002)</visible>
+					<visible>!Control.HasFocus(4002)</visible>
 					<width>1230</width>					
 					<font>Reg32</font>
 					<height>50</height>
@@ -177,7 +174,7 @@
 					<visible>IsEmpty(Skin.String(LyricPath))</visible>
 				</control>
 				<control type="label">
-					<visible>Control.HasFocus(9002)</visible>
+					<visible>Control.HasFocus(4002)</visible>
 					<width>1230</width>					
 					<font>Reg32</font>
 					<align>right</align>
@@ -189,7 +186,7 @@
 					<visible>!IsEmpty(Skin.String(LyricPath))</visible>
 				</control>
 				<control type="label">
-					<visible>Control.HasFocus(9002)</visible>
+					<visible>Control.HasFocus(4002)</visible>
 					<width>1230</width>					
 					<font>Reg32</font>
 					<height>50</height>
@@ -202,8 +199,9 @@
 					<visible>IsEmpty(Skin.String(LyricPath))</visible>
 				</control>
 
+				<!--Subtitle-->
 				<control type="label">
-					<visible>!Control.HasFocus(9003)</visible>
+					<visible>!Control.HasFocus(4003)</visible>
 					<width>1230</width>					
 					<font>Reg32</font>
 					<height>50</height>
@@ -216,7 +214,7 @@
 					<visible>!IsEmpty(Skin.String(SubtitlesPath))</visible>
 				</control>
 				<control type="label">
-					<visible>!Control.HasFocus(9003)</visible>
+					<visible>!Control.HasFocus(4003)</visible>
 					<width>1230</width>
 					<height>50</height>		
 					<align>right</align>
@@ -228,7 +226,7 @@
 					<visible>IsEmpty(Skin.String(SubtitlesPath))</visible>
 				</control>
 				<control type="label">
-					<visible>Control.HasFocus(9003)</visible>
+					<visible>Control.HasFocus(4003)</visible>
 					<width>1230</width>					
 					<font>Reg32</font>
 					<height>50</height>
@@ -241,7 +239,7 @@
 					<visible>!IsEmpty(Skin.String(SubtitlesPath))</visible>
 				</control>
 				<control type="label">
-					<visible>Control.HasFocus(9003)</visible>
+					<visible>Control.HasFocus(4003)</visible>
 					<width>1230</width>
 					<height>50</height>		
 					<align>right</align>
@@ -254,43 +252,7 @@
 				</control>
 
 			</control>
-			<control type="grouplist" id="500">	<!--Debug Grid + Info-->		
-				<description>Control Area</description>
-				<width>1230</width>
-				<height>720</height>
-				<itemgap>3</itemgap>
-				<onup>500</onup>
-				<ondown>500</ondown>
-				<onleft>100</onleft>
-				<onright>-</onright>
-				<orientation>vertical</orientation>
-				<visible>Container(100).Hasfocus(3)</visible>
-
-				<control type="radiobutton" id="501">
-					<description>Enable Debug Grid</description>
-					<width>1230</width>
-					<align>left</align>
-					<label>31034</label>
-					<height>50</height>
-					<focusedcolor>black</focusedcolor>
-					<font>Reg32</font>		
-					<onclick>Skin.ToggleSetting(DebugGrid)</onclick>
-					<selected>Skin.HasSetting(DebugGrid)</selected>
-				</control>
-				<control type="radiobutton" id="502">
-					<description>Enable Debug Info</description>
-					<width>1230</width>
-					<align>left</align>
-					<label>31035</label>
-					<height>50</height>
-					<focusedcolor>black</focusedcolor>
-					<font>Reg32</font>		
-					<onclick>Skin.ToggleSetting(DebugInfo)</onclick>
-					<selected>Skin.HasSetting(DebugInfo)</selected>
-				</control>
-
-			</control>
-			<control type="grouplist" id="600">	<!--Disable Home-Menu Button-->		
+			<control type="grouplist" id="5000"><!--Debug Grid + Info-->		
 				<description>Control Area</description>
 				<width>1230</width>
 				<height>720</height>
@@ -302,7 +264,41 @@
 				<orientation>vertical</orientation>
 				<visible>Container(100).Hasfocus(5)</visible>
 
-				<control type="radiobutton" id="601">	<!--Music-->
+				<control type="radiobutton" id="5001"><!--Enable Debug Grid-->					
+					<width>1230</width>
+					<align>left</align>
+					<label>31034</label>
+					<height>50</height>
+					<focusedcolor>black</focusedcolor>
+					<font>Reg32</font>		
+					<onclick>Skin.ToggleSetting(DebugGrid)</onclick>
+					<selected>Skin.HasSetting(DebugGrid)</selected>
+				</control>
+				<control type="radiobutton" id="5002"><!--Enable Debug Info-->				
+					<width>1230</width>
+					<align>left</align>
+					<label>31035</label>
+					<height>50</height>
+					<focusedcolor>black</focusedcolor>
+					<font>Reg32</font>		
+					<onclick>Skin.ToggleSetting(DebugInfo)</onclick>
+					<selected>Skin.HasSetting(DebugInfo)</selected>
+				</control>
+			</control>
+		
+			<control type="grouplist" id="8000"><!--Skin Setting: Home-Menu Button-->		
+				<description>Control Area</description>
+				<width>1230</width>
+				<height>720</height>
+				<itemgap>3</itemgap>
+				<onup>500</onup>
+				<ondown>500</ondown>
+				<onleft>100</onleft>
+				<onright>-</onright>
+				<orientation>vertical</orientation>
+				<visible>Container(100).Hasfocus(8)</visible>
+
+				<control type="radiobutton" id="8001">	<!--Music-->
 					<description>Music</description>
 					<width>1230</width>
 					<align>left</align>
@@ -313,7 +309,7 @@
 					<onclick>Skin.ToggleSetting(HomeMenuNoMusicButton)</onclick>
 					<selected>Skin.HasSetting(HomeMenuNoMusicButton)</selected>
 				</control>
-				<control type="radiobutton" id="602">	<!--Video-->
+				<control type="radiobutton" id="8002">	<!--Video-->
 					<description>Video</description>
 					<width>1230</width>
 					<align>left</align>
@@ -324,7 +320,7 @@
 					<onclick>Skin.ToggleSetting(HomeMenuNoVideosButton)</onclick>
 					<selected>Skin.HasSetting(HomeMenuNoVideosButton)</selected>
 				</control>
-				<control type="radiobutton" id="603">	<!--Movies-->
+				<control type="radiobutton" id="8003">	<!--Movies-->
 					<description>Movies</description>
 					<width>1230</width>
 					<align>left</align>
@@ -335,7 +331,7 @@
 					<onclick>Skin.ToggleSetting(HomeMenuNoMoviesButton)</onclick>
 					<selected>Skin.HasSetting(HomeMenuNoMoviesButton)</selected>
 				</control>
-				<control type="radiobutton" id="604">	<!--TV_Shows-->
+				<control type="radiobutton" id="8004">	<!--TV_Shows-->
 					<description>TV-Shows</description>
 					<width>1230</width>
 					<align>left</align>
@@ -346,7 +342,7 @@
 					<onclick>Skin.ToggleSetting(HomeMenuNoTVShowsButton)</onclick>
 					<selected>Skin.HasSetting(HomeMenuNoTVShowsButton)</selected>
 				</control>
-				<control type="radiobutton" id="608">	<!--Live_TV-->					
+				<control type="radiobutton" id="8008">	<!--Live_TV-->					
 					<description>Live TV</description>
 					<width>1230</width>
 					<align>left</align>
@@ -357,7 +353,7 @@
 					<onclick>Skin.ToggleSetting(HomeMenuNoPVRButton)</onclick>
 					<selected>Skin.HasSetting(HomeMenuNoPVRButton)</selected>
 				</control>
-				<control type="radiobutton" id="605">	<!--Video-Addons-->
+				<control type="radiobutton" id="8005">	<!--Video-Addons-->
 					<description>Video-Addons</description>
 					<width>1230</width>
 					<align>left</align>
@@ -368,7 +364,7 @@
 					<onclick>Skin.ToggleSetting(HomeMenuNoVideoAddonsButton)</onclick>
 					<selected>Skin.HasSetting(HomeMenuNoVideoAddonsButton)</selected>
 				</control>	
-				<control type="radiobutton" id="606">	<!--Pictures-->
+				<control type="radiobutton" id="8006">	<!--Pictures-->
 					<description>Pictures</description>
 					<width>1230</width>
 					<align>left</align>
@@ -379,7 +375,7 @@
 					<onclick>Skin.ToggleSetting(HomeMenuNoPicturesButton)</onclick>
 					<selected>Skin.HasSetting(HomeMenuNoPicturesButton)</selected>
 				</control>
-				<control type="radiobutton" id="607">	<!--Weather-->
+				<control type="radiobutton" id="8007">	<!--Weather-->
 					<description>Weather</description>
 					<width>1230</width>
 					<align>left</align>
@@ -390,7 +386,7 @@
 					<onclick>Skin.ToggleSetting(HomeMenuNoWeatherButton)</onclick>
 					<selected>Skin.HasSetting(HomeMenuNoWeatherButton)</selected>
 				</control>
-				<!--control type="radiobutton" id="608">
+				<!--control type="radiobutton" id="8008">
 					<description>Favourites</description>
 					<width>1230</width>
 					<align>left</align>
@@ -401,7 +397,7 @@
 					<onclick>Skin.ToggleSetting(HomeMenuNoFavouritesButton)</onclick>
 					<selected>Skin.HasSetting(HomeMenuNoFavouritesButton)</selected>
 				</control-->
-				<control type="radiobutton" id="609">	<!--Addons-->
+				<control type="radiobutton" id="8009">	<!--Addons-->
 					<description>Addons</description>
 					<width>1230</width>
 					<align>left</align>
@@ -412,7 +408,7 @@
 					<onclick>Skin.ToggleSetting(HomeMenuNoAddonsButton)</onclick>
 					<selected>Skin.HasSetting(HomeMenuNoAddonsButton)</selected>
 				</control>	
-				<control type="radiobutton" id="610">	<!--Programs-->
+				<control type="radiobutton" id="8010">	<!--Programs-->
 					<description>Programs</description>
 					<width>1230</width>
 					<align>left</align>
@@ -423,7 +419,7 @@
 					<onclick>Skin.ToggleSetting(HomeMenuNoProgramsButton)</onclick>
 					<selected>Skin.HasSetting(HomeMenuNoProgramsButton)</selected>
 				</control>
-				<control type="radiobutton" id="611">	<!--Filemanger-->
+				<control type="radiobutton" id="8011">	<!--Filemanger-->
 					<description>Filemanager</description>
 					<width>1230</width>
 					<align>left</align>
@@ -434,7 +430,7 @@
 					<onclick>Skin.ToggleSetting(HomeMenuNoFilemanagerButton)</onclick>
 					<selected>Skin.HasSetting(HomeMenuNoFilemanagerButton)</selected>
 				</control>
-				<control type="radiobutton" id="612">	<!--Shutdown-->
+				<control type="radiobutton" id="8012">	<!--Shutdown-->
 					<description>Shutdown</description>
 					<width>1230</width>
 					<align>left</align>
@@ -446,12 +442,10 @@
 					<selected>Skin.HasSetting(HomeMenuNoShutdownButton)</selected>
 				</control>				
 			</control>
-
-			<!--Skin Setting Background	id=9000-->
-			<control type="group" id="9000">
+			<control type="group" id="9000">	<!--Skin Setting: Background-->
 				<posx>0</posx>
 				<posy>0</posy>
-				<visible>Container(100).Hasfocus(4)</visible>
+				<visible>Container(100).Hasfocus(9)</visible>
 
 				<control type="button" id="9005">	<!--empty Button Down-->	
 					<description>Menu Item Next Button</description>						
