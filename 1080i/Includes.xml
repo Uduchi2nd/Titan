@@ -812,10 +812,16 @@
 		<shadowcolor>20FFFFFF</shadowcolor>	
 	</include>
 
-	<!--Keybord-->
-	<include name="EditText">		
+	<!--Keyboard-->
+	<include name="EditTextKeyboard">		
 		<font>Light45</font>
 		<textcolor>eewhite</textcolor>
+		<selectedcolor>eewhite</selectedcolor>
+		<disabledcolor>aawhite</disabledcolor>
+	</include>
+	<include name="EditTextNumeric">		
+		<font>Light45</font>
+		<textcolor>green</textcolor>
 		<selectedcolor>eewhite</selectedcolor>
 		<disabledcolor>aawhite</disabledcolor>
 	</include>

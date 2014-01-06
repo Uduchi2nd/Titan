@@ -29,8 +29,7 @@
 				<texture border="39">dialogs/default/bg.png</texture>
 				<aspectratio>stretch</aspectratio>
 			</control>
-			<control type="label" id="311">
-				<description>Dialog Header</description>
+			<control type="label" id="311">				
 				<posx>36</posx>
 				<posy>-100</posy>
 				<width>1000</width>
@@ -38,13 +37,12 @@
 				<align>center</align>
 				<include>DialogHeader</include>
 			</control>
-			<control type="label" id="310">
-				<description>Edit Text</description>
+			<control type="label" id="310">				
 				<posx>36</posx>
 				<posy>-60</posy>
 				<width>1000</width>				
 				<align>center</align>
-				<include>EditText</include>			
+				<include>EditTextKeyboard</include>			
 			</control>
 			<!-- First Row -->
 			<control type="group" id="320">
