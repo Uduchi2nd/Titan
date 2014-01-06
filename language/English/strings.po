@@ -1,6 +1,6 @@
 # XBMC Media Center language file
-# Addon Name: Avalon
-# Addon id: skin.avalon
+# Addon Name: Titan
+# Addon id: skin.titan
 # Addon Provider: reazorFX
 msgid ""
 msgstr ""
@@ -16,141 +16,9 @@ msgstr ""
 "Language: en\n"
 "Plural-Forms: nplurals=2; plural=(n != 1)\n"
 
-#################
-#Orginal Strings#
-#################
-
-msgctxt "#31000"
-msgid "Finishes at"
-msgstr ""
-
-msgctxt "#31001"
-msgid "Files Mode"
-msgstr ""
-
-msgctxt "#31002"
-msgid "PROGRAMS"
-msgstr ""
-
-msgctxt "#31003"
-msgid "VIDEOS"
-msgstr ""
-
-msgctxt "#31004"
-msgid "MUSIC"
-msgstr ""
-
-msgctxt "#31005"
-msgid "PICTURES"
-msgstr ""
-
-msgctxt "#31006"
-msgid "MOVIES"
-msgstr ""
-
-msgctxt "#31007"
-msgid "TV SHOWS"
-msgstr ""
-
-msgctxt "#31008"
-msgid "FAVOURITES"
-msgstr ""
-
-msgctxt "#31009"
-msgid "PROFILES"
-msgstr ""
-
-msgctxt "#31010"
-msgid "WEATHER"
-msgstr ""
-
-msgctxt "#31011"
-msgid "FILE MANAGER"
-msgstr ""
-
-msgctxt "#31012"
-msgid "SETTINGS"
-msgstr ""
-
-msgctxt "#31013"
-msgid "SHUTDOWN"
-msgstr ""
-
-msgctxt "#31014"
-msgid "PLAY DISC"
-msgstr ""
-
-msgctxt "#31015"
-msgid "Player Controls"
-msgstr ""
-
-msgctxt "#31016"
-msgid "Background Visuals"
-msgstr ""
-
-msgctxt "#31017"
-msgid "Lyrics/Subtitles"
-msgstr ""
-
-msgctxt "#31018"
-msgid "Current Selected"
-msgstr ""
-
-msgctxt "#31019"
-msgid "Open playlist"
-msgstr ""
-
-msgctxt "#31020"
-msgid "Save playlist"
-msgstr ""
-
-msgctxt "#31021"
-msgid "Close playlist"
-msgstr ""
-
-msgctxt "#31022"
-msgid "System music files"
-msgstr ""
-
-msgctxt "#31023"
-msgid "Disable Background Visualiser"
-msgstr ""
-
-msgctxt "#31024"
-msgid "Disable Background Video"
-msgstr ""
-
-msgctxt "#31025"
-msgid "Click to change default Lyrics script"
-msgstr ""
-
-msgctxt "#31026"
-msgid "Click to change default Subtitles script"
-msgstr ""
-
-msgctxt "#31027"
-msgid "Items"
-msgstr ""
-
-msgctxt "#31028"
-msgid "Page"
-msgstr ""
-
-msgctxt "#31029"
-msgid "Current playlist"
-msgstr ""
-
-msgctxt "#31030"
-msgid "Memory Used"
-msgstr ""
-
-msgctxt "#31031"
-msgid "Karaoke Song Selector"
-msgstr ""
-
-msgctxt "#31032"
-msgid "Visualization Presets"
-msgstr ""
+#####################
+#Development Strings#
+#####################
 
 msgctxt "#31033"
 msgid "Debug"
@@ -164,33 +32,9 @@ msgctxt "#31035"
 msgid "Enable Debug Info"
 msgstr ""
 
-msgctxt "#31036"
-msgid "Rewind"
-msgstr ""
-
-msgctxt "#31037"
-msgid "Pause"
-msgstr ""
-
-msgctxt "#31038"
-msgid "Stop"
-msgstr ""
-
-msgctxt "#31039"
-msgid "Fast Forward"
-msgstr ""
-
-msgctxt "#31040"
-msgid "Visualisation Presets"
-msgstr ""
-
-msgctxt "#31041"
-msgid "DVD Menu"
-msgstr ""
-
-#############
-#New Strings#
-#############
+###############
+#Titan Strings#
+###############
 
 msgctxt "#31400"
 msgid "[B]CONFIGURE APPEARANCE SETTINGS[/B][CR][CR][COLOR=midgrey]Change the skin · Set language and region · Change file listing options · Set up a screensaver[/COLOR]"
@@ -528,6 +372,10 @@ msgctxt "#41154"
 msgid "Close"
 msgstr ""
 
+msgctxt "#41155"
+msgid "Finishes at"
+msgstr ""
+
 msgctxt "#42000"
 msgid "Search Youtube"
 msgstr ""
@@ -535,8 +383,6 @@ msgstr ""
 #######
 #Qlock#
 #######
-
-#Row 1
 
 msgctxt "#50000"
 msgid "I"
@@ -582,8 +428,6 @@ msgctxt "#50010"
 msgid "E"
 msgstr ""
 
-#Row 2
-
 msgctxt "#50011"
 msgid "A"
 msgstr ""
@@ -627,8 +471,6 @@ msgstr ""
 msgctxt "#50021"
 msgid "C"
 msgstr ""
-
-#Row 3
 
 msgctxt "#50022"
 msgid "T"
@@ -674,8 +516,6 @@ msgctxt "#50032"
 msgid "X"
 msgstr ""
 
-#Row 4
-
 msgctxt "#50033"
 msgid "H"
 msgstr ""
@@ -719,8 +559,6 @@ msgstr ""
 msgctxt "#50043"
 msgid "O"
 msgstr ""
-
-#Row 5
 
 msgctxt "#50044"
 msgid "P"
@@ -766,8 +604,6 @@ msgctxt "#50054"
 msgid "E"
 msgstr ""
 
-#Row 6
-
 msgctxt "#50055"
 msgid "O"
 msgstr ""
@@ -811,8 +647,6 @@ msgstr ""
 msgctxt "#50065"
 msgid "E"
 msgstr ""
-
-#Row 7
 
 msgctxt "#50066"
 msgid "F"
@@ -858,8 +692,6 @@ msgctxt "#50076"
 msgid "O"
 msgstr ""
 
-#Row 8
-
 msgctxt "#50077"
 msgid "E"
 msgstr ""
@@ -904,8 +736,6 @@ msgctxt "#50087"
 msgid "N"
 msgstr ""
 
-#Row 9
-
 msgctxt "#50088"
 msgid "S"
 msgstr ""
@@ -949,8 +779,6 @@ msgstr ""
 msgctxt "#50098"
 msgid "E"
 msgstr ""
-
-#Row 10
 
 msgctxt "#50099"
 msgid "T"

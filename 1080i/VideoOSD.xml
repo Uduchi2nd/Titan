@@ -109,7 +109,7 @@
 					<include>animation_fade_visible_hidden</include>		
 					<width>60</width>
 					<height>60</height>
-					<label>31036</label>
+					<label></label>
 					<font>-</font>
 					<texturefocus>osd/RewindFO.png</texturefocus>
 					<texturenofocus>osd/RewindNF.png</texturenofocus>

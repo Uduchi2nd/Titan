@@ -112,7 +112,7 @@
 				<description>Memory Text</description>
 				<width>1000</width>
 				<textcolor>midgrey</textcolor>		
-				<label>$LOCALIZE[31030] $INFO[system.memory(used.percent)]</label>
+				<label>$LOCALIZE[154] $INFO[system.memory(used.percent)]</label>
 			</control>
 			<control type="progress" id="24">
 				<description>Memory BAR</description>
@@ -128,14 +128,14 @@
 
 			<control type="label" id="2">
 				<description>Label 2</description>
-				<font>Ref30</font>
+				<font>Reg30</font>
 				<height>45</height>
 				<textcolor>midgrey</textcolor>		
 				<width>1000</width>
 			</control>
 			<control type="label" id="3">
 				<description>Label 3</description>
-				<font>Reg</font>
+				<font>Reg30</font>
 				<height>45</height>
 				<textcolor>midgrey</textcolor>		
 				<width>1000</width>

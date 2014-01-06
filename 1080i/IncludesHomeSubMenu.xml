@@ -123,14 +123,7 @@
 					<textoffsetx>50</textoffsetx>
 					<label>$LOCALIZE[20145] [B]$INFO[System.Alarmpos][/B]</label>
 					<align>left</align>							
-				</control>
-				<control type="button" id="12">	<!--Open Player Controls-->
-					<visible>Container(300).HasFocus(10)</visible>
-					<visible>Player.HasMedia</visible>
-					<include>SubMenuButton</include>	
-					<label>31015</label>					
-					<onclick>ActivateWindow(playercontrols)</onclick>						
-				</control>				
+				</control>						
 
 				<!--Movie Button-->
 				<control type="label" id="13">	<!--Label Menu-->	

@@ -1204,7 +1204,7 @@
 			<align>right</align>
 			<font>Light32</font>
 			<textcolor>darkgrey</textcolor>
-			<label>$LOCALIZE[31000] $INFO[Player.FinishTime]</label>
+			<label>$LOCALIZE[41155] $INFO[Player.FinishTime]</label>
 		</control>		
 		<control type="label"><!--End Time DialogSeekbar-->	
 			<visible>Window.IsActive(DialogSeekbar.xml) + !Window.IsActive(VideoOSD.xml)</visible>
@@ -1217,7 +1217,7 @@
 			<align>right</align>
 			<font>Light32</font>
 			<textcolor>darkgrey</textcolor>
-			<label>$LOCALIZE[31000] $INFO[Player.FinishTime]</label>
+			<label>$LOCALIZE[41155] $INFO[Player.FinishTime]</label>
 		</control>		
 
 		<control type="grouplist"><!--Clock-->

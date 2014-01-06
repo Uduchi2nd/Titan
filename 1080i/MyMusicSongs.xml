@@ -32,7 +32,7 @@
 		<!--Sub Menu-->
 		<control type="group"> 
 			<posx>15</posx>
-			<posy>50</posy>
+			<posy>150</posy>
 			
 			<visible>!Window.IsActive(DialogKeyboard.xml)</visible>
 			

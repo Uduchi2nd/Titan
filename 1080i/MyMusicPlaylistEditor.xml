@@ -27,7 +27,7 @@
 				<width>615</width>
 				<height>45</height>
 				<font>Light38</font>
-				<label>31022</label>
+				<label>System Music Files</label>
 			</control>
 
 			<control type="list" id="50">
@@ -114,7 +114,7 @@
 				<font>Light38</font>
 				<textcolor>blue</textcolor>
 				<align>center</align>
-				<label>31018</label>
+				<label>Current Selected</label>
 			</control>
 
 			<control type="group">
@@ -174,7 +174,7 @@
 					<posx>0</posx>
 					<posy>0</posy>
 					<width>420</width>
-					<label>31019</label>
+					<label>Open Playlist</label>
 					<onleft>50</onleft>
 					<onright>100</onright>
 					<onup>8</onup>
@@ -186,7 +186,7 @@
 					<posx>0</posx>
 					<posy>69</posy>
 					<width>420</width>
-					<label>31020</label>
+					<label>Save Playlist</label>
 					<onleft>50</onleft>
 					<onright>100</onright>
 					<onup>6</onup>
@@ -198,7 +198,7 @@
 					<posx>0</posx>
 					<posy>138</posy>
 					<width>420</width>
-					<label>31021</label>
+					<label>Close Playlist</label>
 					<onleft>50</onleft>
 					<onright>100</onright>
 					<onup>7</onup>
@@ -228,7 +228,7 @@
 				<width>615</width>
 				<height>45</height>
 				<font>Light38</font>
-				<label>31029</label>
+				<label>Current playlist</label>
 			</control>
 
 			<control type="list" id="100">

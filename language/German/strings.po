@@ -1,6 +1,6 @@
 # XBMC Media Center language file
-# Addon Name: Avalon
-# Addon id: skin.avalon
+# Addon Name: Titan
+# Addon id: skin.titan
 # Addon Provider: reazorFX
 msgid ""
 msgstr ""
@@ -16,141 +16,9 @@ msgstr ""
 "Language: de\n"
 "Plural-Forms: nplurals=2; plural=(n != 1)\n"
 
-#################
-#Orginal Strings#
-#################
-
-msgctxt "#31000"
-msgid "Finishes at"
-msgstr "Endet um"
-
-msgctxt "#31001"
-msgid "Files Mode"
-msgstr "Files Mode"
-
-msgctxt "#31002"
-msgid "PROGRAMS"
-msgstr "PROGRAMS"
-
-msgctxt "#31003"
-msgid "VIDEOS"
-msgstr "VIDEOS"
-
-msgctxt "#31004"
-msgid "MUSIC"
-msgstr "MUSIK"
-
-msgctxt "#31005"
-msgid "PICTURES"
-msgstr "BILDER"
-
-msgctxt "#31006"
-msgid "MOVIES"
-msgstr "FILME"
-
-msgctxt "#31007"
-msgid "TV SHOWS"
-msgstr "SERIEN"
-
-msgctxt "#31008"
-msgid "FAVOURITES"
-msgstr "FAVOURITES"
-
-msgctxt "#31009"
-msgid "PROFILES"
-msgstr "PROFILES"
-
-msgctxt "#31010"
-msgid "WEATHER"
-msgstr "WETTER"
-
-msgctxt "#31011"
-msgid "FILE MANAGER"
-msgstr "FILE MANAGER"
-
-msgctxt "#31012"
-msgid "SETTINGS"
-msgstr "SETTINGS"
-
-msgctxt "#31013"
-msgid "SHUTDOWN"
-msgstr "SHUTDOWN"
-
-msgctxt "#31014"
-msgid "PLAY DISC"
-msgstr "PLAY DISC"
-
-msgctxt "#31015"
-msgid "Player Controls"
-msgstr "Player Controls"
-
-msgctxt "#31016"
-msgid "Background Visuals"
-msgstr "Background Visuals"
-
-msgctxt "#31017"
-msgid "Lyrics/Subtitles"
-msgstr "Lyrics/Subtitles"
-
-msgctxt "#31018"
-msgid "Current Selected"
-msgstr "Current Selected"
-
-msgctxt "#31019"
-msgid "Open playlist"
-msgstr "Open playlist"
-
-msgctxt "#31020"
-msgid "Save playlist"
-msgstr "Save playlist"
-
-msgctxt "#31021"
-msgid "Close playlist"
-msgstr "Close playlist"
-
-msgctxt "#31022"
-msgid "System music files"
-msgstr "System music files"
-
-msgctxt "#31023"
-msgid "Disable Background Visualiser"
-msgstr "Disable Background Visualiser"
-
-msgctxt "#31024"
-msgid "Disable Background Video"
-msgstr "Disable Background Video"
-
-msgctxt "#31025"
-msgid "Click to change default Lyrics script"
-msgstr "Click to change default Lyrics script"
-
-msgctxt "#31026"
-msgid "Click to change default Subtitles script"
-msgstr "Click to change default Subtitles script"
-
-msgctxt "#31027"
-msgid "Items"
-msgstr "Items"
-
-msgctxt "#31028"
-msgid "Page"
-msgstr "Page"
-
-msgctxt "#31029"
-msgid "Current playlist"
-msgstr "Current playlist"
-
-msgctxt "#31030"
-msgid "Memory Used"
-msgstr "Memory Used"
-
-msgctxt "#31031"
-msgid "Karaoke Song Selector"
-msgstr "Karaoke Song Selector"
-
-msgctxt "#31032"
-msgid "Visualization Presets"
-msgstr "Visualization Presets"
+#####################
+#Development Strings#
+#####################
 
 msgctxt "#31033"
 msgid "Debug"
@@ -164,33 +32,9 @@ msgctxt "#31035"
 msgid "Enable Debug Info"
 msgstr "Aktiviere Debug Info"
 
-msgctxt "#31036"
-msgid "Rewind"
-msgstr "Rewind"
-
-msgctxt "#31037"
-msgid "Pause"
-msgstr "Pause"
-
-msgctxt "#31038"
-msgid "Stop"
-msgstr "Stop"
-
-msgctxt "#31039"
-msgid "Fast Forward"
-msgstr "Fast Forward"
-
-msgctxt "#31040"
-msgid "Visualisation Presets"
-msgstr "Visualisation Presets"
-
-msgctxt "#31041"
-msgid "DVD Menu"
-msgstr "DVD Menu"
-
-#############
-#New Strings#
-#############
+###############
+#Titan Strings#
+###############
 
 msgctxt "#31400"
 msgid "[B]CONFIGURE APPEARANCE SETTINGS[/B][CR][CR][COLOR=midgrey]Change the skin · Set language and region · Change file listing options · Set up a screensaver[/COLOR]"
@@ -528,6 +372,10 @@ msgctxt "#41154"
 msgid "Close"
 msgstr "Schließen"
 
+msgctxt "#41155"
+msgid "Finishes at"
+msgstr "Endet um"
+
 msgctxt "#42000"
 msgid "Search Youtube"
 msgstr "Suche in Youtube"
@@ -535,8 +383,6 @@ msgstr "Suche in Youtube"
 #######
 #Qlock#
 #######
-
-#Row 1
 
 msgctxt "#50000"
 msgid "I"
