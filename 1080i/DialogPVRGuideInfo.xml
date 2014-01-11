@@ -38,6 +38,7 @@
 				<include>DialogHeader</include>
 				<align>center</align>
 			</control>
+		
 			<control type="group">
 				<posx>560</posx>
 				<posy>234</posy>
@@ -146,6 +147,8 @@
 				<orientation>vertical</orientation>
 				<animation effect="fade" start="75" end="0" time="300" tween="sine" easing="inout" condition="!Control.HasFocus(60)">Conditional</animation>
 			</control>
+			
+			<!--Button Group-->
 			<control type="group" id="8000">				
 				<posx>540</posx>
 				<posy>843</posy>
