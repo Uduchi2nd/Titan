@@ -119,8 +119,8 @@
 						<font>Reg32</font>
 						<textcolor>list_label_1_nf</textcolor>
 						<selectedcolor>list_label_1_select</selectedcolor>
-						<label>$VAR[value_list_label_1_fo]</label>
-					</control>
+						<label>$VAR[value_list_label_1]</label>
+					</control>					
 					<control type="image"><!--Separator-->			
 						<posx>615</posx>
 						<posy>56</posy>
@@ -147,8 +147,8 @@
 						<font>Reg36</font>
 						<textcolor>list_label_1_fo</textcolor>
 						<selectedcolor>list_label_1_select</selectedcolor>
-						<label>$VAR[value_list_label_1_fo]</label>
-					</control>	
+						<label>$VAR[value_list_label_1]</label>
+					</control>						
 					<control type="image"><!--Separator-->			
 						<posx>615</posx>
 						<posy>56</posy>
@@ -169,16 +169,16 @@
 						<texture>views/view_50_slider_big.png</texture>					
 					</control>
 					<control type="label"><!--Label 1-->						
-						<posx>640</posx>
+						<posx>630</posx>
 						<width>1100</width>
 						<height>55</height>
 						<font>Reg36</font>	
 						<textcolor>list_label_1_fo</textcolor>
 						<selectedcolor>list_label_1_select</selectedcolor>
-						<label>$VAR[value_list_label_1_fo]</label>
+						<label>$VAR[value_list_label_1]</label>
 					</control>
 					<control type="label"><!--Label 2-->							
-						<posx>635</posx>
+						<posx>630</posx>
 						<posy>52</posy>
 						<width>1100</width>
 						<height>30</height>
@@ -209,7 +209,7 @@
 						<font>Reg32</font>
 						<textcolor>list_label_1_nf</textcolor>
 						<selectedcolor>list_label_1_select</selectedcolor>
-						<label>$VAR[value_list_label_1_fo]</label>
+						<label>$VAR[value_list_label_1]</label>
 					</control>					
 					<control type="image"><!--Separator-->			
 						<posx>1205</posx>
@@ -237,7 +237,7 @@
 						<font>Reg36</font>
 						<textcolor>list_label_1_fo</textcolor>
 						<selectedcolor>list_label_1_select</selectedcolor>
-						<label>$VAR[value_list_label_1_fo]</label>
+						<label>$VAR[value_list_label_1]</label>
 					</control>	
 					<control type="image"><!--Separator-->			
 						<posx>1205</posx>
@@ -265,7 +265,7 @@
 						<font>Reg36</font>	
 						<textcolor>list_label_1_fo</textcolor>
 						<selectedcolor>list_label_1_select</selectedcolor>
-						<label>$VAR[value_list_label_1_fo]</label>
+						<label>$VAR[value_list_label_1]</label>
 					</control>
 					<control type="label"><!--Label 2-->							
 						<posx>1225</posx>
@@ -299,7 +299,7 @@
 						<font>Reg32</font>
 						<textcolor>list_label_1_nf</textcolor>
 						<selectedcolor>list_label_1_select</selectedcolor>
-						<label>$VAR[value_list_label_1_fo]</label>
+						<label>$VAR[value_list_label_1]</label>
 					</control>
 					<control type="image"><!--Watched Overlay-->		
 						<visible>Container.Content(episodes)</visible>
@@ -335,7 +335,7 @@
 						<font>Reg36</font>
 						<textcolor>list_label_1_fo</textcolor>
 						<selectedcolor>list_label_1_select</selectedcolor>
-						<label>$VAR[value_list_label_1_fo]</label>
+						<label>$VAR[value_list_label_1]</label>
 					</control>	
 					<control type="image"><!--Watched Overlay-->		
 						<visible>Container.Content(episodes)</visible>
@@ -371,7 +371,7 @@
 						<font>Reg36</font>	
 						<textcolor>list_label_1_fo</textcolor>
 						<selectedcolor>list_label_1_select</selectedcolor>
-						<label>$VAR[value_list_label_1_fo]</label>
+						<label>$VAR[value_list_label_1]</label>
 					</control>
 					<control type="label"><!--Label 2-->							
 						<posx>1040</posx>
@@ -704,7 +704,7 @@
 				<font>Bold30Big</font>			
 				<textcolor>black</textcolor>
 				<label>$INFO[ListItem.Album]</label>	
-			</control>				
+			</control>					
 		</control>
 		<control type="group">		<!-- Title -->	
 			<visible>Control.IsVisible(50)</visible>	

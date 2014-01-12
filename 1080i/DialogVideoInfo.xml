@@ -653,29 +653,22 @@
 			<control type="group">
 				<include>animation_dialog</include>	
 
-				<control type="label">
-					<description>Dialog Header</description>
+				<control type="label"><!--Header-->					
 					<posx>460</posx>
-					<posy>250</posy>
+					<posy>300</posy>
 					<width>1000</width>
 					<height>22</height>			
 					<align>center</align>
 					<label>No Infos</label>
-					<include>DialogHeader</include>
-					<animation effect="slide" end="0,25" time="0" condition="IsEmpty(Control.GetLabel(2))">Conditional</animation>
-					<animation effect="slide" end="0,25" time="0" condition="IsEmpty(Control.GetLabel(3))">Conditional</animation>
-					<animation effect="slide" end="0,25" time="0" condition="IsEmpty(Control.GetLabel(4))">Conditional</animation>
+					<include>DialogHeader</include>					
 				</control>
-				<control type="label">
-					<description>Line 1</description>
+				<control type="label"><!--Header 2-->					
 					<posx>100</posx>
-					<posy>300</posy>
+					<posy>340</posy>
 					<width>1720</width>				
 					<align>center</align>
 					<label>Press Back or OK to exit</label>
-					<include>DialogHeader2</include>
-					<animation effect="slide" end="0,25" time="0" condition="IsEmpty(Control.GetLabel(3))">Conditional</animation>
-					<animation effect="slide" end="0,25" time="0" condition="IsEmpty(Control.GetLabel(4))">Conditional</animation>
+					<include>DialogHeader2</include>					
 				</control>
 			</control>
 

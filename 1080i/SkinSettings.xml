@@ -331,7 +331,7 @@
 					<onclick>Skin.ToggleSetting(HomeMenuNoMoviesButton)</onclick>
 					<selected>Skin.HasSetting(HomeMenuNoMoviesButton)</selected>
 				</control>
-				<control type="radiobutton" id="8004">	<!--TV_Shows-->
+				<control type="radiobutton" id="8004">	<!--TV-Shows-->
 					<description>TV-Shows</description>
 					<width>1230</width>
 					<align>left</align>
@@ -342,7 +342,7 @@
 					<onclick>Skin.ToggleSetting(HomeMenuNoTVShowsButton)</onclick>
 					<selected>Skin.HasSetting(HomeMenuNoTVShowsButton)</selected>
 				</control>
-				<control type="radiobutton" id="8008">	<!--Live_TV-->					
+				<control type="radiobutton" id="8008">	<!--Live-TV-->					
 					<description>Live TV</description>
 					<width>1230</width>
 					<align>left</align>

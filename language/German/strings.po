@@ -182,7 +182,7 @@ msgstr "Bibliothek"
 
 msgctxt "#41024"
 msgid "Live TV"
-msgstr ""
+msgstr "Live TV"
 
 msgctxt "#41025"
 msgid "File manager"

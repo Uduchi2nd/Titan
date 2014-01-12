@@ -52,7 +52,7 @@
 	<!-- ========== -->
 	<!-- List Label -->
 	<!-- ========== -->
-	<variable name="value_list_label_1_fo"> 
+	<variable name="value_list_label_1"> 
 		<value condition="!Container.Content(albums)">$INFO[ListItem.Label]</value>
 		<value condition="Container.Content(albums)">$INFO[ListItem.Label2] - $INFO[ListItem.Label]</value>	
 	</variable>	
@@ -67,7 +67,8 @@
 		<value condition="Container.Content(artists)">[COLOR=list_label_2_first]$LOCALIZE[21898]: [/COLOR]$INFO[ListItem.Property(Artist_YearsActive)]</value><!-- YearsActive/Artists -->
 		<value condition="Container.Content(songs) + !SubString(ListItem.Duration,min)">[COLOR=list_label_2_first]$LOCALIZE[180]: [/COLOR] $INFO[ListItem.Duration] min</value>
 		<value condition="Container.Content(songs) + SubString(ListItem.Duration,min)">[COLOR=list_label_2_first]$LOCALIZE[180]: [/COLOR] $INFO[ListItem.Duration]</value>
-		<value condition="Container.Content(addons) + !IsEmpty(ListItem.Property(Addon.Version))">[COLOR=list_label_2_first]$LOCALIZE[24051] [/COLOR]$INFO[ListItem.Property(Addon.Version)] - [COLOR=list_label_2_first]$LOCALIZE[21863]: [/COLOR]$INFO[ListItem.Property(Addon.Creator)]</value>
+		<value condition="Container.Content(addons) + !IsEmpty(ListItem.Property(Addon.Version)) + IsEmpty(ListItem.Label2)">[COLOR=list_label_2_first]$LOCALIZE[24051] [/COLOR]$INFO[ListItem.Property(Addon.Version)] - [COLOR=list_label_2_first]$LOCALIZE[21863]: [/COLOR]$INFO[ListItem.Property(Addon.Creator)]</value>
+		<value condition="Container.Content(addons) + !IsEmpty(ListItem.Property(Addon.Version)) + !IsEmpty(ListItem.Label2)">[COLOR=list_label_2_first]$LOCALIZE[24051] [/COLOR]$INFO[ListItem.Property(Addon.Version)] - [COLOR=list_label_2_first]$LOCALIZE[21863]: [/COLOR]$INFO[ListItem.Property(Addon.Creator)] - [COLOR=list_label_2_first]$INFO[ListItem.Label2][/COLOR]</value>
 	</variable>		
 	
 	<!-- =============== -->

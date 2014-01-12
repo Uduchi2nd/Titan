@@ -212,8 +212,8 @@
 					<onclick>ActivateWindow(111)</onclick>
 					<visible>!Skin.HasSetting(HomeMenuNoShutdownButton)</visible>
 				</item>	
-				<item id="7"><!--PVR-->
-					<label>41122</label>
+				<item id="7"><!--Live-TV-->
+					<label>41024</label>
 					<icon>home/home_pvr.png</icon>
 					<thumb>$INFO[Skin.String(CustomPVRFolder)]</thumb>		
 					<onclick>ActivateWindowAndFocus(PVR, 32,0, 11,0)</onclick>
