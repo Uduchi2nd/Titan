@@ -279,7 +279,7 @@
 				</focusedlayout>
 			</control>		
 
-			<control type="group">			<!-- Process -->	
+			<control type="group">			<!--Process-->	
 				<visible>Control.IsVisible(11)</visible>				
 				<include>animation_view_change_pvr</include>			
 				<include>animation_list</include>
@@ -309,7 +309,7 @@
 					<label>$INFO[Container(11).ListItem.EndTime]</label>	     		
 				</control>
 			</control>
-			<control type="group">			<!-- Title -->	
+			<control type="group">			<!--Title-->	
 				<visible>Control.IsVisible(11)</visible>	
 				<include>animation_view_change_pvr</include>			
 				<include>animation_list</include>
@@ -324,7 +324,7 @@
 					<label>$INFO[ListItem.Label]</label>	
 				</control>				
 			</control>
-			<control type="group">			<!-- Page Control -->	
+			<control type="group">			<!--Page Control-->	
 				<visible>Control.IsVisible(11)</visible>	
 				<visible>![Window.IsActive(DialogVideoInfo.xml) + !substring(ListItem.Path,plugin)]</visible>
 				<include>animation_view_change_pvr</include>			
@@ -345,18 +345,45 @@
 				<visible>IntegerGreaterThan(Container(11).NumItems,30)</visible>
 				<include>animation_view_change_pvr</include>
 				<include>animation_list</include>		
-				<control type="scrollbar" id="70">	<!--Scrollbar ID70-->							
+				<control type="scrollbar" id="70">	<!--Scrollbar ID70-->	
+					<visible>IntegerGreaterThan(Container(11).NumItems,30)</visible>	
 					<posx>1835</posx>
 					<posy>320</posy>
 					<height>570</height>			
 					<onleft>11</onleft>
-					<onright>11</onright>						
-				</control>				
+					<onright>11</onright>
+					<visible allowhiddenfocus="true">Control.HasFocus(70) | Container(11).Scrolling</visible>
+					<animation effect="fade" start="0" end="100" time="400" condition="Control.HasFocus(70) | Container(11).Scrolling">Conditional</animation>
+				</control>	
+				<control type="image">				<!--Scrolling Letter Background-->
+					<visible>Container(11).Scrolling</visible>	
+					<posx>1450</posx>
+					<posy>555</posy>
+					<width>100</width>
+					<height>100</height>			
+					<texture>common/scrollbar-letter.png</texture>
+					<animation effect="fade" start="0" end="100" time="400" delay="30">Visible</animation>				
+					<animation effect="fade" start="100" end="0" time="400" delay="150">Hidden</animation>		
+				</control>
+				<control type="label">				<!--Scrolling Letter-->
+					<visible>Container(11).Scrolling</visible>	
+					<posx>1450</posx>
+					<posy>555</posy>
+					<width>100</width>
+					<height>100</height>
+					<align>center</align>
+					<aligny>center</aligny>
+					<font>Bold45</font>				
+					<textcolor>mainblue</textcolor>									
+					<label>$INFO[ListItem.SortLetter]</label>
+					<animation effect="fade" start="0" end="100" time="400" delay="30">Visible</animation>				
+					<animation effect="fade" start="100" end="0" time="400" delay="150">Hidden</animation>		
+				</control>	
 			</control>		
 		</control>
 	</include>
 
-	<include name="EPGTimelineView">		<!--EPG Timeline View ID=10-->		
+	<include name="EPGTimelineView">		<!--EPG: Timeline View ID=10-->		
 		<control type="group">
 
 			<control type="group">			<!--Panel-->
@@ -672,7 +699,7 @@
 		</control>
 	</include>
 
-	<include name="LiveTVGuideNowNextView">	<!--LiveTVGuideNowNextView ID=16-->
+	<include name="LiveTVGuideNowNextView">	<!--EPG: LiveTVGuideNowNextView ID=16-->
 		<control type="group">       
 
 			<control type="group">			<!--Panel-->
@@ -1052,7 +1079,7 @@
 		</control>
 	</include>
 
-	<include name="LiveTVGuideChannelView">	<!--LiveTVGuideChannelView ID=15-->
+	<include name="LiveTVGuideChannelView">	<!--EPG: LiveTVGuideChannelView ID=15-->
 		<control type="group">  
 
 			<control type="group">			<!--Panel-->
@@ -1552,11 +1579,11 @@
 				<width>1920</width>
 				<height>570</height>
 				<onleft>9000</onleft>
-				<onright>-</onright>
+				<onright>71</onright>
 				<onup>11</onup>
 				<ondown>11</ondown>
 				<viewtype label="535">list</viewtype>
-				<pagecontrol>-</pagecontrol>
+				<pagecontrol>71</pagecontrol>
 				<scrolltime>200</scrolltime>
 
 				<!-- =========== -->
@@ -1695,7 +1722,7 @@
 				</focusedlayout>
 			</control>		
 
-			<control type="group">			<!-- Process -->	
+			<control type="group">			<!--Process-->	
 				<visible>Control.IsVisible(12)</visible>				
 				<include>animation_view_change_pvr</include>			
 				<include>animation_list</include>
@@ -1725,7 +1752,7 @@
 					<label>$INFO[Container(12).ListItem.EndTime]</label>	     		
 				</control>
 			</control>
-			<control type="group">			<!-- Title -->	
+			<control type="group">			<!--Title-->	
 				<visible>Control.IsVisible(12)</visible>	
 				<include>animation_view_change_pvr</include>			
 				<include>animation_list</include>
@@ -1740,7 +1767,7 @@
 					<label>$INFO[ListItem.Label]</label>	
 				</control>				
 			</control>
-			<control type="group">			<!-- Page Control -->	
+			<control type="group">			<!--Page Control-->	
 				<visible>Control.IsVisible(12)</visible>	
 				<visible>![Window.IsActive(DialogVideoInfo.xml) + !substring(ListItem.Path,plugin)]</visible>
 				<include>animation_view_change_pvr</include>			
@@ -1755,6 +1782,45 @@
 					<textcolor>black</textcolor>
 					<label>$INFO[Container.CurrentPage]/$INFO[Container.NumPages]</label>
 				</control>			
+			</control>	
+			<control type="group">			<!--Scrollbar-->		
+				<visible>IntegerGreaterThan(Container(12).NumItems,30)</visible>
+				<include>animation_view_change_pvr</include>
+				<include>animation_list</include>		
+				<control type="scrollbar" id="71">	<!--Scrollbar ID71-->	
+					<visible>IntegerGreaterThan(Container(12).NumItems,30)</visible>	
+					<posx>1835</posx>
+					<posy>320</posy>
+					<height>570</height>			
+					<onleft>11</onleft>
+					<onright>11</onright>
+					<visible allowhiddenfocus="true">Control.HasFocus(71) | Container(12).Scrolling</visible>
+					<animation effect="fade" start="0" end="100" time="400" condition="Control.HasFocus(71) | Container(12).Scrolling">Conditional</animation>
+				</control>	
+				<control type="image">				<!--Scrolling Letter Background-->
+					<visible>Container(12).Scrolling</visible>	
+					<posx>1450</posx>
+					<posy>555</posy>
+					<width>100</width>
+					<height>100</height>			
+					<texture>common/scrollbar-letter.png</texture>
+					<animation effect="fade" start="0" end="100" time="400" delay="30">Visible</animation>				
+					<animation effect="fade" start="100" end="0" time="400" delay="150">Hidden</animation>		
+				</control>
+				<control type="label">				<!--Scrolling Letter-->
+					<visible>Container(12).Scrolling</visible>	
+					<posx>1450</posx>
+					<posy>555</posy>
+					<width>100</width>
+					<height>100</height>
+					<align>center</align>
+					<aligny>center</aligny>
+					<font>Bold45</font>				
+					<textcolor>mainblue</textcolor>									
+					<label>$INFO[ListItem.SortLetter]</label>
+					<animation effect="fade" start="0" end="100" time="400" delay="30">Visible</animation>				
+					<animation effect="fade" start="100" end="0" time="400" delay="150">Hidden</animation>		
+				</control>	
 			</control>	
 		</control>
 	</include>
@@ -2212,7 +2278,7 @@
 					<control type="label">	<!--Date-->
 						<posx>30</posx>
 						<posy>0</posy>
-						<width>400</width>
+						<width>350</width>
 						<height>80</height>
 						<font>Reg32</font>
 						<textcolor>mainblue</textcolor>  
@@ -2297,16 +2363,17 @@
 						<width>350</width>
 						<height>80</height>
 						<font>Reg32</font>
-						<textcolor>black</textcolor>  
+						<textcolor>black</textcolor> 
+						<scroll>true</scroll>
 						<info>ListItem.Date</info>
 					</control>
 					<control type="label">	<!--Channel Name-->							
 						<posx>400</posx>
 						<posy>0</posy>
-						<width>400</width>
+						<width>350</width>
 						<height>80</height>					
 						<font>Reg32</font>
-						<textcolor>black</textcolor>    
+						<textcolor>black</textcolor>   						
 						<label>$INFO[ListItem.ChannelName]</label>
 					</control>					
 					<control type="label">	<!--Channel Show-->						
@@ -2584,7 +2651,7 @@
 					<control type="label">	<!--Date-->
 						<posx>30</posx>
 						<posy>0</posy>
-						<width>400</width>
+						<width>350</width>
 						<height>80</height>
 						<font>Reg32</font>
 						<textcolor>mainblue</textcolor>  
@@ -2666,10 +2733,11 @@
 					<control type="label">	<!--Date-->
 						<posx>30</posx>
 						<posy>0</posy>
-						<width>400</width>
+						<width>350</width>
 						<height>80</height>
 						<font>Reg32</font>
-						<textcolor>black</textcolor>  
+						<textcolor>black</textcolor> 
+						<scroll>true</scroll>
 						<info>ListItem.Date</info>
 					</control>
 					<control type="label">	<!--Channel Name-->							
