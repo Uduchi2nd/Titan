@@ -9,6 +9,7 @@
 	<color name="FanartDiffuse">66FFFFFF</color>
 	<color name="WidgetPosterDiffuse">aaFFFFFF</color>
 	<color name="Separator">BBFFFFFF</color>	<!--List Separator-->
+	<color name="Flag">FF555555</color>	
 	
 	<!--Global-->
 	<!--Titan 00b8ff-->
