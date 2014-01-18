@@ -666,7 +666,7 @@
 			<posx>120</posx>
 			<posy>560</posy>	
 			<width>830</width>
-			<height>230</height>
+			<height>190</height>
 			<font>Light32</font>				
 			<textcolor>list_label_info</textcolor>	
 			<shadowcolor></shadowcolor> 
@@ -818,7 +818,7 @@
 			<include>animation_view_change</include>			
 			<include>animation_list</include>
 			<posx>120</posx>
-			<posy>850</posy>			
+			<posy>840</posy>			
 
 			<control type="image">	<!--Video Resolution-->	
 				<posx>0</posx>
@@ -853,7 +853,7 @@
 			<include>animation_view_change</include>			
 			<include>animation_list</include>
 			<posx>360</posx><!-- +240 -->
-			<posy>850</posy>			
+			<posy>840</posy>			
 
 			<control type="image">	<!--Audio Codec-->	
 				<posx>0</posx>
