@@ -24,7 +24,8 @@
 		<value condition="Window.IsActive(SkinSettings.xml)">[UPPERCASE]$LOCALIZE[5][/UPPERCASE]</value>
 		<value condition="Window.IsActive(SettingsCategory.xml)">[UPPERCASE]$LOCALIZE[5][/UPPERCASE]</value>
 		<value condition="Window.IsActive(SettingsSystemInfo.xml)">[UPPERCASE]$LOCALIZE[5][/UPPERCASE]</value>
-		<value condition="Window.IsActive(MyPVR.xml)">[UPPERCASE]Live TV[/UPPERCASE]</value>
+		<value condition="Window.IsActive(MyPVR.xml)">[UPPERCASE]$LOCALIZE[41024][/UPPERCASE]</value>
+		<value condition="Window.IsActive(MyMusicPlaylistEditor.xml)">[UPPERCASE]$LOCALIZE[10503][/UPPERCASE]</value>
 	</variable>
 	<variable name="value_header_icon">
 		<value condition="Window.IsActive(Home.xml)">icons/icon_home.png</value>
@@ -47,6 +48,7 @@
 		<value condition="Window.IsActive(SettingsCategory.xml)">icons/icon_settings.png</value>
 		<value condition="Window.IsActive(SettingsSystemInfo.xml)">icons/icon_settings.png</value>
 		<value condition="Window.IsActive(MyPVR.xml)">icons/icon_tvshows.png</value>
+		<value condition="Window.IsActive(MyMusicPlaylistEditor.xml)">icons/icon_music.png</value>
 	</variable>
 	
 	<!-- ========== -->
@@ -123,7 +125,8 @@
 		<value condition="substring(Container.FolderPath,addons://sources/video/) | substring(Container.FolderPath,plugin://plugin.video)">special://skin/backgrounds/curtains.png</value>
 	</variable>
 	<variable name="value_music_background">
-		<value condition="Window.IsActive(MyMusicNav.xml)">special://skin/backgrounds/music.png</value>								
+		<value condition="Window.IsActive(MyMusicNav.xml)">special://skin/backgrounds/music.png</value>		
+		<value condition="Window.IsActive(MyMusicPlaylistEditor.xml)">special://skin/backgrounds/music.png</value>	
 	</variable>
 	<variable name="value_global_background">
 		<value condition="IsEmpty(Skin.String(CustomGlobalBack)) + ![Window.IsActive(Settings.xml) | Window.IsActive(SkinSettings.xml) | Window.IsActive(SettingsCategory.xml) | Window.IsActive(SettingsSystemInfo.xml) | Window.IsActive(FileManager.xml)]">special://skin/backgrounds/global.png</value>	
