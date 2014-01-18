@@ -27,7 +27,7 @@
 			<align>right</align>
 			<font>Light40</font>
 			<textcolor>midgrey</textcolor>
-			<label>Titan 1.4.7</label>
+			<label>Titan 1.4.8</label>
 			<include>animation_fade_visible_hidden</include>
 			<include>animation_fade_open_close</include>
 		</control>

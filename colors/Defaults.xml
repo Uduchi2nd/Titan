@@ -21,12 +21,12 @@
 	<color name="list_label_1_select">cc00b8ff</color>	<!--CC Main Blue-->
 	<color name="list_label_2_first">7700b8ff</color>	<!--77 Main Blue-->
 	<color name="list_label_2_second">FF858585</color>	<!--Light Grey-->	
-	<color name="list_label_info">FF686868</color>		<!--Mid Grey-->	
-	<color name="list_flag">FF4e4e4e</color>			<!--Diffuse-->
+	<color name="list_label_info">FF686868</color>		<!--Mid Grey-->		
 	<color name="list_separator">BBFFFFFF</color>		<!--Diffuse-->	
+	<color name="list_flag">77FFFFFF</color>			<!--Diffuse-->
 	
 	<!--Video Info-->
-	<color name="video_info_flag">FF4e4e4e</color>		<!--Diffuse-->
+	<color name="video_info_flag">77FFFFFF</color>		<!--Diffuse-->
 	
 	<!--Grey-->
 	<color name="grey">FFC0C2C2</color>
