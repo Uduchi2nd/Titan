@@ -426,7 +426,7 @@
 						<posy>0</posy>
 						<width>212</width>
 						<height>45</height>		
-						<colordiffuse>77white</colordiffuse>
+						<colordiffuse>video_info_flag</colordiffuse>
 						<texture fallback="flags/resolution/default.png">$INFO[ListItem.VideoResolution,flags/resolution/,.png]</texture>					
 					</control>	
 					<control type="image">	<!--VideoCode-->
@@ -434,7 +434,7 @@
 						<posy>0</posy>
 						<width>212</width>
 						<height>45</height>		
-						<colordiffuse>77white</colordiffuse>
+						<colordiffuse>video_info_flag</colordiffuse>
 						<texture fallback="flags/videocodec/default.png">$INFO[ListItem.VideoCodec,flags/videocodec/,.png]</texture>				
 					</control>				
 					<control type="image">	<!--Aspectration-->
@@ -442,7 +442,7 @@
 						<posy>0</posy>
 						<width>212</width>
 						<height>45</height>		
-						<colordiffuse>77white</colordiffuse>
+						<colordiffuse>video_info_flag</colordiffuse>
 						<texture fallback="flags/aspectration/default.png">$INFO[ListItem.VideoAspect,flags/aspectration/,.png]</texture>					
 					</control>
 				</control>	
@@ -459,7 +459,7 @@
 						<posy>0</posy>
 						<width>124</width>
 						<height>45</height>		
-						<colordiffuse>77white</colordiffuse>
+						<colordiffuse>video_info_flag</colordiffuse>
 						<texture fallback="flags/audiocodec/default.png">$INFO[ListItem.AudioCodec,flags/audiocodec/,.png]</texture>					
 					</control>	
 					<control type="image">	<!--Audio Channels-->	
@@ -467,7 +467,7 @@
 						<posy>0</posy>
 						<width>124</width>
 						<height>45</height>		
-						<colordiffuse>77white</colordiffuse>
+						<colordiffuse>video_info_flag</colordiffuse>
 						<texture fallback="flags/audiochannels/default.png">$INFO[ListItem.AudioChannels,flags/audiochannels/,.png]</texture>					
 					</control>	
 				</control>	

@@ -147,7 +147,7 @@
 					<width>854</width>
 					<height>20</height>		
 					<fadetime>400</fadetime>
-					<colordiffuse>Separator</colordiffuse>
+					<colordiffuse>list_separator</colordiffuse>
 					<texture>common/separator.png</texture>			
 				</control>
 			</itemlayout>
@@ -236,7 +236,7 @@
 					<width>854</width>
 					<height>20</height>		
 					<fadetime>400</fadetime>
-					<colordiffuse>Separator</colordiffuse>
+					<colordiffuse>list_separator</colordiffuse>
 					<texture>common/separator.png</texture>			
 				</control>
 			</focusedlayout>

@@ -2,7 +2,7 @@
 <includes>
 	<include name="View_50_List">	
 
-		<!-- Panel -->		
+		<!--Panel-->		
 		<control type="group">	
 			<visible>Control.IsVisible(50)</visible>	
 			<visible>![Window.IsActive(DialogVideoInfo.xml) + !substring(ListItem.Path,plugin)]</visible>			
@@ -88,7 +88,7 @@
 			</control>				
 		</control>
 
-		<!-- View 50 -->		
+		<!--View 50-->		
 		<control type="group">	
 			<visible>Control.IsVisible(50)</visible>
 			<visible>![Window.IsActive(DialogVideoInfo.xml) + !substring(ListItem.Path,plugin)]</visible>	
@@ -127,7 +127,7 @@
 						<width>1200</width>
 						<height>20</height>		
 						<fadetime>400</fadetime>
-						<colordiffuse>Separator</colordiffuse>
+						<colordiffuse>list_separator</colordiffuse>
 						<texture>common/separator.png</texture>			
 					</control>
 				</itemlayout>
@@ -155,7 +155,7 @@
 						<width>1200</width>
 						<height>20</height>		
 						<fadetime>400</fadetime>
-						<colordiffuse>Separator</colordiffuse>
+						<colordiffuse>list_separator</colordiffuse>
 						<texture>common/separator.png</texture>			
 					</control>
 				</focusedlayout>
@@ -194,7 +194,7 @@
 						<width>1200</width>
 						<height>20</height>		
 						<fadetime>400</fadetime>
-						<colordiffuse>Separator</colordiffuse>
+						<colordiffuse>list_separator</colordiffuse>
 						<texture>common/separator.png</texture>			
 					</control>
 				</focusedlayout>
@@ -217,7 +217,7 @@
 						<width>600</width>
 						<height>20</height>		
 						<fadetime>400</fadetime>
-						<colordiffuse>Separator</colordiffuse>
+						<colordiffuse>list_separator</colordiffuse>
 						<texture>common/separator.png</texture>			
 					</control>
 				</itemlayout>
@@ -245,7 +245,7 @@
 						<width>600</width>
 						<height>20</height>		
 						<fadetime>400</fadetime>
-						<colordiffuse>Separator</colordiffuse>
+						<colordiffuse>list_separator</colordiffuse>
 						<texture>common/separator.png</texture>			
 					</control>				
 				</focusedlayout>
@@ -284,7 +284,7 @@
 						<width>600</width>
 						<height>20</height>		
 						<fadetime>400</fadetime>
-						<colordiffuse>Separator</colordiffuse>
+						<colordiffuse>list_separator</colordiffuse>
 						<texture>common/separator.png</texture>			
 					</control>
 				</focusedlayout>
@@ -315,7 +315,7 @@
 						<width>785</width>
 						<height>20</height>		
 						<fadetime>400</fadetime>
-						<colordiffuse>Separator</colordiffuse>
+						<colordiffuse>list_separator</colordiffuse>
 						<texture>common/separator.png</texture>			
 					</control>
 				</itemlayout>
@@ -351,7 +351,7 @@
 						<width>785</width>
 						<height>20</height>		
 						<fadetime>400</fadetime>
-						<colordiffuse>Separator</colordiffuse>
+						<colordiffuse>list_separator</colordiffuse>
 						<texture>common/separator.png</texture>			
 					</control>				
 				</focusedlayout>
@@ -398,7 +398,7 @@
 						<width>785</width>
 						<height>20</height>		
 						<fadetime>400</fadetime>
-						<colordiffuse>Separator</colordiffuse>
+						<colordiffuse>list_separator</colordiffuse>
 						<texture>common/separator.png</texture>			
 					</control>					
 				</focusedlayout>
@@ -406,8 +406,8 @@
 			</control>
 		</control>
 
-		<!-- Info -->		
-		<control type="group">		<!-- Regie, Duration... Movies, TV-Shows, Sesaons, Music-Videos-->
+		<!--Info-->		
+		<control type="group">		<!--Regie, Duration... Movies, TV-Shows, Sesaons, Music-Videos-->
 			<visible>Control.IsVisible(50)</visible>
 			<visible>!Window.IsActive(DialogVideoInfo.xml)</visible>
 			<visible>Container.Content(MusicVideos) | Container.Content(movies) | Container.Content(tvshows) | Container.Content(seasons)</visible>
@@ -415,7 +415,7 @@
 			<include>animation_list</include>	
 			<posx>510</posx>
 			<posy>330</posy>
-			<control type="group">	<!-- Ground 1 -->
+			<control type="group">	<!--Ground 1-->
 				<visible>!IsEmpty(Control.GetLabel(5201))</visible>					
 				<posy>0</posy>
 				<control type="label">
@@ -442,7 +442,7 @@
 					<label>...</label>			
 				</control>
 			</control>
-			<control type="group">	<!-- Ground 2 -->
+			<control type="group">	<!--Ground 2-->
 				<visible>!IsEmpty(Control.GetLabel(5202))</visible>						
 				<posy>40</posy>
 				<control type="label">
@@ -469,7 +469,7 @@
 					<label>...</label>			
 				</control>
 			</control>
-			<control type="group">	<!-- Ground 3 -->
+			<control type="group">	<!--Ground 3-->
 				<visible>!IsEmpty(Control.GetLabel(5203))</visible>					
 				<posy>80</posy>
 				<control type="label">
@@ -496,7 +496,7 @@
 					<label>...</label>			
 				</control>
 			</control>
-			<control type="group">	<!-- Ground 4 -->
+			<control type="group">	<!--Ground 4-->
 				<visible>!IsEmpty(Control.GetLabel(5204))</visible>					
 				<posy>120</posy>
 				<control type="label">
@@ -524,7 +524,7 @@
 				</control>
 			</control>			
 		</control>
-		<control type="group">		<!-- Regie, Duration... Episodes-->
+		<control type="group">		<!--Regie, Duration... Episodes-->
 			<visible>Control.IsVisible(50)</visible>
 			<visible>!Window.IsActive(DialogVideoInfo.xml)</visible>
 			<visible>Container.content(episodes)</visible>
@@ -532,7 +532,7 @@
 			<include>animation_list</include>
 			<posx>490</posx>
 			<posy>330</posy>
-			<control type="group">	<!-- Ground 1 -->
+			<control type="group">	<!--Ground 1-->
 				<visible>!IsEmpty(Control.GetLabel(5201))</visible>						
 				<posy>0</posy>
 				<control type="label">
@@ -559,7 +559,7 @@
 					<label>...</label>			
 				</control>
 			</control>
-			<control type="group">	<!-- Ground 2 -->
+			<control type="group">	<!--Ground 2-->
 				<visible>!IsEmpty(Control.GetLabel(5202))</visible>				
 				<posy>40</posy>
 				<control type="label">
@@ -586,7 +586,7 @@
 					<label>...</label>			
 				</control>
 			</control>
-			<control type="group">	<!-- Ground 3 -->
+			<control type="group">	<!--Ground 3-->
 				<visible>!IsEmpty(Control.GetLabel(5203))</visible>		
 				<posy>80</posy>
 				<control type="label">
@@ -613,7 +613,7 @@
 					<label>...</label>			
 				</control>
 			</control>
-			<control type="group">	<!-- Ground 4 -->
+			<control type="group">	<!--Ground 4-->
 				<visible>!IsEmpty(Control.GetLabel(5204))</visible>				
 				<posy>120</posy>
 				<control type="label">
@@ -641,7 +641,7 @@
 				</control>
 			</control>			
 		</control>
-		<control type="textbox">	<!-- Info Plot: Movies, TV-Shows, Music-Videos -->
+		<control type="textbox">	<!--Info Plot: Movies, TV-Shows, Music-Videos-->
 			<visible>Control.IsVisible(50)</visible>	
 			<visible>!Window.IsActive(DialogVideoInfo.xml)</visible>	
 			<visible>Container.Content(MusicVideos) | Container.Content(movies) | container.content(tvshows)</visible>
@@ -657,7 +657,7 @@
 			<autoscroll>false</autoscroll>
 			<label>$INFO[ListItem.Plot]</label>				
 		</control>
-		<control type="textbox">	<!-- Info Plot: Episodes -->
+		<control type="textbox">	<!--Info Plot: Episodes-->
 			<visible>Control.IsVisible(50)</visible>	
 			<visible>!Window.IsActive(DialogVideoInfo.xml)</visible>	
 			<visible>Container.Content(episodes)</visible>
@@ -666,14 +666,14 @@
 			<posx>120</posx>
 			<posy>560</posy>	
 			<width>830</width>
-			<height>190</height>
+			<height>230</height>
 			<font>Light32</font>				
 			<textcolor>list_label_info</textcolor>	
 			<shadowcolor></shadowcolor> 
 			<autoscroll>false</autoscroll>
 			<label>$INFO[ListItem.Plot]</label>				
 		</control>
-		<control type="group">		<!-- Rating, Label -->	
+		<control type="group">		<!--Rating, Label-->	
 			<visible>Control.IsVisible(50)</visible>	
 			<visible>![Window.IsActive(DialogVideoInfo.xml) + !substring(ListItem.Path,plugin)]</visible>
 			<include>animation_view_change</include>			
@@ -706,7 +706,7 @@
 				<label>$INFO[ListItem.Album]</label>	
 			</control>					
 		</control>
-		<control type="group">		<!-- Title -->	
+		<control type="group">		<!--Title-->	
 			<visible>Control.IsVisible(50)</visible>	
 			<visible>![Window.IsActive(DialogVideoInfo.xml) + !substring(ListItem.Path,plugin)]</visible>
 			<include>animation_view_change</include>			
@@ -733,7 +733,7 @@
 				<label>$INFO[ListItem.Artist]</label>	
 			</control>	
 		</control>
-		<control type="group">		<!-- Page Control -->	
+		<control type="group">		<!--Page Control-->	
 			<visible>Control.IsVisible(50)</visible>	
 			<visible>![Window.IsActive(DialogVideoInfo.xml) + !substring(ListItem.Path,plugin)]</visible>
 			<include>animation_view_change</include>			
@@ -749,13 +749,13 @@
 				<label>$INFO[Container.CurrentPage]/$INFO[Container.NumPages]</label>
 			</control>			
 		</control>
-		<control type="group">		<!-- Flags Video: Movies-->	
+		<control type="group">		<!--Flags Video: Movies-->	
 			<visible>Control.IsVisible(50)</visible>			
 			<visible>Container.Content(movies) + !ListItem.IsFolder</visible>	
 			<visible>!substring(Container.FolderPath,addons://sources/video/) + !substring(Container.FolderPath,plugin://plugin.video)</visible>
 			<include>animation_view_change</include>			
 			<include>animation_list</include>
-			<posx>500</posx>
+			<posx>510</posx>
 			<posy>870</posy>			
 
 			<control type="image">	<!--Video Resolution-->	
@@ -763,7 +763,7 @@
 				<posy>0</posy>
 				<width>212</width>
 				<height>45</height>		
-				<colordiffuse>77white</colordiffuse>
+				<colordiffuse>list_flag</colordiffuse>
 				<texture fallback="flags/resolution/default.png">$INFO[ListItem.VideoResolution,flags/resolution/,.png]</texture>					
 			</control>	
 			<control type="image">	<!--VideoCode-->
@@ -771,7 +771,7 @@
 				<posy>0</posy>
 				<width>212</width>
 				<height>45</height>		
-				<colordiffuse>77white</colordiffuse>
+				<colordiffuse>list_flag</colordiffuse>
 				<texture fallback="flags/videocodec/default.png">$INFO[ListItem.VideoCodec,flags/videocodec/,.png]</texture>				
 			</control>				
 			<control type="image">	<!--Aspectration-->
@@ -779,18 +779,18 @@
 				<posy>0</posy>
 				<width>212</width>
 				<height>45</height>		
-				<colordiffuse>77white</colordiffuse>
+				<colordiffuse>list_flag</colordiffuse>
 				<texture fallback="flags/aspectration/default.png">$INFO[ListItem.VideoAspect,flags/aspectration/,.png]</texture>					
 			</control>
 		</control>	
-		<control type="group">		<!-- Flags Audio: Movies -->		
+		<control type="group">		<!--Flags Audio: Movies-->		
 			<visible>Control.IsVisible(50)</visible>	
 			<visible>!Window.IsActive(DialogVideoInfo.xml)</visible>
 			<visible>Container.Content(movies) + !ListItem.IsFolder</visible>
 			<visible>!substring(Container.FolderPath,addons://sources/video/) + !substring(Container.FolderPath,plugin://plugin.video)</visible>
 			<include>animation_view_change</include>			
 			<include>animation_list</include>
-			<posx>740</posx><!-- +240 -->
+			<posx>750</posx><!-- +240 -->
 			<posy>870</posy>			
 
 			<control type="image">	<!--Audio Codec-->	
@@ -798,7 +798,7 @@
 				<posy>0</posy>
 				<width>124</width>
 				<height>45</height>		
-				<colordiffuse>77white</colordiffuse>
+				<colordiffuse>list_flag</colordiffuse>
 				<texture fallback="flags/audiocodec/default.png">$INFO[ListItem.AudioCodec,flags/audiocodec/,.png]</texture>					
 			</control>	
 			<control type="image">	<!--Audio Channels-->	
@@ -806,11 +806,11 @@
 				<posy>0</posy>
 				<width>124</width>
 				<height>45</height>		
-				<colordiffuse>77white</colordiffuse>
+				<colordiffuse>list_flag</colordiffuse>
 				<texture fallback="flags/audiochannels/default.png">$INFO[ListItem.AudioChannels,flags/audiochannels/,.png]</texture>					
 			</control>	
 		</control>	
-		<control type="group">		<!-- Flags Video: Episodes-->	
+		<control type="group">		<!--Flags Video: Episodes-->	
 			<visible>Control.IsVisible(50)</visible>	
 			<visible>!Window.IsActive(DialogVideoInfo.xml)</visible>
 			<visible>Container.Content(episodes) + !ListItem.IsFolder</visible>	
@@ -818,14 +818,14 @@
 			<include>animation_view_change</include>			
 			<include>animation_list</include>
 			<posx>120</posx>
-			<posy>840</posy>			
+			<posy>850</posy>			
 
 			<control type="image">	<!--Video Resolution-->	
 				<posx>0</posx>
 				<posy>0</posy>
 				<width>212</width>
 				<height>45</height>		
-				<colordiffuse>77white</colordiffuse>
+				<colordiffuse>list_flag</colordiffuse>
 				<texture fallback="flags/resolution/default.png">$INFO[ListItem.VideoResolution,flags/resolution/,.png]</texture>					
 			</control>	
 			<control type="image">	<!--VideoCode-->
@@ -833,7 +833,7 @@
 				<posy>0</posy>
 				<width>212</width>
 				<height>45</height>		
-				<colordiffuse>77white</colordiffuse>
+				<colordiffuse>list_flag</colordiffuse>
 				<texture fallback="flags/videocodec/default.png">$INFO[ListItem.VideoCodec,flags/videocodec/,.png]</texture>				
 			</control>				
 			<control type="image">	<!--Aspectration-->
@@ -841,11 +841,11 @@
 				<posy>0</posy>
 				<width>212</width>
 				<height>45</height>		
-				<colordiffuse>77white</colordiffuse>
+				<colordiffuse>list_flag</colordiffuse>
 				<texture fallback="flags/aspectration/default.png">$INFO[ListItem.VideoAspect,flags/aspectration/,.png]</texture>					
 			</control>
 		</control>	
-		<control type="group">		<!-- Flags Audio: Episodes -->		
+		<control type="group">		<!--Flags Audio: Episodes-->		
 			<visible>Control.IsVisible(50)</visible>	
 			<visible>!Window.IsActive(DialogVideoInfo.xml)</visible>
 			<visible>Container.Content(episodes) + !ListItem.IsFolder</visible>
@@ -853,14 +853,14 @@
 			<include>animation_view_change</include>			
 			<include>animation_list</include>
 			<posx>360</posx><!-- +240 -->
-			<posy>840</posy>			
+			<posy>850</posy>			
 
 			<control type="image">	<!--Audio Codec-->	
 				<posx>0</posx>
 				<posy>0</posy>
 				<width>124</width>
 				<height>45</height>		
-				<colordiffuse>77white</colordiffuse>
+				<colordiffuse>list_flag</colordiffuse>
 				<texture fallback="flags/audiocodec/default.png">$INFO[ListItem.AudioCodec,flags/audiocodec/,.png]</texture>					
 			</control>	
 			<control type="image">	<!--Audio Channels-->	
@@ -868,12 +868,12 @@
 				<posy>0</posy>
 				<width>124</width>
 				<height>45</height>		
-				<colordiffuse>77white</colordiffuse>
+				<colordiffuse>list_flag</colordiffuse>
 				<texture fallback="flags/audiochannels/default.png">$INFO[ListItem.AudioChannels,flags/audiochannels/,.png]</texture>					
 			</control>	
-		</control>	
+		</control>		
 
-		<!-- Control Tags -->	
+		<!--Control Tags-->	
 		<control type="group">	
 			<control type="label" id="5101">
 				<include>HiddenButton</include>
@@ -913,7 +913,7 @@
 			</control>
 		</control>
 
-		<!-- Scollbar -->			
+		<!--Scollbar-->			
 		<control type="group">
 			<visible>Control.IsVisible(50)</visible>	
 			<visible>![Window.IsActive(DialogVideoInfo.xml) + !substring(ListItem.Path,plugin)]</visible>

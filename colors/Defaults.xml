@@ -5,10 +5,8 @@
 	<color name="black">FF1b1b1b</color>	
 	<color name="red">FFFF0000</color>
 	<color name="blue">FF0000FF</color>
-	<color name="green">FF00FF00</color>
-	<color name="FanartDiffuse">66FFFFFF</color>
+	<color name="green">FF00FF00</color>	
 	<color name="WidgetPosterDiffuse">aaFFFFFF</color>
-	<color name="Separator">BBFFFFFF</color>	<!--List Separator-->	
 	
 	<!--Global-->
 	<!--Titan 00b8ff-->
@@ -17,13 +15,18 @@
 	<color name="ccmainblue">cc00b8ff</color>		<!--Main Blue-->		
 	<color name="orange">FFff7800</color>			<!--Orange-->		
 	
-	<!-- List 50 -->
+	<!--List 50, and all other List Views-->
 	<color name="list_label_1_fo">cc00b8ff</color>		<!--CC Main Blue-->
 	<color name="list_label_1_nf">FF686868</color>		<!--Mid Grey-->
 	<color name="list_label_1_select">cc00b8ff</color>	<!--CC Main Blue-->
 	<color name="list_label_2_first">7700b8ff</color>	<!--77 Main Blue-->
 	<color name="list_label_2_second">FF858585</color>	<!--Light Grey-->	
-	<color name="list_label_info">FF686868</color>		<!--Mid Grey-->
+	<color name="list_label_info">FF686868</color>		<!--Mid Grey-->	
+	<color name="list_flag">FF4e4e4e</color>			<!--Diffuse-->
+	<color name="list_separator">BBFFFFFF</color>		<!--Diffuse-->	
+	
+	<!--Video Info-->
+	<color name="video_info_flag">FF4e4e4e</color>		<!--Diffuse-->
 	
 	<!--Grey-->
 	<color name="grey">FFC0C2C2</color>

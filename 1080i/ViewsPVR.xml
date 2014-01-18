@@ -199,7 +199,7 @@
 						<width>785</width>
 						<height>20</height>		
 						<fadetime>400</fadetime>
-						<colordiffuse>Separator</colordiffuse>
+						<colordiffuse>list_separator</colordiffuse>
 						<texture>common/separator.png</texture>			
 					</control>
 				</itemlayout>
@@ -273,7 +273,7 @@
 						<width>785</width>
 						<height>20</height>		
 						<fadetime>400</fadetime>
-						<colordiffuse>Separator</colordiffuse>
+						<colordiffuse>list_separator</colordiffuse>
 						<texture>common/separator.png</texture>			
 					</control>	
 				</focusedlayout>
@@ -973,7 +973,7 @@
 						<width>1635</width>
 						<height>20</height>		
 						<fadetime>400</fadetime>
-						<colordiffuse>Separator</colordiffuse>
+						<colordiffuse>list_separator</colordiffuse>
 						<texture>common/separator.png</texture>			
 					</control>
 				</itemlayout>
@@ -1070,7 +1070,7 @@
 						<width>1635</width>
 						<height>20</height>		
 						<fadetime>400</fadetime>
-						<colordiffuse>Separator</colordiffuse>
+						<colordiffuse>list_separator</colordiffuse>
 						<texture>common/separator.png</texture>			
 					</control>
 				</focusedlayout>
@@ -1356,7 +1356,7 @@
 						<width>1650</width>
 						<height>20</height>		
 						<fadetime>400</fadetime>
-						<colordiffuse>Separator</colordiffuse>
+						<colordiffuse>list_separator</colordiffuse>
 						<texture>common/separator.png</texture>			
 					</control>
 				</itemlayout>
@@ -1437,7 +1437,7 @@
 						<width>1650</width>
 						<height>20</height>		
 						<fadetime>400</fadetime>
-						<colordiffuse>Separator</colordiffuse>
+						<colordiffuse>list_separator</colordiffuse>
 						<texture>common/separator.png</texture>			
 					</control>				
 				</focusedlayout>
@@ -1643,7 +1643,7 @@
 						<width>785</width>
 						<height>20</height>		
 						<fadetime>400</fadetime>
-						<colordiffuse>Separator</colordiffuse>
+						<colordiffuse>list_separator</colordiffuse>
 						<texture>common/separator.png</texture>			
 					</control>
 				</itemlayout>
@@ -1716,7 +1716,7 @@
 						<width>785</width>
 						<height>20</height>		
 						<fadetime>400</fadetime>
-						<colordiffuse>Separator</colordiffuse>
+						<colordiffuse>list_separator</colordiffuse>
 						<texture>common/separator.png</texture>			
 					</control>	
 				</focusedlayout>
@@ -1970,7 +1970,7 @@
 						<width>785</width>
 						<height>20</height>		
 						<fadetime>400</fadetime>
-						<colordiffuse>Separator</colordiffuse>
+						<colordiffuse>list_separator</colordiffuse>
 						<texture>common/separator.png</texture>			
 					</control>
 				</itemlayout>
@@ -2013,7 +2013,7 @@
 							<width>785</width>
 							<height>20</height>		
 							<fadetime>400</fadetime>
-							<colordiffuse>Separator</colordiffuse>
+							<colordiffuse>list_separator</colordiffuse>
 							<texture>common/separator.png</texture>			
 						</control>						
 					</control>	
@@ -2345,7 +2345,7 @@
 						<width>1650</width>
 						<height>20</height>		
 						<fadetime>400</fadetime>
-						<colordiffuse>Separator</colordiffuse>
+						<colordiffuse>list_separator</colordiffuse>
 						<texture>common/separator.png</texture>			
 					</control>
 				</itemlayout>
@@ -2427,7 +2427,7 @@
 						<width>1650</width>
 						<height>20</height>		
 						<fadetime>400</fadetime>
-						<colordiffuse>Separator</colordiffuse>
+						<colordiffuse>list_separator</colordiffuse>
 						<texture>common/separator.png</texture>			
 					</control>				
 				</focusedlayout>
@@ -2718,7 +2718,7 @@
 						<width>1650</width>
 						<height>20</height>		
 						<fadetime>400</fadetime>
-						<colordiffuse>Separator</colordiffuse>
+						<colordiffuse>list_separator</colordiffuse>
 						<texture>common/separator.png</texture>			
 					</control>
 				</itemlayout>
@@ -2800,7 +2800,7 @@
 						<width>1650</width>
 						<height>20</height>		
 						<fadetime>400</fadetime>
-						<colordiffuse>Separator</colordiffuse>
+						<colordiffuse>list_separator</colordiffuse>
 						<texture>common/separator.png</texture>			
 					</control>				
 				</focusedlayout>
