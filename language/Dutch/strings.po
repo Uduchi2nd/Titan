@@ -16,22 +16,6 @@ msgstr ""
 "Language: nl\n"
 "Plural-Forms: nplurals=2; plural=(n != 1)\n"
 
-#####################
-#Development Strings#
-#####################
-
-msgctxt "#31033"
-msgid "Debug"
-msgstr "Debug"
-
-msgctxt "#31034"
-msgid "Enable Debug Grid"
-msgstr "Schakel Debug Grid In"
-
-msgctxt "#31035"
-msgid "Enable Debug Info"
-msgstr "Schakel Debug Info Uit"
-
 ###############
 #Titan Strings#
 ###############

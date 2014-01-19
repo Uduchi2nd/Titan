@@ -16,22 +16,6 @@ msgstr ""
 "Language: en\n"
 "Plural-Forms: nplurals=2; plural=(n != 1)\n"
 
-#####################
-#Development Strings#
-#####################
-
-msgctxt "#31033"
-msgid "Debug"
-msgstr ""
-
-msgctxt "#31034"
-msgid "Enable Debug Grid"
-msgstr ""
-
-msgctxt "#31035"
-msgid "Enable Debug Info"
-msgstr ""
-
 ###############
 #Titan Strings#
 ###############
