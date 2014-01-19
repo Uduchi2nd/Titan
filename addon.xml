@@ -18,6 +18,6 @@
 	<extension point="xbmc.addon.metadata">
 		<platform>all</platform>
 		<summary>Titan by reazorFX</summary>
-		<description>Titan is a port from Mediaportal to XBMC all thanks goes to: joostzilla, ncoH, Dlarge500, elliotmc and Team Mediaportal for the great Skin!</description>
+		<description>Titan is a port from Mediaportal to XBMC all thanks goes to: joostzilla, ncoH, Dlarge500, elliotmc and Team Mediaportal for this great Skin!</description>
 	</extension>
 </addon>
