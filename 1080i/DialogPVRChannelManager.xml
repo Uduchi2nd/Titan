@@ -62,8 +62,7 @@
 						<onright>8002</onright>
 						<pagecontrol>60</pagecontrol>
 						<scrolltime>0</scrolltime>
-						<visible>!Window.IsActive(contextmenu)</visible>
-						<include>visiblehidefadeinfo</include>
+						<visible>!Window.IsActive(contextmenu)</visible>						
 						<itemlayout height="60">
 							<control type="image">
 								<posx>0</posx>
