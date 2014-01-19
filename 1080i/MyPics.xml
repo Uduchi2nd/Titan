@@ -5,7 +5,7 @@
 	<views>50</views>
 
 	<controls>
-	
+
 		<!--Global Background-->
 		<include>GlobalBackground</include>
 		<!--Time & Weather-->
@@ -13,10 +13,10 @@
 		<!--Header-->
 		<include>Header</include>
 		<!--Music_NowPlaying-->
-		<include>NowPlayingMusicHome</include>
+		<include>NowPlayingMusic</include>
 		<!--Video_NowPlaying-->
-		<include>NowPlayingVideoHome</include>
-    
+		<include>NowPlayingVideo</include>
+
 		<!--Hidden Button-->
 		<control type="radiobutton" id="19">
 			<description>Filter (hidden)</description>
@@ -28,14 +28,14 @@
 
 		<!--Sub Menu Tab Left-->
 		<include>SubMenuTabLeft</include>
-		
+
 		<!--Sub Menu-->
 		<control type="group"> 
 			<posx>15</posx>
 			<posy>150</posy>
-			
+
 			<visible>!Window.IsActive(DialogKeyboard.xml)</visible>
-			
+
 			<include>animation_fade_visible_hidden</include>
 			<include>animation_fade_open_close</include>
 			<include>animation_sub_menu</include>					
@@ -67,7 +67,7 @@
 				<onup>9000</onup>
 				<ondown>9000</ondown>
 				<orientation>vertical</orientation>
-				
+
 				<!--Button-->	
 				<control type="label" id="200">			<!--Label Menu-->					
 					<width>458</width>
@@ -131,7 +131,7 @@
 					<onclick>Container.SetViewMode(50)</onclick>
 					<onfocus>Skin.Reset(OtherView)</onfocus>					
 				</control>	
-				
+
 			</control>
 		</control>
 	</controls>

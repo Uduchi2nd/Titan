@@ -20,8 +20,7 @@
                 <posx>700</posx>
                 <posy>500</posy>
                 <texturefocus>calibrate/cal_br_fo.png</texturefocus>
-                <texturenofocus>calibrate/cal_br.png</texturenofocus>
-                <include>ScreenCalibrationAnimations</include>
+                <texturenofocus>calibrate/cal_br.png</texturenofocus>                
             </control>
             <control type="mover" id="10">
                 <description>subtitle position mover</description>

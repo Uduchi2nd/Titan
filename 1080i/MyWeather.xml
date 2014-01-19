@@ -7,14 +7,10 @@
 
 		<!--Global Background-->
 		<include>GlobalBackground</include>
-		<!--Header-->
-		<include>Header</include>	
 		<!--Time & Weather-->
-		<include>TimeWeather</include>
-		<!--Music_NowPlaying-->
-		<include>NowPlayingMusicHome</include>
-		<!--Video_NowPlaying-->
-		<include>NowPlayingVideoHome</include>
+		<include>TimeWeather</include>	
+		<!--Header-->
+		<include>Header</include>			
 
 		<!--Hidden Button-->
 		<control type="radiobutton" id="50">
