@@ -48,26 +48,6 @@
 		<width>1920</width>
 		<height>1080</height>
 	</include>
-	<include name="WindowID">
-		<width>780</width>
-		<height>21</height>
-		<textcolor>blue</textcolor>
-		<shadowcolor>black</shadowcolor>
-		<align>left</align>
-	</include>
-	<include name="DialogID">
-		<width>780</width>
-		<height>21</height>
-		<textcolor>green</textcolor>
-		<shadowcolor>black</shadowcolor>
-		<align>left</align>
-	</include>
-	<include name="GlobalOverlay">
-		<control type="image">
-			<include>DimensionsFullscreen</include>
-			<texture border="2">other_textures/black-back.png</texture>
-		</control>
-	</include>
 	<include name="Button9001">
 		<label>41070</label>
 		<height>50</height>
@@ -593,18 +573,6 @@
 			<effect type="zoom" start="100" end="100" center="980,550" tween="sine" easing="out" time="750"/>
 		</animation>
 	</include>
-	<include name="animation_home_back">					<!--Home Background -->
-		<animation type="WindowOpen" reversible="false">
-			<effect type="slide" start="0" end="0" tween="cubic" easing="out" time="750"/>
-			<effect type="fade" start="0" end="100" tween="sine" easing="inout" time="1000" delay="175"/>
-			<effect type="zoom" start="100" end="100" center="980,550" tween="cubic" easing="out" time="600" />
-		</animation>
-		<animation type="WindowClose" reversible="false">	
-			<effect type="slide" start="0" end="0" tween="cubic" easing="out" time="750"/>
-			<effect type="fade" start="100" end="0" tween="sine" easing="out" time="600"/>
-			<effect type="zoom" start="100" end="100" center="980,550" tween="sine" easing="out" time="750"/>
-		</animation>
-	</include>
 	<include name="animation_fade_open_close">				<!--Fade Open/Close-->
 		<animation effect="fade" time="600">WindowOpen</animation>		
 		<animation effect="fade" time="600">WindowClose</animation>		
@@ -623,7 +591,6 @@
 			<effect type="fade" start="100" end="0" tween="sine" easing="out" time="450"/>
 		</animation>		
 	</include>
-
 	<include name="animation_sub_menu">						<!--Sub Menu Slide Animation-->	
 		<animation type="Conditional" condition="!ControlGroup(9000).HasFocus()">	
 			<effect type="slide" start="0" end="-600" time="450" reversible="true" tween="cubic" easing="inout"/>			
@@ -666,41 +633,6 @@
 			<effect type="fade" start="100" end="0" time="600"/>			
 		</animation>
 	</include>
-	<include name="animation_widget_poster">				<!--Widget Poster Anitmaion-->	
-		<animation type="Focus" reversible="false">				
-			<effect type="fade" start="0" end="100" time="300" tween="sine" easing="inout" />
-			<effect type="zoom" start="50" end="100" time="300" center="auto" tween="sine" easing="inout" delay="100" />	
-		</animation>		
-	</include>
-	<include name="animation_widget_poster_reflection">		<!--Widget Poster Anitmaion-->
-		<animation type="Focus" reversible="true">
-			<effect type="fade" start="50" end="100" time="300" tween="sine" easing="inout" />
-			<effect type="zoom" start="100" end="110" time="300" center="auto" tween="sine" easing="inout" delay="100" />
-			<effect type="slide" start="0,0" end="0,21" time="450" tween="sine" easing="inout" delay="0" />
-		</animation>
-	</include>
-	<include name="animation_widget_dialog">				<!--Widget Dialog Animation-->			
-		<animation type="Visible" reversible="false">			
-			<effect type="zoom" start="75" end="100" center="960,540" easing="out" tween="back" time="300" />
-			<effect type="fade" start="0" end="100" time="175" />
-		</animation>
-		<animation type="Hidden" reversible="false">			
-			<effect type="zoom" start="100" end="175" center="960,540" easing="out" tween="sine" time="300" />
-			<effect type="fade" start="100" end="0" time="250" easing="out" tween="cubic" />
-		</animation>
-	</include>
-	<include name="animation_widget_wraplist">				<!--Widget Wraplist Animation-->	
-		<animation effect="fade" start="0" end="100" tween="sine" easing="inout" time="600" delay="300">Visible</animation>
-		<animation effect="fade" start="100" end="0" tween="sine" easing="inout" time="200">Hidden</animation>		
-	</include>
-	<include name="animation_widget_label">					<!--Widget Dialog Animation-->	
-		<animation time="600" effect="fade" delay="100">Visible</animation>
-		<animation time="200" effect="fade">Hidden</animation>		
-	</include>
-	<include name="animation_widget_progress">				<!--Widget Dialog Animation-->	
-		<animation time="600" effect="fade">Visible</animation> 
-		<animation time="200" effect="fade">Hidden</animation>	
-	</include>	
 
 	<!--Sub Menu-->
 	<include name="SubMenuButton">			<!--Sub Menu Button-->				
