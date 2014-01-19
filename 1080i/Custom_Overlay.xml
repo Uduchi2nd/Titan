@@ -1,4 +1,4 @@
-﻿<!--Basic-->
+﻿<!--Titan-->
 <window type="dialog" id="50">
 	<zorder>2</zorder>
 	<visible>!Window.IsVisible(startup)</visible>

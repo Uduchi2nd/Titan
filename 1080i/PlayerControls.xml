@@ -1,9 +1,7 @@
-<!--Basic-->
+<!--Titan-->
 <window type="dialog" id="400">
-	<defaultcontrol always="true">403</defaultcontrol>
+	<defaultcontrol>-</defaultcontrol>
 	<onload>Dialog.Close(PlayerControls.xml)</onload>
-
 	<controls>
 	</controls>
-
 </window>

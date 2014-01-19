@@ -7,8 +7,6 @@
 	<include file="View_51_Showcase.xml" />
 	<include file="View_52_Panel.xml" />
 	<include file="IncludesInfos.xml" />
-	<!--include file="IncludesHomeWidget.xml" /-->
-	<!--include file="IncludesHomeSubMenu.xml" /-->
 	<include file="IncludesVariables.xml" />
 	<include file="IncludesNowPlaying.xml" />	
 	<include file="Custom_Home.xml" />

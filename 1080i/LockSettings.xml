@@ -1,4 +1,4 @@
-<!--Basic-->
+<!--Titan-->
 <window>
 	<defaultcontrol always="true">5</defaultcontrol>
 	<allowoverlay>no</allowoverlay>
@@ -15,7 +15,7 @@
 			<control type="label">
 				<description>Heading</description>
 				<posx>473</posx>
-				<posy>195</posy>
+				<posy>190</posy>
 				<width>974</width>				
 				<label>$LOCALIZE[20043]</label>
 				<include>DialogHeader</include>

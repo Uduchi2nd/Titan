@@ -1,9 +1,7 @@
-﻿<!--Basic-->
+﻿<!--Titan-->
 <window id="120">
-	<defaultcontrol always="true">15</defaultcontrol>
+	<defaultcontrol>-</defaultcontrol>
 	<onload>Dialog.Close(MusicOSD.xml)</onload>
-	
 	<controls>	
 	</controls>
-
 </window>

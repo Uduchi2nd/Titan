@@ -1,4 +1,4 @@
-<!--Basic-->
+<!--Titan-->
 <window>
     <defaultcontrol always="true">2</defaultcontrol>
     <allowoverlay>no</allowoverlay> 
@@ -32,7 +32,7 @@
                 <posx>355</posx>
                 <posy>191</posy>
                 <width>1210</width>
-                <height>91</height>
+                <height>77</height>
                 <texture border="90,3,90,3">common/profil/separator.png</texture>
             </control>
             
@@ -41,19 +41,16 @@
                 <posx>357</posx>
                 <posy>191</posy>
                 <width>1210</width>
-                <height>91</height>
-                <texture>common/button-fo.png</texture>
-                <animation effect="fade" start="100" end="50" tween="sine" easing="inout" time="2000" pulse="true" reversible="false" condition="true">Conditional</animation>
-                <animation effect="fade" end="100" tween="sine" easing="inout" time="200">Visible</animation>
-                <animation effect="fade" end="0" tween="sine" easing="inout" time="200">Hidden</animation>
+                <height>77</height>
+                <texture>common/button-fo.png</texture>               
                 <visible>Control.HasFocus(4)</visible>
             </control>
             
             <control type="label">
                 <description>Category</description>
                 <posx>391</posx>
-                <posy>203</posy>
-                <height>60</height>
+                <posy>191</posy>
+                <height>76</height>
                 <width>400</width>
                 <align>left</align>
                 <font>Light32</font>
@@ -64,8 +61,8 @@
     
             <control type="radiobutton" id="4">
                 <posx>356</posx>
-                <posy>205</posy>
-                <height>60</height>
+                <posy>191</posy>
+                <height>76</height>
                 <width>1210</width>
                 <label>-</label>
                 <align>left</align>
@@ -86,14 +83,14 @@
             <control type="list" id="2">
                 <description>Control Area</description>
                 <posx>356</posx>
-                <posy>281</posy>
+                <posy>267</posy>
                 <width>1210</width>
                 <height>609</height>
                 <onleft>noop</onleft>
                 <onright>40</onright>
                 <onup>4</onup>
                 <ondown>4</ondown>
-                <pagecontrol>40</pagecontrol>
+                <pagecontrol>-</pagecontrol>
                 <orientation>vertical</orientation>
                 <itemlayout height="76">
                     <control type="image">
@@ -219,30 +216,6 @@
                         </control>
                     </control>
                 </focusedlayout>
-            </control>
-            <control type="image" id="42">
-                <animation effect="fade" start="100" end="0" time="0" delay="1500">WindowOpen</animation>
-            </control>
-            <control type="image" id="41">
-                <animation effect="fade" start="0" end="100" time="0">Visible</animation>
-                <animation effect="fade" start="100" end="0" time="0">Hidden</animation>
-                <visible>Control.HasFocus(40) | !Control.IsVisible(42)</visible>
-            </control>
-            <control type="scrollbar" id="40">
-                <posx>1559</posx>
-                <posy>281</posy>
-                <width>6</width>
-                <height>608</height>
-                <texturesliderbackground>-</texturesliderbackground>
-                <texturesliderbar border="1">views/other/scrollbar-sq.png</texturesliderbar>
-                <texturesliderbarfocus border="1">views/other/scrollbar-sq.png</texturesliderbarfocus>
-                <textureslidernib>-</textureslidernib>
-                <textureslidernibfocus>-</textureslidernibfocus>
-                <onleft>2</onleft>
-                <onright>2</onright>
-                <showonepage>false</showonepage>
-                <orientation>vertical</orientation>
-                <animation effect="fade" start="75" end="0" time="300" tween="sine" easing="inout" condition="!Control.IsVisible(41)">Conditional</animation>
             </control>
         </control>
        

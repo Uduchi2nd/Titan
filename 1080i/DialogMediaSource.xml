@@ -1,4 +1,4 @@
-<!--Basic-->
+<!--Titan-->
 <window>
 	<defaultcontrol always="true">9002</defaultcontrol>
 	<allowoverlay>no</allowoverlay>
@@ -10,7 +10,7 @@
 		<!--Dialog Media Source-->
 		<control type="group">
 			<include>animation_dialog</include>          
-			<visible>!Window.IsVisible(virtualkeyboard) + !Window.IsVisible(filebrowser)</visible>
+			<visible>!Window.IsVisible(virtualkeyboard) + !Window.IsVisible(filebrowser) + !Window.IsVisible(DialogNetworkSetup.xml)</visible>
 
 			<!--Header-->
 			<control type="label" id="2">
@@ -272,6 +272,7 @@
 					<textoffsetx>20</textoffsetx>
 					<include>DialogButtonBrowseAdd</include>
 					<texturefocus border="2">dialogs/default/highlight.png</texturefocus>
+					<texturenofocus>-</texturenofocus>	
 					<onup>9002</onup>
 					<onleft>-</onleft>
 					<onright>-</onright>

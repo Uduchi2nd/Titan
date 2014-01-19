@@ -10,6 +10,7 @@
 		<!--File Browser-->
 		<control type="group">
 			<include>animation_dialog</include>
+			<visible>!Window.IsVisible(DialogNetworkSetup.xml)</visible>
 
 			<!--Panel-->
 			<control type="image">

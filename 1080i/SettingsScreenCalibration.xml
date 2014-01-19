@@ -1,11 +1,11 @@
-<!--Basic-->
+<!--Titan-->
 <window>
     <defaultcontrol>8</defaultcontrol>
     <allowoverlay>no</allowoverlay>
     <controls>
         <control type="videowindow" id="20">
             <description>videowindow</description>
-            <include>DimensionsFullscreen</include>
+            <include>FullscreenDimensions</include>
         </control>
         <control type="group">
             <control type="mover" id="8">
@@ -46,7 +46,7 @@
                 <width>1920</width>
                 <align>center</align>
                 <label>-</label>
-                <font>Light50</font>				
+                <font>Light40</font>
                 <shadowcolor>FF000000</shadowcolor>
             </control>
             <control type="label" id="3">
@@ -56,7 +56,7 @@
                 <width>1920</width>
                 <align>center</align>
                 <label>-</label>
-                <font>Light50</font>				
+                <font>Light40</font>
                 <shadowcolor>FF000000</shadowcolor>
             </control>
         </control>

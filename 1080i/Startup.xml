@@ -1,5 +1,4 @@
-﻿<!--Basic-->
+﻿<!--Titan-->
 <window>
 	<onload>ReplaceWindow(Home)</onload>
-
 </window>

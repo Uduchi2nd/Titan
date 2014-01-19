@@ -1,9 +1,7 @@
-<!--Basic-->
+<!--Titan-->
 <window id="122">
-	<defaultcontrol always="true">2</defaultcontrol>	
-	<onload>Dialog.Close(VisualisationPresetList.xml)</onload>
-	
+	<defaultcontrol>-</defaultcontrol>	
+	<onload>Dialog.Close(VisualisationPresetList.xml)</onload>	
 	<controls>
 	</controls>
-
 </window>

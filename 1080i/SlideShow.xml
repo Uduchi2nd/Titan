@@ -1,8 +1,6 @@
-<!--Basic-->
+<!--Titan-->
 <window id="2007">
 	<onload>Dialog.Close(SlideShow.xml)</onload>
-
 	<controls>
 	</controls>
-
 </window>

@@ -1,4 +1,4 @@
-<!--Basic-->
+<!--Titan-->
 <window>
 	<defaultcontrol always="true">8001</defaultcontrol>
 	<allowoverlay>no</allowoverlay>
@@ -45,12 +45,11 @@
 				<control type="label">
 					<description>Heading</description>
 					<posx>473</posx>
-					<posy>376</posy>
+					<posy>360</posy>
 					<width>974</width>
-					<font>Light34</font>
-					<label>$LOCALIZE[21421]</label>
-					<textcolor>ddwhite</textcolor>
 					<align>center</align>
+					<include>DialogHeader</include>
+					<label>$LOCALIZE[21421]</label>					
 				</control>
 				<control type="group" id="8001">
 					<posx>479</posx>

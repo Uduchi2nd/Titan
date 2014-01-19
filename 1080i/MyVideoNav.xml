@@ -100,6 +100,10 @@
 					<include>SubMenuButton</include>
 					<label>137</label>									
 				</control>					
+				<!--control type="radiobutton" id="7">		
+					<description>Button File Stack</description>
+					<include>SubMenuButton</include>											
+				</control-->	
 				<!--control type="radiobutton" id="205">					
 					<include>SubMenuButton</include>
 					<label>Slim List</label>					

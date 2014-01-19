@@ -264,9 +264,5 @@
 			</content>
 		</control>
 
-
-		<!--include>HomeSubMenu</include-->			
-		<!--include>HomeWidget</include-->		
-
 	</controls>
 </window>
