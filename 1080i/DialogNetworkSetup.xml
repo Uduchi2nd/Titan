@@ -1,6 +1,7 @@
 <!--Titan-->
 <window>
 	<defaultcontrol always="true">10</defaultcontrol>
+	<allowoverlay>no</allowoverlay>
 	<zorder>7</zorder><!--Over File Browser-->
 	<controls>	
 
