@@ -9,7 +9,7 @@
 	<include file="IncludesInfos.xml" />
 	<include file="IncludesVariables.xml" />
 	<include file="IncludesNowPlaying.xml" />	
-	<include file="Custom_Home.xml" />
+	
 	<include file="Custom_MediaDialog.xml" />	
 
 	<!--PVR-->

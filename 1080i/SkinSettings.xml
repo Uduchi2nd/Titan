@@ -85,14 +85,9 @@
 					<onclick>-</onclick>
 				</item>	
 				<item id="4"><!--Lyrics/Subtitles ID=4000-->					
-					<label>$LOCALIZE[24013]/$LOCALIZE[24012]</label>
+					<label>$LOCALIZE[24013] / $LOCALIZE[24012]</label>
 					<onclick>-</onclick>
 				</item>
-				<item id="5"><!--Debug ID=5000-->				
-					<label>31033</label>
-					<onclick>-</onclick>
-				</item>	
-
 			</content>			
 		</control>
 
@@ -251,39 +246,6 @@
 					<visible>IsEmpty(Skin.String(SubtitlesPath))</visible>
 				</control>
 
-			</control>
-			<control type="grouplist" id="5000"><!--Debug Grid + Info-->		
-				<description>Control Area</description>
-				<width>1230</width>
-				<height>720</height>
-				<itemgap>3</itemgap>
-				<onup>500</onup>
-				<ondown>500</ondown>
-				<onleft>100</onleft>
-				<onright>-</onright>
-				<orientation>vertical</orientation>
-				<visible>Container(100).Hasfocus(5)</visible>
-
-				<control type="radiobutton" id="5001"><!--Enable Debug Grid-->					
-					<width>1230</width>
-					<align>left</align>
-					<label>31034</label>
-					<height>50</height>
-					<focusedcolor>black</focusedcolor>
-					<font>Reg32</font>		
-					<onclick>Skin.ToggleSetting(DebugGrid)</onclick>
-					<selected>Skin.HasSetting(DebugGrid)</selected>
-				</control>
-				<control type="radiobutton" id="5002"><!--Enable Debug Info-->				
-					<width>1230</width>
-					<align>left</align>
-					<label>31035</label>
-					<height>50</height>
-					<focusedcolor>black</focusedcolor>
-					<font>Reg32</font>		
-					<onclick>Skin.ToggleSetting(DebugInfo)</onclick>
-					<selected>Skin.HasSetting(DebugInfo)</selected>
-				</control>
 			</control>
 
 			<control type="grouplist" id="8000"><!--Skin Setting: Home-Menu Button-->		

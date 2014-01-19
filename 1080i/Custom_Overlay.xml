@@ -235,6 +235,17 @@
 				<label>VideoFullScreen.xml</label>
 				<visible>Window.IsVisible(VideoFullScreen.xml)</visible>
 			</control>
+			
+			<control type="label">
+				<width>780</width>
+				<height>21</height>
+				<textcolor>FF0000FF</textcolor>
+				<shadowcolor>FF000000</shadowcolor>
+				<font>font13</font>
+				<align>left</align>
+				<label>SkinSettings.xml</label>
+				<visible>Window.IsVisible(SkinSettings.xml)</visible>
+			</control>
 
 			<!-- Dialog labels -->
 
