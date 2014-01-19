@@ -8,8 +8,9 @@
 	<include file="View_52_Panel.xml" />
 	<include file="IncludesInfos.xml" />
 	<include file="IncludesVariables.xml" />
-	<include file="IncludesNowPlaying.xml" />	
-	
+	<include file="IncludesNowPlaying.xml" />
+
+	<!--Artwork Downloader-->
 	<include file="Custom_MediaDialog.xml" />	
 
 	<!--PVR-->
