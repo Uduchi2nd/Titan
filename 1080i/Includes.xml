@@ -1365,7 +1365,7 @@
 				<control type="group"><!--Studio: TV-Shows-->
 					<width>700</width>
 					<height>40</height>
-					<visible>VideoPlayer.Content(episodes)] + !IsEmpty(VideoPlayer.Studio)</visible>
+					<visible>VideoPlayer.Content(episodes) + !IsEmpty(VideoPlayer.Studio)</visible>
 					<control type="image">
 						<posx>0</posx>
 						<posy>5</posy>

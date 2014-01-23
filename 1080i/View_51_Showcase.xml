@@ -725,7 +725,7 @@
 				<effect type="fade" start="100" end="0" time="10" delay="800" tween="cubic" easing="inout" />
 			</animation>
 			<animation effect="fade" time="250" >WindowClose</animation>			
-			<visible>Control.IsVisible(51) + !Control.IsVisible(6001) + !Control.IsVisible(6002) + !Control.IsVisible(6003) + !Control.IsVisible(6003)</visible>
+			<visible>Control.IsVisible(51) + !Control.IsVisible(6001) + !Control.IsVisible(6002)</visible>
 			<camera x="960" y="750" />
 			<control type="group"><!-- -7 Puffer -->								
 				<control type="group">

@@ -478,8 +478,7 @@
 					<onup condition="Control.IsVisible(3)">3</onup>
 					<ondown condition="Control.IsVisible(3)">3</ondown>
 					<onup condition="Control.IsVisible(6)">6</onup>
-					<ondown condition="Control.IsVisible(6)">6</ondown>
-					<onclick condition="Window.IsActive(3003)">Dialog.Close(3003)</onclick> <!--Custom Home-->
+					<ondown condition="Control.IsVisible(6)">6</ondown>					
 					<animation effect="fade" start="100" end="75" time="0" condition="!Control.IsEnabled(5)">Conditional</animation>
 				</control>
 				<control type="button" id="7">	

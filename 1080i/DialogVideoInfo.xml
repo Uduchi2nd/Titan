@@ -157,8 +157,7 @@
 						<font>Reg45</font>
 						<textcolor>eewhite</textcolor>
 						<align>left</align>
-						<scroll>false</scroll>  
-						<animation effect="fade" start="100" end="50" time="200" tween="sine" easing="inout" condition="ControlGroup(9333).HasFocus | Control.HasFocus(9335) | Control.HasFocus(1101) | Control.HasFocus(1102) | Control.HasFocus(1103) | Control.HasFocus(1104) | Control.HasFocus(1105) | Control.HasFocus(1110)">Conditional</animation>
+						<scroll>false</scroll>  						
 					</control>
 					<!--Arrow-->
 					<control type="image">				
@@ -168,7 +167,7 @@
 						<height>60</height>
 						<aspectratio>keep</aspectratio>
 						<texture>dialogs/videoinfo/arrow.png</texture>
-						<visible>!Control.HasFocus(1110) + !Control.HasFocus(50)</visible>
+						<visible>!Control.HasFocus(50)</visible>
 					</control>		
 				</control>
 

@@ -127,8 +127,8 @@
 				<width>310</width>
 				<height>473</height>
 				<itemgap>-1</itemgap>
-				<onup>9333</onup>					
-				<ondown>9333</ondown>	
+				<onup>-</onup>					
+				<ondown>-</ondown>	
 				<onright>50</onright>     
 				<onleft>-</onleft>			
 				<orientation>vertical</orientation>
