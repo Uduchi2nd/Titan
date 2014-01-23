@@ -52,7 +52,7 @@
 
 					<onright>SetFocus(9001)</onright>     
 					<onleft>-</onleft>			
-					<orientation>vertial</orientation>
+					<orientation>vertical</orientation>
 				
 					<control type="button" id="100">	<!--Search Trailer on Youtube-->	
 						<visible>Container.Content(movies)</visible>	
@@ -236,8 +236,7 @@
 							<posy>3</posy>
 							<width>49</width>
 							<height>49</height>
-							<texture>dialogs/videoinfo/premiered-icon.png</texture>
-							<scroll>false</scroll>
+							<texture>dialogs/videoinfo/premiered-icon.png</texture>							
 						</control>
 						<control type="label">
 							<posx>60</posx>
@@ -259,8 +258,7 @@
 							<posy>3</posy>
 							<width>49</width>
 							<height>49</height>
-							<texture>dialogs/videoinfo/premiered-icon.png</texture>
-							<scroll>false</scroll>
+							<texture>dialogs/videoinfo/premiered-icon.png</texture>							
 						</control>
 						<control type="label">
 							<posx>60</posx>
@@ -282,8 +280,7 @@
 							<posy>3</posy>
 							<width>49</width>
 							<height>49</height>
-							<texture>dialogs/videoinfo/time-icon.png</texture>
-							<scroll>false</scroll>
+							<texture>dialogs/videoinfo/time-icon.png</texture>							
 						</control>						
 						<control type="label">
 							<posx>60</posx>
@@ -305,8 +302,7 @@
 							<posy>3</posy>
 							<width>49</width>
 							<height>49</height>
-							<texture>dialogs/videoinfo/genre-icon.png</texture>
-							<scroll>false</scroll>
+							<texture>dialogs/videoinfo/genre-icon.png</texture>							
 						</control>
 						<control type="label">
 							<posx>60</posx>
@@ -328,14 +324,13 @@
 							<posy>5</posy>
 							<width>49</width>
 							<height>49</height>
-							<texture>dialogs/videoinfo/director-icon.png</texture>
-							<scroll>false</scroll>
+							<texture>dialogs/videoinfo/director-icon.png</texture>							
 						</control>
 						<control type="label">
 							<posx>60</posx>
 							<posy>0</posy>
 							<width>950</width>
-							<font>RegS34</font>
+							<font>Reg34</font>
 							<align>left</align>
 							<label>$INFO[ListItem.Director]</label>
 							<textcolor>aawhite</textcolor>
@@ -351,8 +346,7 @@
 							<posy>2</posy>
 							<width>49</width>
 							<height>49</height>
-							<texture>dialogs/videoinfo/writer-icon.png</texture>
-							<scroll>false</scroll>
+							<texture>dialogs/videoinfo/writer-icon.png</texture>							
 						</control>
 						<control type="label">
 							<posx>60</posx>
@@ -538,8 +532,7 @@
 					<label>-</label>
 					<textcolor>-</textcolor>
 					<focusedcolor>-</focusedcolor>
-					<disabledcolor>-</disabledcolor>
-					<pulseonselect>-</pulseonselect>
+					<disabledcolor>-</disabledcolor>					
 					<texturefocus>-</texturefocus>
 					<texturenofocus>-</texturenofocus>
 				</control>

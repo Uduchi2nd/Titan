@@ -11,7 +11,7 @@
 			<include>DimensionsFullscreen</include>
 			<fadetime>600</fadetime>
 			<texture background="true" fallback="special://skin/backgrounds/music.png">$INFO[MusicPlayer.Property(Fanart_Image)]</texture>
-			<aspectratio  align="center" aligny="center">strech</aspectratio>						
+			<aspectratio  align="center" aligny="center">stretch</aspectratio>						
 		</control>		
 		
 		<!--Music Visualisation-->
@@ -170,7 +170,7 @@
 				<height>220</height>
 				<fadetime>200</fadetime>
 				<texture background="true" fallback="cover_default.png" diffuse="cover_matte.png">$INFO[MusicPlayer.Cover]</texture>
-				<aspectratio align="top" aligny="top">keep</aspectratio>			
+				<aspectratio align="left" aligny="top">keep</aspectratio>			
 			</control>
 			
 	

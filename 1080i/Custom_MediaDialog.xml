@@ -74,9 +74,7 @@
 				<label>[B]Artwork Downloader[/B]</label>                  
 				<align>left</align>
 				<textoffsetx>20</textoffsetx>
-				<include>DialogButton</include>
-				<scroll>false</scroll>
-				<enabled>false</enabled>
+				<include>DialogButton</include>						
 				<texturenofocus border="0,0,0,2">dialogs/default/separator.png</texturenofocus>
 				<visible>System.HasAddon(script.artwork.downloader)</visible>
 			</control>

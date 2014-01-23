@@ -150,8 +150,7 @@
 					<align>right</align>
 					<textoffsetx>30</textoffsetx>
 					<textcolor>midgrey</textcolor>
-					<font>Reg32</font>
-					<align>left</align>		
+					<font>Reg32</font>					
 					<label>$INFO[Skin.String(LyricPath)]</label>
 					<visible>!IsEmpty(Skin.String(LyricPath))</visible>
 				</control>
@@ -164,8 +163,7 @@
 					<textoffsetx>30</textoffsetx>
 					<label>CU Lyrics</label>
 					<textcolor>midgrey</textcolor>
-					<font>Reg32</font>
-					<align>left</align>		
+					<font>Reg32</font>					
 					<visible>IsEmpty(Skin.String(LyricPath))</visible>
 				</control>
 				<control type="label">
@@ -175,8 +173,7 @@
 					<align>right</align>
 					<textoffsetx>30</textoffsetx>
 					<textcolor>black</textcolor>
-					<font>Reg32</font>
-					<align>left</align>		
+					<font>Reg32</font>					
 					<label>$INFO[Skin.String(LyricPath)]</label>
 					<visible>!IsEmpty(Skin.String(LyricPath))</visible>
 				</control>
@@ -189,8 +186,7 @@
 					<textoffsetx>30</textoffsetx>
 					<label>CU Lyrics</label>
 					<textcolor>black</textcolor>
-					<font>Reg32</font>
-					<align>left</align>		
+					<font>Reg32</font>					
 					<visible>IsEmpty(Skin.String(LyricPath))</visible>
 				</control>
 
@@ -203,8 +199,7 @@
 					<align>right</align>
 					<textoffsetx>30</textoffsetx>
 					<textcolor>midgrey</textcolor>
-					<font>Reg32</font>
-					<align>left</align>		
+					<font>Reg32</font>					
 					<label>$INFO[Skin.String(SubtitlesPath)]</label>
 					<visible>!IsEmpty(Skin.String(SubtitlesPath))</visible>
 				</control>
@@ -216,8 +211,7 @@
 					<textoffsetx>30</textoffsetx>
 					<label>XBMC Subtitles</label>
 					<textcolor>midgrey</textcolor>
-					<font>Reg32</font>
-					<align>left</align>		
+					<font>Reg32</font>							
 					<visible>IsEmpty(Skin.String(SubtitlesPath))</visible>
 				</control>
 				<control type="label">
@@ -228,8 +222,7 @@
 					<align>right</align>
 					<textoffsetx>30</textoffsetx>
 					<textcolor>black</textcolor>
-					<font>Reg32</font>
-					<align>left</align>		
+					<font>Reg32</font>					
 					<label>$INFO[Skin.String(SubtitlesPath)]</label>
 					<visible>!IsEmpty(Skin.String(SubtitlesPath))</visible>
 				</control>
@@ -241,8 +234,7 @@
 					<textoffsetx>30</textoffsetx>
 					<label>XBMC Subtitles</label>
 					<textcolor>black</textcolor>
-					<font>Reg32</font>
-					<align>left</align>		
+					<font>Reg32</font>					
 					<visible>IsEmpty(Skin.String(SubtitlesPath))</visible>
 				</control>
 
@@ -871,8 +863,7 @@
 					<font>Reg30</font>
 					<haspath>yes</haspath>
 					<textcolor>midgrey</textcolor>
-					<label fallback="571">$INFO[Container(9004).ListItem.Thumb]</label>
-					<textcolor>white</textcolor>
+					<label fallback="571">$INFO[Container(9004).ListItem.Thumb]</label>					
 				</control>
 			</control>
 		</control>

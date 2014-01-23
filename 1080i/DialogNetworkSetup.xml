@@ -280,8 +280,7 @@
 					<label>OK</label>
 					<include>DialogButtonOKCancel</include>
 					<texturefocus>common/select-fo.png</texturefocus>
-					<texturenofocus>common/select-nf.png</texturenofocus>
-					<texturenofocus>common/select-nf.png</texturenofocus>					
+					<texturenofocus>common/select-nf.png</texturenofocus>									
 					<align>left</align>	
 					<textoffsetx>100</textoffsetx> 					
 					<pulseonselect>false</pulseonselect>
@@ -299,8 +298,7 @@
 					<label>$LOCALIZE[222]</label>
 					<include>DialogButtonOKCancel</include>
 					<texturefocus>common/cancel-fo.png</texturefocus>
-					<texturenofocus>common/cancel-nf.png</texturenofocus>
-					<texturenofocus>common/select-nf.png</texturenofocus>					
+					<texturenofocus>common/cancel-nf.png</texturenofocus>									
 					<align>left</align>	
 					<textoffsetx>100</textoffsetx> 					
 					<pulseonselect>false</pulseonselect>

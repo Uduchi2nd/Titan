@@ -241,8 +241,7 @@
 								<height>50</height>
 								<font>Light30</font>
 								<textcolor>white</textcolor>
-								<selectedcolor>white</selectedcolor>
-								<selectedcolor>midgrey</selectedcolor>
+								<selectedcolor>white</selectedcolor>								
 								<label>$INFO[ListItem.ActualIcon,,.0]</label>
 								<align>right</align>
 								<aligny>center</aligny>

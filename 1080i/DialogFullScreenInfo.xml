@@ -45,8 +45,7 @@
 					<usealttexture></usealttexture>
 					<alttexturefocus>osd/InfoSelFO.png</alttexturefocus>
 					<alttexturenofocus>osd/InfoSelNF.png</alttexturenofocus>
-					<onclick>Skin.ToggleSetting(DialogFullSreenAddInfo)</onclick>
-					<selected>Skin.HasSetting(DialogFullSreenAddInfo)</selected>	
+					<onclick>Skin.ToggleSetting(DialogFullSreenAddInfo)</onclick>						
 				</control>					
 				<control type="button" id="103">		<!--Close-->
 					<width>60</width>

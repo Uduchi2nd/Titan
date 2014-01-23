@@ -104,8 +104,7 @@
 			</control>
 			<control type="progress" id="22">
 				<description>CPU BAR</description>
-				<width>1000</width>
-				<textcolor>midgrey</textcolor>		
+				<width>1000</width>					
 				<info>System.CPUUsage</info>
 			</control>
 			<control type="label" id="23">
@@ -116,8 +115,7 @@
 			</control>
 			<control type="progress" id="24">
 				<description>Memory BAR</description>
-				<width>1000</width>
-				<textcolor>midgrey</textcolor>		
+				<width>1000</width>				
 				<info>system.memory(used)</info>
 			</control>				
 			<control type="label" id="25">

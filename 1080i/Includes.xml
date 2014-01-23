@@ -973,7 +973,7 @@
 			<height>220</height>
 			<fadetime>200</fadetime>
 			<texture background="true" fallback="cover_default.png" >$INFO[VideoPlayer.Cover]</texture>
-			<aspectratio align="top" aligny="top">keep</aspectratio>				
+			<aspectratio align="left" aligny="top">keep</aspectratio>				
 			<visible>!VideoPlayer.Content(Movies)</visible>
 		</control>
 		<control type="image"><!--Movie-->			
@@ -983,7 +983,7 @@
 			<height>220</height>
 			<fadetime>200</fadetime>			
 			<texture background="true" fallback="poster_default.png" diffuse="poster_matte.png">$INFO[VideoPlayer.Cover]</texture>
-			<aspectratio  align="left" aligny="top">stretch</aspectratio>			
+			<aspectratio align="left" aligny="top">stretch</aspectratio>			
 			<visible>VideoPlayer.Content(Movies)</visible>
 		</control>	
 
@@ -1261,8 +1261,7 @@
 						<posy>5</posy>
 						<width>49</width>
 						<height>49</height>
-						<texture>dialogs/videoinfo/premiered-icon.png</texture>
-						<scroll>false</scroll>
+						<texture>dialogs/videoinfo/premiered-icon.png</texture>						
 					</control>
 					<control type="label">
 						<posx>65</posx>
@@ -1284,8 +1283,7 @@
 						<posy>5</posy>
 						<width>49</width>
 						<height>49</height>
-						<texture>dialogs/videoinfo/premiered-icon.png</texture>
-						<scroll>false</scroll>
+						<texture>dialogs/videoinfo/premiered-icon.png</texture>						
 					</control>
 					<control type="label">
 						<posx>65</posx>
@@ -1307,8 +1305,7 @@
 						<posy>5</posy>
 						<width>49</width>
 						<height>49</height>
-						<texture>dialogs/videoinfo/genre-icon.png</texture>
-						<scroll>false</scroll>
+						<texture>dialogs/videoinfo/genre-icon.png</texture>						
 					</control>
 					<control type="label">
 						<posx>65</posx>
@@ -1330,8 +1327,7 @@
 						<posy>5</posy>
 						<width>49</width>
 						<height>49</height>
-						<texture>dialogs/videoinfo/director-icon.png</texture>
-						<scroll>false</scroll>
+						<texture>dialogs/videoinfo/director-icon.png</texture>						
 					</control>
 					<control type="label">
 						<posx>65</posx>
@@ -1353,8 +1349,7 @@
 						<posy>5</posy>
 						<width>49</width>
 						<height>49</height>
-						<texture>dialogs/videoinfo/writer-icon.png</texture>
-						<scroll>false</scroll>
+						<texture>dialogs/videoinfo/writer-icon.png</texture>						
 					</control>
 					<control type="label">
 						<posx>65</posx>
@@ -1376,8 +1371,7 @@
 						<posy>5</posy>
 						<width>49</width>
 						<height>49</height>
-						<texture>dialogs/videoinfo/tvstudio-icon.png</texture>
-						<scroll>false</scroll>
+						<texture>dialogs/videoinfo/tvstudio-icon.png</texture>						
 					</control>
 					<control type="label">
 						<posx>65</posx>
